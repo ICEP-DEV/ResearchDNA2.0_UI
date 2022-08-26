@@ -1,17 +1,21 @@
-import { Component } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-landing-page',
+  templateUrl: './landing-page.component.html',
+  styleUrls: ['./landing-page.component.scss']
 })
-export class AppComponent {
-  title = 'research';
+export class LandingPageComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
   images = [
     {
       imageSrc:
-        '../../src/assets/images/Sport Management014.jpg',
-      imageAlt: '../../src/assets/images/Sport Management014.jpg',
+        '../../assets/images/Sport Management014.jpg',
+      imageAlt: '../../assets/images/Sport Management014.jpg',
     },
     {
       imageSrc:
@@ -29,5 +33,7 @@ export class AppComponent {
       imageAlt: '../assets/images/292393406_5246543968755039_5947110489787451877_n.jpg',
     },
   ]
+
+
 
 }
