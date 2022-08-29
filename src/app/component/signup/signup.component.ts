@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {MatIconModule} from '@angular/material/icon';
+
+
+import {AuthService} from "../../shared/services/auth.service";
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
@@ -8,20 +11,22 @@ import {MatIconModule} from '@angular/material/icon';
 })
 export class SignupComponent implements OnInit {
  signupForm: FormGroup;
-  constructor() {}
+ msg:'gh';
+  constructor(private authService: AuthService) {}
 
   ngOnInit(): void {
     this.signupForm = this.createFormGroup();
   }
 createFormGroup(): FormGroup {
   return new FormGroup({
-    name: new FormControl("", [Validators.required, Validators.minLength(2)]),
-    studentNo: new FormControl("", [Validators.required, Validators.minLength(2)]),
+    firstName: new FormControl("", [Validators.required, Validators.minLength(2)]),
+    lastName: new FormControl("", [Validators.required, Validators.minLength(2)]),
+    studNumber: new FormControl("", [Validators.required, Validators.minLength(2)]),
     email: new FormControl("", [Validators.required, Validators.minLength(2)]),
-    password: new FormControl("", [Validators.required, Validators.minLength(2)]),
-  })
+    password: new FormControl("", [Validators.required, Validators.minLength(7)]),
+  });
 }
 signup(): void {
-  console.log(this.signupForm.value);
+  this.authService.signup(this.signupForm.value);
 }
 }
