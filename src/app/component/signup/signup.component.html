@@ -3,10 +3,13 @@
 <mat-card>
 
     <form [formGroup]="signupForm" (ngSubmit)="signup()" novalidate>
+        <img class="img-responsive" src="https://cdn0.iconfinder.com/data/icons/thin-line-2/4/03-512.png">
+            
 
         <br/>
         <br/>
         <mat-form-field>
+            
             <mat-label>First Name</mat-label>
             <input matInput placeholder="Enter your name" formControlName="name">
         </mat-form-field>

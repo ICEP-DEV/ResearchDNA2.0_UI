@@ -14,8 +14,8 @@ mat-card {
     position: relative;
     width: 50%;
     left: 25%;
-    top: 35%;
-    height: 300px;
+    top: 15%;
+    height: 400px;
     box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.55);
 }
 
@@ -53,6 +53,19 @@ mat-icon {
     color: #0F35FF;
     opacity: 0.7;
     position: absolute;
-    top: 38%;
+    top: 18%;
     left: 44%;
+}
+img{
+    height: 90px;
+    width: 90px;
+    display: block;
+    position: center;
+    bottom: 30px;
+    margin-top: 20px;
+    padding-right: 100px;
+    margin-left: 200px;
+}
+.href{
+    color: red
 }
