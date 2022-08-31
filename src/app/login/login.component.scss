@@ -25,7 +25,7 @@ color: #000000;
 }
 .d1{
   position: absolute;
-width: 56.01px;
+
 height: 0px;
 left: 10px;
 top: 236px;
@@ -50,11 +50,12 @@ color: #000000;
 }
 .d2{
   position: absolute;
-width: 530.01px;
+width: 0.01px;
 height: 0px;
 left: 29px;
 top: 485px;
 margin-top: 130px;
+
 border: 1px solid #6699FF;
 transform: rotate(0.32deg)
 }
@@ -70,9 +71,7 @@ font-style: normal;
 font-weight: 800;
 font-size: 25px;
 line-height: 24px;
-
 color: #000000;
-
 }
 .picture{
   position: absolute;
@@ -83,14 +82,21 @@ left: -390px;
 top: 15px;
 border-radius: 0px;
 
-border-radius: 0px;
-
-
- 
+border-radius: 0px; 
 }
-input{
- margin-top: 100px;
-
+img{
+  position: absolute;
+  width: 189px;
+  height: 122px;
+  margin-right: 50px;
+  left: 10px;
+  top: 65px;
+  border-radius: 0px;
+  border-radius: 0px; 
+  background: transparent;
+}
+.input{
+ margin-top: 600px;
 
 }
 .b{
@@ -138,4 +144,11 @@ line-height: 15px;
 
 color: #808080;
 
+}
+.mat-divider{
+  max-width: 650px;
+  margin-left: 40px;
+}
+.profile{
+  margin-top: 80px;
 }
