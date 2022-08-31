@@ -11,6 +11,13 @@
 
   </mat-label>
   <mat-card class="picture">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
   <input id="imageUpload" type="file" 
        name="profile_photo" placeholder="Photo" required="" capture>
   </mat-card>
@@ -44,4 +51,34 @@
 
   </mat-label>
 </mat-card>
+
+<button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+  <mat-icon>more_vert</mat-icon>
+</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>
+    <mat-icon>home</mat-icon>
+    <span>Home</span>
+  </button>
+  <button mat-menu-item >
+    <mat-icon>description</mat-icon>
+    <span>Project</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>notifications_off</mat-icon>
+    <span>Workspace</span>
+  </button>
+  <button mat-menu-item >
+    <mat-icon>pan_tool</mat-icon>
+    <span>Research Tools</span>
+  </button>
+  <button mat-menu-item >
+    <mat-icon>chat</mat-icon>
+    <span>Chatbox</span>
+  </button>
+  <button mat-menu-item >
+    <mat-icon>dashboard</mat-icon>
+    <span>Dashboard</span>
+  </button>
+</mat-menu>
 

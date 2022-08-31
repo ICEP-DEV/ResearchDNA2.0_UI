@@ -87,18 +87,15 @@ border-radius: 0px;
 img{
   position: absolute;
   width: 189px;
-  height: 122px;
+  height: 162px;
   margin-right: 50px;
   left: 10px;
-  top: 65px;
+  top: 5px;
   border-radius: 0px;
   border-radius: 0px; 
   background: transparent;
 }
-.input{
- margin-top: 600px;
 
-}
 .b{
   position: absolute;
 width: 241px;
@@ -145,10 +142,22 @@ line-height: 15px;
 color: #808080;
 
 }
+mat-menu{
+  max-width: 20px;
+}
 .mat-divider{
   max-width: 650px;
   margin-left: 40px;
 }
 .profile{
   margin-top: 80px;
+}
+mat-menu{
+  position: absolute;
+width: 361px;
+height: 421px;
+left: 2px;
+top: -28px;
+
+background: #FFFFFF;
 }

@@ -10,6 +10,8 @@ import {MatCardModule} from '@angular/material/card';
 import { LoginComponent } from './login/login.component';
 import { MatLineModule } from '@angular/material/core';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatMenuModule} from '@angular/material/menu'; 
+import {MatIconModule} from '@angular/material/icon';
 
 
 @NgModule({
@@ -22,9 +24,9 @@ import {MatDividerModule} from '@angular/material/divider';
     MatCardModule,
     MatLineModule,
     MatDividerModule,
-    
+    MatMenuModule,
     BrowserAnimationsModule,
-
+    MatIconModule,
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
