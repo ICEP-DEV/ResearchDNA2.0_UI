@@ -18,7 +18,7 @@ mat-card.mat1 {
     position: absolute;
     height: 300px;
     top: 700px;
-    left: 260px;
+    left: 160px;
     width: 370px;
     border-radius: 15px;
     box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.55);
@@ -28,7 +28,7 @@ mat-card.mat2 {
     position: absolute;
     height: 300px;
     top: 700px;
-    left: 1060px;
+    left: 560px;
     width: 370px;
     margin-top: 0px;
     border-radius: 15px;
@@ -39,7 +39,7 @@ mat-card.mat3 {
     position: absolute;
     height: 300px;
     top: 700px;
-    left: 1760px;
+    left: 960px;
     width: 370px;
     border-radius: 15px;
     box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.55);
@@ -126,6 +126,7 @@ mat-card.mat3 {
     top: 40%;
     left: 35%;
     color: rgb(0, 0, 0);
+    font-weight: bold;
 }
 
 .landText2 {
@@ -137,6 +138,7 @@ mat-card.mat3 {
     top: 48%;
     left: 42%;
     color: rgb(0, 0, 0);
+    font-weight: bold;
 }
 
 button {
