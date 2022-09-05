@@ -12,6 +12,7 @@ import { MatLineModule } from '@angular/material/core';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatMenuModule} from '@angular/material/menu'; 
 import {MatIconModule} from '@angular/material/icon';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 
 @NgModule({
@@ -31,7 +32,7 @@ import {MatIconModule} from '@angular/material/icon';
     MatInputModule,
     MatButtonModule,
     MatCardModule,
-
+    MatToolbarModule,
     ReactiveFormsModule,
   
     MatFormFieldModule,
