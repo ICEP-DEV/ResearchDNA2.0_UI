@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -13,12 +14,20 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatMenuModule} from '@angular/material/menu'; 
 import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { AppRoutingModule } from './app-routing.module';
+import { EditComponent } from './edit/edit.component';
 
 
 @NgModule({
   declarations: [
+    
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    
+    EditComponent
+    
+    
+ 
   ],
   imports: [
     BrowserModule,
@@ -34,8 +43,9 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     MatCardModule,
     MatToolbarModule,
     ReactiveFormsModule,
-  
+    AppRoutingModule,
     MatFormFieldModule,
+    
 
 
   ],

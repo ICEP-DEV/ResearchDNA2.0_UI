@@ -150,7 +150,7 @@ mat-menu{
   margin-left: 40px;
 }
 .profile{
-  margin-top: 80px;
+  margin-top: 100px;
 }
 mat-menu{
   position: absolute;
@@ -163,7 +163,7 @@ background: #FFFFFF;
 }
 .edit{
   top: 1100px;
-  left: 793px;
+  left: 993px;
   position: absolute;
   width: 223px;
 height: 37px;
@@ -184,6 +184,42 @@ border-radius: 15px;
 font-weight: bolder;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+.img-fluid {
+  height: 83px;
+}
+
+.dev {
+  height: 9px;
+  background-color: #0F35FF;
+}
+
+.header {
+  height: 90px;
+  background-color: white;
+}
+
+button {
+  height: 90px;
+  width: 170px;
+  border-radius: 0px;
+  position: absolute;
+  top: 0px;
+  right: -1px;
+  text-size-adjust: 30px;
+}
 
 
 
