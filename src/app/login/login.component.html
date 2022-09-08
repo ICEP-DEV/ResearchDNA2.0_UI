@@ -1,5 +1,22 @@
+<div *ngIf="ChangingImage" class="saveimg" >
+  <input type="file" (change)="fileChangeEvent($event)" />
 
+<image-cropper
+    [imageChangedEvent]="imageChangedEvent"
+    [maintainAspectRatio]="true"
+    [aspectRatio]="4 / 3"
+    format="png"
+    (imageCropped)="imageCropped($event)"
+    
+    (cropperReady)="cropperReady()"
+    (loadImageFailed)="loadImageFailed()"
+></image-cropper>
+
+<img [src]="croppedImage" />
+<button md-button type="button" (click)="saveNewImage()" class = "u-img">Save</button>
+</div>
 <mat-card class="profile">
+  
   <mat-label class="Basic">Basic Information</mat-label>
   <mat-label class="b">
     Name:
@@ -11,19 +28,16 @@
     Faculty:
 
   </mat-label>
-  <mat-card class="picture">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-  <input id="imageUpload" type="file" 
-       name="profile_photo" placeholder="Photo" required="" capture>
-  </mat-card>
+ 
+    <img
+    fxFlex="128px"
+    [src]="data && data.image ? data.image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcgNY4pYkj6KPV2TbqsBw3lYZ9mwkbx_XwjnYSsXunpnLwD1XFXi2Iuf5_zD-u9xsa14c&usqp=CAU'"
+    class="profile-img">
+    <button md-button type="button" (click)="ChangingImageclick()" class = "u-img">Upload picture</button>
+    
+  
   <mat-divider class="d1"></mat-divider>
-  <img src="https://flyclipart.com/thumb2/user-icon-png-pnglogocom-133466.png" alt="pp">
+  
   <mat-label class="contact">Contact Information</mat-label>
   <mat-label class="c">
     User id:

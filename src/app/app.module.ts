@@ -16,6 +16,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { AppRoutingModule } from './app-routing.module';
 import { EditComponent } from './edit/edit.component';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { ImageCropperModule } from 'ngx-image-cropper';
 
 
 @NgModule({
@@ -45,6 +47,8 @@ import { EditComponent } from './edit/edit.component';
     ReactiveFormsModule,
     AppRoutingModule,
     MatFormFieldModule,
+    MatProgressBarModule,
+    ImageCropperModule
     
 
 
