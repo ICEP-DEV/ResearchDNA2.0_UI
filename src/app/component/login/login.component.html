@@ -3,6 +3,11 @@
 <mat-card>
 
     <form [formGroup]="loginForm" (ngSubmit)="login()" novalidate>
+        <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdagfNlkCXKS54rDkgY6CjGNtPECsI_SZlKQ&usqp=CAU">
+        <br/>
+        <br/>
+        <br/>
+        <br/>
         <br/>
         <br/>
         <mat-form-field>
@@ -19,6 +24,6 @@
         <div>Don't have an account?<a routerLink="/signup">Sign Up</a></div>
         <br/>
         <div>Forgot your password?<a href="">Reset Password</a></div>
-        <button color="Red" [disabled]="!loginForm.valid" mat-raised-button type="submit"><span>Submit</span></button>
+        <button color="Red" mat-raised-button type="submit"><span>Submit</span></button>
     </form>
 </mat-card>

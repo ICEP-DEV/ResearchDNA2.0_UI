@@ -1,0 +1,67 @@
+.container {
+    width: 300px;
+    height: 80vh;
+    background-color: white;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.55);
+}
+
+.logo-image {
+    height: 83px;
+}
+
+.dev {
+    height: 9px;
+    background-color: #0F35FF;
+}
+
+mat-toolbar {
+    height: 90px;
+    background-color: white;
+}
+
+.profileImg {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    right: 27px;
+    text-size-adjust: 30px;
+}
+
+.calendar {
+    position: absolute;
+    top: 180px;
+    left: 22%;
+}
+
+.bottomCard {
+    position: absolute;
+    top: 250px;
+    left: 15%;
+    width: 700px;
+    height: 150px;
+}
+
+.PageTitle {
+    font-size: 54px;
+}
+
+.title {
+    position: absolute;
+    top: 60px;
+    left: 22%;
+}
+
+.bottomCard2 {
+    position: absolute;
+    top: 250px;
+    left: 65%;
+    width: 250px;
+    height: 150px;
+}
+
+.homeIcon {
+    //height: 50px;
+    //width: 50px;
+}

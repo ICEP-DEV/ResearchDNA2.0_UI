@@ -3,7 +3,9 @@
 <mat-card>
 
     <form [formGroup]="signupForm" (ngSubmit)="signup()" novalidate>
-
+        <img class="img-responsive" src="https://cdn0.iconfinder.com/data/icons/thin-line-2/4/03-512.png">
+        <br/>
+        <br/>
         <br/>
         <br/>
         <mat-form-field>
@@ -33,6 +35,6 @@
 
         </mat-form-field>
         <div>Already have an account?<a routerLink="/login">Sign In</a></div>
-        <button color="Red" [disabled]="!signupForm.valid" mat-raised-button type="submit"><span>Submit</span></button>
+        <button color="Red" mat-raised-button type="submit"><span>Submit</span></button>
     </form>
 </mat-card>

@@ -13,6 +13,9 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import {MaterialModule} from './material/material.module';
 import { CarouselComponent } from './carousel/carousel.component';
 import { LoginComponent } from './component/login/login.component';
+import { DashboardComponent } from './component/dashboard/dashboard.component';
+import { CalendarModule } from '@syncfusion/ej2-angular-calendars';
+import { ProjectsComponent } from './component/projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +27,8 @@ import { LoginComponent } from './component/login/login.component';
     LandingPageComponent,
     CarouselComponent,
     LoginComponent,
+    DashboardComponent,
+    ProjectsComponent,
 
   ],
   imports: [
@@ -33,6 +38,8 @@ import { LoginComponent } from './component/login/login.component';
     ReactiveFormsModule,
     MaterialModule,
     HttpClientModule,
+    CalendarModule
+
 
   ],
   providers: [],

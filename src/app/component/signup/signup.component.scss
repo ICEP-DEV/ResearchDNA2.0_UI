@@ -15,7 +15,7 @@ mat-card {
     width: 50%;
     left: 25%;
     top: 35%;
-    height: 500px;
+    height: 600px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.55);
 }
 
@@ -56,4 +56,16 @@ mat-icon {
     position: absolute;
     top: 38%;
     left: 44%;
+}
+
+img {
+    height: 90px;
+    width: 90px;
+    display: block;
+    position: Absolute;
+    bottom: 540px;
+    left: -10%;
+    margin-top: 20px;
+    padding-right: 100px;
+    margin-left: 400px;
 }
