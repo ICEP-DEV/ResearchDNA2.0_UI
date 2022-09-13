@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -18,6 +17,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { EditComponent } from './edit/edit.component';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { ImageCropperModule } from 'ngx-image-cropper';
+import { HttpClientModule } from '@angular/common/http';
+import {UserService} from './user.service'
 
 
 @NgModule({
@@ -48,7 +49,8 @@ import { ImageCropperModule } from 'ngx-image-cropper';
     AppRoutingModule,
     MatFormFieldModule,
     MatProgressBarModule,
-    ImageCropperModule
+    ImageCropperModule,
+    HttpClientModule
     
 
 
@@ -56,4 +58,12 @@ import { ImageCropperModule } from 'ngx-image-cropper';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(private api:UserService){
+
+  }
+  ngOnInit()
+  {
+    
+  }
+ }

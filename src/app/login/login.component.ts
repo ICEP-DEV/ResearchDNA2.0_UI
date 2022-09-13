@@ -1,5 +1,7 @@
 import { createViewChild } from '@angular/compiler/src/core';
 import { Component, OnInit } from '@angular/core';
+import { UserService } from '../user.service';
+
 
 import { ImageCroppedEvent, LoadedImage } from 'ngx-image-cropper';
 
@@ -9,17 +11,24 @@ import { ImageCroppedEvent, LoadedImage } from 'ngx-image-cropper';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
+
+  student: any;
  ChangingImage : boolean | undefined
  imageChangedEvent: any = '';
     croppedImage: any = '';
+    
  
 data: any;
+  UserService: any;
   constructor() {
     this.data = {}
     
    }
 
-  ngOnInit(): void {
+  ngOnInit() {
+   this.UserService.getstudent().subscribe((student:any[])=>{
+    console.log(student)
+   })
   }
   ChangingImageclick(){
 this.ChangingImage= true;
