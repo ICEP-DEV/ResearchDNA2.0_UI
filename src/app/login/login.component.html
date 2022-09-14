@@ -39,11 +39,11 @@
   <mat-divider class="d1"></mat-divider>
   
   <mat-label class="contact">Contact Information</mat-label>
-  <mat-label class="c" >
-    User id: 
+  <mat-label class="c" *ngFor="let student for student" >
+    User id: <p>{{student.userid}}</p>
     <br>
     <br>
-    Email:
+    Email:<p>{{student.email}}</p>
     
   </mat-label>
   
@@ -68,6 +68,10 @@
   </mat-label>
 </mat-card>
 <button mat-raised-button  class="edit" routerLink="edit" routerLinkActive="active">Edit Information</button>
+
+<li *ngIf = "userIsAuthenticated">  
+  <button mat-button (click)= "onLogout()" class="logout">Logout</button>  
+</li>  
 
 
 

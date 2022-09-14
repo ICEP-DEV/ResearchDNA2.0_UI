@@ -20,6 +20,9 @@ export class LoginComponent implements OnInit {
  
 data: any;
   UserService: any;
+user: any;
+userIsAuthenticated: any;
+  token: null | undefined;
   constructor() {
     this.data = {}
     
@@ -52,6 +55,10 @@ cropperReady() {
 loadImageFailed() {
     // show message
 }
+onLogout(){  
+  this.token = null;  
+  this.userIsAuthenticated = false;   
+}  
   
 
 }
