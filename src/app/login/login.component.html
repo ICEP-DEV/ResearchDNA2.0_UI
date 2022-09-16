@@ -68,6 +68,7 @@
   </mat-label>
 </mat-card>
 <button mat-raised-button  class="edit" routerLink="edit" routerLinkActive="active">Edit Information</button>
+<button mat-raised-button  class="log" routerLink="researchtools" routerLinkActive="active">logout</button>
 
 <li *ngIf = "userIsAuthenticated">  
   <button mat-button (click)= "onLogout()" class="logout">Logout</button>  

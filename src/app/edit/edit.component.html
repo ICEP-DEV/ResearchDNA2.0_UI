@@ -21,22 +21,22 @@
         <!--field form email-->
         <mat-form-field>
             <mat-label>Email</mat-label>
-            <input matInput placeholder="Enter your name" formControlName="email">
+            <input matInput placeholder="Enter your email" formControlName="email">
         </mat-form-field>
         <!--field for old password-->
         <mat-form-field>
             <mat-label>Old Password</mat-label>
-            <input matInput placeholder="Enter your name" formControlName="Oldpassword">
+            <input matInput placeholder="Enter your old password" formControlName="Oldpassword">
         </mat-form-field>
         <!--field for new password-->
         <mat-form-field>
             <mat-label>New Password</mat-label>
-            <input matInput placeholder="Enter your name" formControlName="Newpassword">
+            <input matInput placeholder="Enter your new password" formControlName="Newpassword">
         </mat-form-field>
         <!--field for confirm password-->
         <mat-form-field>
             <mat-label>Confirm Password</mat-label>
-            <input matInput type="password" placeholder="Enter your name" formControlName="confpassword">
+            <input matInput type="password" placeholder="Confirm password" formControlName="confpassword">
             <br/>
 
         </mat-form-field>
@@ -45,4 +45,4 @@
        
     </form>
 </mat-card>
-<button color="Red" mat-raised-button class="update" type="submit"><span>Update info</span></button>
+<button  mat-raised-button class="update"  routerLink="researchtools" routerLinkActive="active">Update info</button>
