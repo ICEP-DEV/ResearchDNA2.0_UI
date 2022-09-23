@@ -183,9 +183,7 @@ border-radius: 15px;
 font-weight: bolder;
 }
 
-.saveimg{
-  margin-right: 900px;
-}
+
 .log{
   top: 1100px;
   left: 593px;
@@ -196,6 +194,39 @@ font-size: 16px;
 font-weight: bolder;
 background: rgba(102, 153, 255, 0.27);
 border-radius: 15px;
+}
+.log{
+  top: 1100px;
+  left: 83px;
+
+}
+
+
+
+#imageUpload
+{
+    display: none;
+}
+
+#profileImage
+{
+    cursor: pointer;
+}
+
+#profile-container {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+#profile-container img {
+    width: 150px;
+    height: 150px;
 }
 
 

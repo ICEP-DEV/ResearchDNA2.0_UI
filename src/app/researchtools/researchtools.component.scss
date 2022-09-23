@@ -3,7 +3,7 @@
 width: 405px;
 height: 45px;
 left: 10px;
-top: 10px;
+top: 30px;
 background: #FFFFFF;
 }
 .go{
@@ -11,9 +11,10 @@ background: #FFFFFF;
 width: 46px;
 height: 37px;
 left: 20px;
-top: 10px;
+top: 30px;
 background: rgba(29, 97, 159, 0.88);
 border-radius: 5px;
+color: white;
 }
 .heading{
     position: absolute;
@@ -125,3 +126,46 @@ color: #000000;
     font-weight: bold;
     font-size: 26px;
 }
+.content3{
+    position: absolute;
+    width: 576px;
+    height: 64px;
+    left: 1121px;
+    top: 305px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 15px;
+    
+    color: #000000;  
+}
+.step3{
+    font-weight: bold;
+    font-size: 26px; 
+}
+.content4{
+    position: absolute;
+    width: 876px;
+    height: 64px;
+    left: 1121px;
+    top: 445px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 15px;
+    
+    color: #000000;  
+}
+.step4{
+    font-weight: bold;
+    font-size: 26px;
+} 
+table {
+    width: 100%;
+    top: 500px;
+  }
+  

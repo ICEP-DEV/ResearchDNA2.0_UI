@@ -1,21 +1,12 @@
-<div *ngIf="ChangingImage" class="saveimg" >
-  <input type="file" (change)="fileChangeEvent($event)" />
-
-<image-cropper
-    [imageChangedEvent]="imageChangedEvent"
-    [maintainAspectRatio]="true"
-    [aspectRatio]="4 / 3"
-    format="png"
-    (imageCropped)="imageCropped($event)"
-    
-    (cropperReady)="cropperReady()"
-    (loadImageFailed)="loadImageFailed()"
-></image-cropper>
-
-<img [src]="croppedImage" />
-<button md-button type="button" (click)="saveNewImage()" class = "u-img">Save</button>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<div id="profile-container">
+   <img id="profileImage" src="http://lorempixel.com/100/100" />
 </div>
+<input id="imageUpload" type="file" 
+       name="profile_photo" placeholder="Photo" required="" capture>
 <mat-card class="profile">
+
+  
   
   <mat-label class="Basic">Basic Information</mat-label>
   <mat-label class="b">
@@ -29,21 +20,16 @@
 
   </mat-label>
  
-    <img
-    fxFlex="128px"
-    [src]="data && data.image ? data.image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcgNY4pYkj6KPV2TbqsBw3lYZ9mwkbx_XwjnYSsXunpnLwD1XFXi2Iuf5_zD-u9xsa14c&usqp=CAU'"
-    class="profile-img">
-    <button md-button type="button" (click)="ChangingImageclick()" class = "u-img">Upload picture</button>
     
   
   <mat-divider class="d1"></mat-divider>
   
   <mat-label class="contact">Contact Information</mat-label>
-  <mat-label class="c" *ngFor="let student for student" >
-    User id: <p>{{student.userid}}</p>
+  <mat-label class="c"  >
+    User id: 
     <br>
     <br>
-    Email:<p>{{student.email}}</p>
+    Email:
     
   </mat-label>
   

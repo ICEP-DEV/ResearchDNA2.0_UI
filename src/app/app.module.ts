@@ -19,7 +19,8 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { ImageCropperModule } from 'ngx-image-cropper';
 import { HttpClientModule } from '@angular/common/http';
 import {UserService} from './user.service';
-import { ResearchtoolsComponent } from './researchtools/researchtools.component'
+import { ResearchtoolsComponent } from './researchtools/researchtools.component';
+import {MatTableModule} from '@angular/material/table';
 
 
 @NgModule({
@@ -52,7 +53,8 @@ import { ResearchtoolsComponent } from './researchtools/researchtools.component'
     MatFormFieldModule,
     MatProgressBarModule,
     ImageCropperModule,
-    HttpClientModule
+    HttpClientModule,
+    MatTableModule
     
 
 
