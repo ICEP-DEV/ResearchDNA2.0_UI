@@ -1,13 +1,29 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<div id="profile-container">
-   <img id="profileImage" src="http://lorempixel.com/100/100" />
-</div>
-<input id="imageUpload" type="file" 
-       name="profile_photo" placeholder="Photo" required="" capture>
-<mat-card class="profile">
+
+
+<br>
+<br>
 
   
-  
+  <mat-card class="profile">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+      
+    
+    <div class="col-md-12">
+      <input type="file" (change)="onFileChange($event)" />
+    </div>
+   
   <mat-label class="Basic">Basic Information</mat-label>
   <mat-label class="b">
     Name:
@@ -58,7 +74,24 @@
 
 <li *ngIf = "userIsAuthenticated">  
   <button mat-button (click)= "onLogout()" class="logout">Logout</button>  
-</li>  
+</li>
+
+
+<div class="container mt-5 text-center">
+  <div class="col-md-8">
+    <image-cropper 
+      [imageChangedEvent]="imgChangeEvt" 
+      [maintainAspectRatio]="true" 
+      [aspectRatio]="4 / 4"
+      [resizeToWidth]="256" 
+      format="png" 
+      (imageCropped)="cropImg($event)" 
+      (imageLoaded)="imgLoad()"
+      (cropperReady)="initCropper()" 
+      (loadImageFailed)="imgFailed()">
+    </image-cropper>
+  </div>
+
 
 
 

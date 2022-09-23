@@ -9,6 +9,10 @@ background: #F5F5F5;
 border-radius: 15px;
 
 }
+.proff{
+  height: 200px;
+ 
+}
 .Basic{
   position: absolute;
 width: 275px;
@@ -99,7 +103,7 @@ border-radius: 0px;
   position: absolute;
 width: 241px;
 height: 100px;
-left: 219px;
+left: 230px;
 top: 103px;
 
 font-family: 'Inter';
@@ -200,37 +204,12 @@ border-radius: 15px;
   left: 83px;
 
 }
-
-
-
-#imageUpload
-{
-    display: none;
+.col-md-8{
+  visibility: hidden;
+  height:200px ;
+  margin-top: 0px;
+  margin-left: 10px;
 }
-
-#profileImage
-{
-    cursor: pointer;
-}
-
-#profile-container {
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-}
-
-#profile-container img {
-    width: 150px;
-    height: 150px;
-}
-
-
-
 
 
 

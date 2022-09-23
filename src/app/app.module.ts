@@ -22,6 +22,8 @@ import {UserService} from './user.service';
 import { ResearchtoolsComponent } from './researchtools/researchtools.component';
 import {MatTableModule} from '@angular/material/table';
 
+ 
+
 
 @NgModule({
   declarations: [
@@ -54,11 +56,18 @@ import {MatTableModule} from '@angular/material/table';
     MatProgressBarModule,
     ImageCropperModule,
     HttpClientModule,
-    MatTableModule
+    MatTableModule,
+    
+    
+    
+    
+    
+    
     
 
 
   ],
+  
   providers: [],
   bootstrap: [AppComponent]
 })

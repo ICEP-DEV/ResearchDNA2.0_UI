@@ -11,11 +11,29 @@ import { ImageCroppedEvent, LoadedImage } from 'ngx-image-cropper';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
+  
 
-  student: any;
- ChangingImage : boolean | undefined
- imageChangedEvent: any = '';
-    croppedImage: any = '';
+  imgChangeEvt: any = '';
+    cropImgPreview: any = '';
+  ChangingImage: boolean | undefined;
+  imageChangedEvent: any;
+  croppedImage: string | null | undefined;
+    onFileChange(event: any): void {
+        this.imgChangeEvt = event;
+    }
+    cropImg(e: ImageCroppedEvent) {
+        this.cropImgPreview = e.base64;
+    }
+    imgLoad() {
+        // display cropper tool
+    }
+    initCropper() {
+        // init cropper
+    }
+    
+    imgFailed() {
+        // error msg
+    }
     
  
 data: any;
