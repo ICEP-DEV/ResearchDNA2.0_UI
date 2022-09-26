@@ -1,29 +1,36 @@
-
+<div class="container ">
+  <div class="col-md-8" visibility="hidden">
+    <image-cropper 
+      [imageChangedEvent]="imgChangeEvt" 
+      [maintainAspectRatio]="true" 
+      [aspectRatio]="4 / 4"
+      [resizeToWidth]="256" 
+      format="png" 
+      (imageCropped)="cropImg($event)" 
+      (imageLoaded)="imgLoad()"
+      (cropperReady)="initCropper()" 
+      (loadImageFailed)="imgFailed()">
+    </image-cropper>
+    
+  </div>
+  
 
 <br>
 <br>
 
   
   <mat-card class="profile">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    
-      
     
     <div class="col-md-12">
       <input type="file" (change)="onFileChange($event)" />
     </div>
+      
+    <div class="col-md-4">
+      <img [src]="cropImgPreview" />
+    </div>
    
+   
+    
   <mat-label class="Basic">Basic Information</mat-label>
   <mat-label class="b">
     Name:
@@ -77,20 +84,7 @@
 </li>
 
 
-<div class="container mt-5 text-center">
-  <div class="col-md-8">
-    <image-cropper 
-      [imageChangedEvent]="imgChangeEvt" 
-      [maintainAspectRatio]="true" 
-      [aspectRatio]="4 / 4"
-      [resizeToWidth]="256" 
-      format="png" 
-      (imageCropped)="cropImg($event)" 
-      (imageLoaded)="imgLoad()"
-      (cropperReady)="initCropper()" 
-      (loadImageFailed)="imgFailed()">
-    </image-cropper>
-  </div>
+
 
 
 

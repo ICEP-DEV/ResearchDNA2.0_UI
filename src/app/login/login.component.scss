@@ -17,7 +17,7 @@ border-radius: 15px;
   position: absolute;
 width: 275px;
 height: 24px;
-left: 220px;
+left: 290px;
 top: 27px;
 font-family: 'Inter';
 font-style: normal;
@@ -103,7 +103,7 @@ border-radius: 0px;
   position: absolute;
 width: 241px;
 height: 100px;
-left: 230px;
+left: 290px;
 top: 103px;
 
 font-family: 'Inter';
@@ -206,10 +206,15 @@ border-radius: 15px;
 }
 .col-md-8{
   visibility: hidden;
-  height:200px ;
-  margin-top: 0px;
-  margin-left: 10px;
+  width: 1px;
 }
+.col-md-4{
+  height:50px ;
+  margin-bottom: 400px;
+  margin-left: 0px;
+  width: 50px; 
+}
+
 
 
 
