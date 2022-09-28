@@ -12,5 +12,5 @@ export class WorkspaceComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  ckeditorContent: string = '<p>Some html</p>';
+  ckeditorContent:string;
 }
