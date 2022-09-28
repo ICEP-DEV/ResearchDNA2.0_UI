@@ -7,6 +7,8 @@ import {MatListModule} from "@angular/material/list";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatDividerModule} from '@angular/material/divider';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatTableModule} from '@angular/material/table';
 const MaterialComponents = [
     MatButtonModule,
     MatCardModule,
@@ -16,11 +18,15 @@ const MaterialComponents = [
     MatToolbarModule,
     MatDividerModule,
     MatSidenavModule,
+    MatTabsModule,
+    MatTableModule
+
 ]
 
 @NgModule({
   imports: [
-    MaterialComponents
+    MaterialComponents,
+
   ],
   exports: [MaterialComponents]
 })

@@ -1,7 +1,9 @@
 export interface User {
+  studNumber: number;
   firstName: string;
   lastName: string;
-  studNumber: number;
   email: string;
   password: string;
+  department: string;
+  faculty: string;
 }

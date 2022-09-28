@@ -18,6 +18,15 @@ button {
     border-radius: 0px;
     position: absolute;
     top: 0px;
-    right: -1px;
+    right: -0px;
+    text-size-adjust: 30px;
+}
+
+.img-responsive {
+    height: 80px;
+    width: 100px;
+    position: absolute;
+    top: 0px;
+    right: 10px;
     text-size-adjust: 30px;
 }
