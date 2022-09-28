@@ -8,6 +8,12 @@
         <br/>
         <br/>
         <br/>
+        <!--field form studentNo-->
+        <mat-form-field>
+            <mat-label>Student No</mat-label>
+            <input matInput placeholder="Enter your name" formControlName="studNumber" placeholder="21890086">
+        </mat-form-field>
+
         <mat-form-field>
             <mat-label>First Name</mat-label>
             <input matInput placeholder="Enter your name" formControlName="firstName" placeholder="Ex. John">
@@ -17,11 +23,7 @@
             <mat-label>Last Name</mat-label>
             <input matInput placeholder="Enter your name" formControlName="lastName" placeholder="Ex. Nkosi">
         </mat-form-field>
-        <!--field form studentNo-->
-        <mat-form-field>
-            <mat-label>Student No</mat-label>
-            <input matInput placeholder="Enter your name" formControlName="studnumber" placeholder="21890086">
-        </mat-form-field>
+
         <!--field for email-->
         <mat-form-field>
             <mat-label>Email</mat-label>
@@ -34,7 +36,15 @@
             <br/>
 
         </mat-form-field>
+        <mat-form-field>
+            <mat-label>Department</mat-label>
+            <input matInput placeholder="Enter your name" formControlName="department" placeholder="Ex. Humanities">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Faculty</mat-label>
+            <input matInput placeholder="Enter your name" formControlName="faculty" placeholder="Ex. Law">
+        </mat-form-field>
         <div>Already have an account?<a routerLink="/login">Sign In</a></div>
-        <button color="Red" mat-raised-button type="submit"><span>Submit</span></button>
+        <button color="Red" [disabled]="!signupForm.valid" mat-raised-button type="submit"><span>Submit</span></button>
     </form>
 </mat-card>

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {Routes, ActivatedRoute, ParamMap} from '@angular/router';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatSort, Sort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
@@ -15,15 +14,15 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
 ];
 @Component({
-  selector: 'app-projects',
-  templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.scss']
+  selector: 'app-projectcreate',
+  templateUrl: './projectcreate.component.html',
+  styleUrls: ['./projectcreate.component.scss']
 })
-
-export class ProjectsComponent implements OnInit {
-
+export class ProjectcreateComponent implements OnInit {
   displayedColumns: string[] = [ 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
+
+  constructor() { }
 
   ngOnInit(): void {
   }

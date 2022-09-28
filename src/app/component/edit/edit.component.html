@@ -1,0 +1,44 @@
+<mat-card>
+
+    <form [formGroup]="editForm" (ngSubmit)="signup()" novalidate>
+        <div class="mat-display-3">Update Information</div>
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <mat-form-field>
+
+            <mat-label>First Name</mat-label>
+            <input matInput placeholder="Enter your name" formControlName="name">
+        </mat-form-field>
+        <!--field form email-->
+        <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Enter your email" formControlName="email">
+        </mat-form-field>
+        <!--field for old password-->
+        <mat-form-field>
+            <mat-label>Old Password</mat-label>
+            <input matInput placeholder="Enter your old password" formControlName="Oldpassword">
+        </mat-form-field>
+        <!--field for new password-->
+        <mat-form-field>
+            <mat-label>New Password</mat-label>
+            <input matInput placeholder="Enter your new password" formControlName="Newpassword">
+        </mat-form-field>
+        <!--field for confirm password-->
+        <mat-form-field>
+            <mat-label>Confirm Password</mat-label>
+            <input matInput type="password" placeholder="Confirm password" formControlName="confpassword">
+            <br/>
+
+        </mat-form-field>
+
+
+
+    </form>
+</mat-card>
+<button mat-raised-button class="update" routerLink="researchtools" routerLinkActive="active">Update info</button>
