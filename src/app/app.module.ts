@@ -21,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
 import {UserService} from './user.service';
 import { ResearchtoolsComponent } from './researchtools/researchtools.component';
 import {MatTableModule} from '@angular/material/table';
+import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
 
  
 
@@ -32,7 +33,8 @@ import {MatTableModule} from '@angular/material/table';
     LoginComponent,
     
     EditComponent,
-          ResearchtoolsComponent
+          ResearchtoolsComponent,
+          AdmindashboardComponent
     
     
  
