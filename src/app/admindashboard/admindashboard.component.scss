@@ -8,6 +8,48 @@ top: 118px;
 background: #FFFFFF;
 border-radius: 5px;
 }
+.welcome{
+    position: absolute;
+width: 555px;
+height: 132px;
+left: 95px;
+top: 70px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 36px;
+line-height: 39px;
+
+color: #FFFFFF;
+
+}
+.afew{
+    position: absolute;
+width: 555px;
+height: 132px;
+left: 95px;
+top: 150px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 24px;
+
+color: #000000;
+
+}
+.learn{
+    position: absolute;
+    width: 286px;
+    height: 40px;
+    left: 123px;
+    top: 222px;
+    
+    background: #FFFFFF;
+    border-radius: 10px; 
+}
 .head{
     position: absolute;
 width: 1700px;
@@ -47,6 +89,22 @@ line-height: 24px;
 
 color: #1D619F;
 
+}
+.studlist{
+    position: absolute;
+width: 334px;
+height: 33px;
+left: 39px;
+top: 260px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 24px;
+
+color: #1D619F;
+  
 }
 .box1{
 position: absolute;
@@ -119,4 +177,53 @@ line-height: 29px;
 
 
 color: #000000
+}
+.stud{
+    position: absolute;
+    width: 400px;
+    height: 29px;
+    top: -30px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px; 
+}
+.proj{
+    position: absolute;
+width: 500px;
+height: 29px;
+left: 990px;
+top: 840px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px; 
+}
+img{
+    margin-left:1414px; 
+    height: 319px;
+    margin-top:-15px;
+   
+    
+}
+.projpic{
+  height: 350px;
+  margin-right: 10px;
+}
+.penpic{
+    height: 350px;
+    margin-right: -10px;
+}
+.chart1{
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.chart2{
+    margin-left: 40px;
+    margin-top: 100px;
+    height: 290px;  
 }
