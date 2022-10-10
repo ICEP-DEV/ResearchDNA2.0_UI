@@ -1,0 +1,33 @@
+<div class="container">
+    <table class="studtable">
+      <thead>
+          <tr>
+            
+            <th>Student Number</th>
+            <th>Student Name</th>
+            <br>
+        
+            <th>Student Surname</th>
+            
+            <th>Qualification</th>
+            
+            <th>Faculty</th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let studentlist of students">
+            
+            <td>{{studentlist.student_number}}</td>
+            <td>{{ studentlist.student_name }}</td>
+            <br>
+            <br>
+            
+            <td>{{ studentlist.student_surname }}</td>
+            
+            <td>{{ studentlist.Qualification }}</td>
+            
+            <td>{{ studentlist.Faculty }}</td>
+          </tr>
+      </tbody>
+    </table>
+  </div>

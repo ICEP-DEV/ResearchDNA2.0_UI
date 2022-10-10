@@ -22,6 +22,7 @@ import {UserService} from './user.service';
 import { ResearchtoolsComponent } from './researchtools/researchtools.component';
 import {MatTableModule} from '@angular/material/table';
 import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
+import { StudentslistComponent } from './studentslist/studentslist.component';
 
 
 
@@ -39,7 +40,8 @@ import { AdmindashboardComponent } from './admindashboard/admindashboard.compone
     
     EditComponent,
           ResearchtoolsComponent,
-          AdmindashboardComponent
+          AdmindashboardComponent,
+          StudentslistComponent
     
     
  
