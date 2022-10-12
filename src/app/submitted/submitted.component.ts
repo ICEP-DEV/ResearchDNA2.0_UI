@@ -1,24 +1,25 @@
 import { Component, OnInit } from '@angular/core';
 
-export interface Studentlists {
+export interface Studentlist {
+ 
+  stud_numb: number,
   stud_proj: string,
-  stud_numb: string,
-  stud_name:string,
+  name:string,
   stud_surn:string
 
 }
 
-const STUDENT_DATA: Studentlists[] = [
-  {stud_numb: '215715213 ',stud_name:' Siphesihle Pretty ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
-  {stud_numb: '215715213 ',stud_name:' Siphesihle Pretty ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
-  {stud_numb: '215715213 ',stud_name:' Siphesihle Pretty ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
-  {stud_numb: '215715213 ',stud_name:' Siphesihle Pretty ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
-  {stud_numb: '215715213 ',stud_name:' Siphesihle Pretty ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
-  {stud_numb: '215715213 ',stud_name:' Siphesihle Pretty ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
-  {stud_numb: '215715213 ',stud_name:' Siphesihle Pretty ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
-  {stud_numb: '215715213 ',stud_name:' Siphesihle Pretty ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
-  {stud_numb: '215715213 ',stud_name:' Siphesihle Pretty ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
-  {stud_numb: '215715213 ',stud_name:' Siphesihle Pretty ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
+const STUDENT_DATA: Studentlist[] = [
+  {stud_numb: 214715213 ,name:' Siphesihle Pretty ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
+  {stud_numb: 123457641,name:' Siphesihle Pretty ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
+  {stud_numb: 215715213 ,name:' Siphesihle Pretty ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
+  {stud_numb: 215715213 ,name:' Siphesihle Pretty ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
+  {stud_numb: 215715213 ,name:' Siphesihle Pretty ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
+  {stud_numb: 215715213 ,name:' Siphesihle Pretty ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
+  {stud_numb: 215715213 ,name:' Siphesihle Pretty ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
+  {stud_numb: 214715213 ,name:' Siphesihle Pretty ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
+  {stud_numb: 215715213 ,name:' Siphesihle Pretty ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
+  {stud_numb: 215715213 ,name:' Siphesihle Pretty ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
 ];
 
 @Component({
@@ -28,14 +29,17 @@ const STUDENT_DATA: Studentlists[] = [
 })
 export class SubmittedComponent implements OnInit {
 
+  searchText = '';
 
   displayedColumns: string[] = ['stud_numb','stud_name','stud_surn','stud_proj'];
   dataSource = STUDENT_DATA;
-  clickedRows = new Set<Studentlists>();
+  clickedRows = new Set<Studentlist>();
  
   constructor() { }
 
   ngOnInit(): void {
   }
+ 
+  
 
 }

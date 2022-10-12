@@ -1,0 +1,27 @@
+.view{
+    background-color: aliceblue;
+    height: 70px;
+}
+.message{
+    height: 140px;
+    margin-top:20px;
+    margin-left: 20px;
+    width: 300px;
+
+}
+.h{
+    color: blue($color: #000000);
+}
+.file{
+    font-size: large;
+}
+.descr{
+    font-size: larger;
+}
+.feed{
+    width: 200px;
+    height: 50px;
+    background: lightblue;
+    padding: 10px;
+    margin-left: 20px;
+}

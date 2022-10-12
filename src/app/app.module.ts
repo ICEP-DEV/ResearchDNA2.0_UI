@@ -24,6 +24,10 @@ import {MatTableModule} from '@angular/material/table';
 import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
 import { StudentslistComponent } from './studentslist/studentslist.component';
 import { SubmittedComponent } from './submitted/submitted.component';
+import { FormsModule } from '@angular/forms';
+import { SearchbystudentPipe } from './searchbystudent.pipe';
+import { HighlightDirective } from './highlight.directive';
+import { ViewprojectComponent } from './viewproject/viewproject.component';
 
 
 
@@ -38,12 +42,17 @@ import { SubmittedComponent } from './submitted/submitted.component';
     
     AppComponent,
     LoginComponent,
+    SearchbystudentPipe,
+    HighlightDirective,
     
     EditComponent,
           ResearchtoolsComponent,
           AdmindashboardComponent,
           StudentslistComponent,
-          SubmittedComponent
+          SubmittedComponent,
+          SearchbystudentPipe,
+          HighlightDirective,
+          ViewprojectComponent
     
     
  
@@ -68,6 +77,7 @@ import { SubmittedComponent } from './submitted/submitted.component';
     ImageCropperModule,
     HttpClientModule,
     MatTableModule,
+    FormsModule
    
     
     

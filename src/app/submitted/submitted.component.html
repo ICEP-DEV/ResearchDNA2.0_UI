@@ -1,8 +1,24 @@
-<input matInput placeholder="search for projects" formControlName="Search" class="search">
+<!--<input matInput placeholder="search for projects" formControlName="Search" class="search">
 <button mat-raised-button  class="search"><mat-icon >search</mat-icon></button>
+-->
+
+
+
+
+
+
+
 <br>
 <br>
-<br>
+<form class="example-form">
+<mat-form-field class="example-full-width">
+<span matPrefix> </span>
+<input type="tel" matInput placeholder="Search by student no." class= "search" [(ngModel)]= "searchText">
+<button matSuffix mat-button><mat-icon >search</mat-icon></button>
+</mat-form-field>
+<br/>
+{{searchText}}
+</form>
 <br>
 <br>
 <br>
@@ -15,7 +31,7 @@
 <br>
 <br>
 <div *ngFor="let item of [].constructor(10); let i = index">
-<button mat-button [matMenuTriggerFor]="list">{{dataSource[1].stud_numb}}{{dataSource[i].stud_name}}{{dataSource[i].stud_surn}}{{dataSource[i].stud_proj}}</button>
+<button mat-button [matMenuTriggerFor]="list">{{dataSource[i].stud_numb}}{{dataSource[i].name}}{{dataSource[i].stud_surn}}{{dataSource[i].stud_proj}}</button>
 <br>
 <br>
 <mat-menu #list="matMenu">
@@ -24,3 +40,4 @@
  
 </mat-menu>
 </div>
+
