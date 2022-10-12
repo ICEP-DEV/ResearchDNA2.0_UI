@@ -1,11 +1,12 @@
 <mat-card class="menu">
-    <label class="home">Home</label>
+    <button mat-button class="home">Home</button>
     <br>
-    <label class="chat">Chatbox</label>
+    <button mat-button class="chat">Chatbox</button>
 
     <br>
-    <label class="studlist">Students list</label>
+    <button mat-button class="studlist" routerLink="/studentslist" routerLinkActive="true" >Student list</button>
     <br>
+    
     <br>
 
 <br>
@@ -58,13 +59,32 @@
 
 </mat-card>
 <mat-card class="box1">
-    <label class="stud">Students average score</label>
-    <img class="chart1" src="https://www.kindpng.com/picc/m/268-2684156_icon-bar-graph-bar-chart-icon-png-transparent.png" alt="pngg">
+    <label class="stud">Announcements</label>
+    <label class="ann1">Student Proposal meeting 12:00  11/10/2022
+        <br>
+        <br>
+        Student Proposal meeting 12:00  11/10/2022
+        <br>
+        <br>
+        Student Proposal meeting 12:00  11/10/2022
+        <br>
+        <br>
+        Student Proposal meeting 12:00  11/10/2022
+    </label>
 
 </mat-card>
 <label class="sub">Submissions</label>
 <mat-card class="box2">
-    <img class="chart2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARYAAAC1CAMAAACtbCCJAAAAPFBMVEX39/cAAAD////6+vpqamqtra08PDzw8PC8vLwICAj5+fnn5+fOzs7U1NTt7e3Kysqnp6cjIyMZGRlvb2/uO/mYAAAB/0lEQVR4nO3c0WrUUBRA0Y5jHU21M+r//6ugtQyyYy8lMem41lNebjjZEAgkN3d3AAAAv01Ptp5jp3S5crwcfvn6butR9uR4/5TlgyxXZEmyJFmSLEmWJEuSJcmSZEmyJFmSLGk+yzRkk6HXN5/lccTpRrvMZZlOhxEfjxvNvTJZ0nyWT7LI8gdZkixJliRLkiXJkmRJsiRZkixJliRLkiXJkmRJsiRZkixJliRLkiXJkmRJsiRZkixJliRLkiXJkmRJsiRZkixJliRLkiXJkmRJsiRZkixJliRLkiXJkmRJsiRZkixJliRLWiHLdByx733ly2eZTufPAx533WWFLA8jCw9fdn37yZJkSbIkWZIsSZYkS5IlyZJkSbIkWZIsSZYkS5IlyZJkSbIkWZIsSZYkS5IlyZJkSbvKMvZSf60U1/aUZXoceqm/Wosre8pyPA+t/BffOsiSZEmyJFmSLEmWJEuSJcmSZEmyJFmSLEmWJEuSJcmSZEmyJFmSLEmWJEuSJcmSZEmyJFmSLEmWJEuSJcmSZEmyJFmSLEmWJEuazzI0oiyy/PQw4hQjvv53fPv5kd98lmnI388+1eFLl5WLXly1rPks/zVZkixJlnSV5SYstDftOcu37+9vwXmZLs9ZbsT9QlkuW1/Isi673jD79o09zb4VW9cEAAB25AdgWG+3vpGbqAAAAABJRU5ErkJggg==" alt="pngg">
+
+
+    <div *ngFor="let item of [].constructor(10); let i = index">
+        <label class="projj">{{dataSource[i].proj_name}}
+            <br>
+        </label>
+    
+     </div>
+
+    <button class="view">View more</button>
 </mat-card>
 <label></label>
 <label class="pending">Pending Projects</label>

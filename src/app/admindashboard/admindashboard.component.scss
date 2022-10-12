@@ -63,7 +63,7 @@ background: rgba(15, 72, 124, 0.33);
     position: absolute;
 width: 334px;
 height: 33px;
-left: 39px;
+left: -99px;
 top: 154px;
 
 font-family: 'Inter';
@@ -78,7 +78,7 @@ color: #1D619F;
     position: absolute;
 width: 334px;
 height: 33px;
-left: 39px;
+left: -89px;
 top: 209px;
 
 font-family: 'Inter';
@@ -94,7 +94,7 @@ color: #1D619F;
     position: absolute;
 width: 334px;
 height: 33px;
-left: 39px;
+left: -74px;
 top: 260px;
 
 font-family: 'Inter';
@@ -211,7 +211,7 @@ img{
     
 }
 .projpic{
-  height: 350px;
+  height: 300px;
   margin-right: 10px;
 }
 .penpic{
@@ -227,3 +227,31 @@ img{
     margin-top: 100px;
     height: 290px;  
 }
+.view{
+    position: absolute;
+    width: 286px;
+    height: 40px;
+   
+    
+    background: #FFFFFF;
+    border-radius: 10px; 
+}
+.projj{
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+}
+.ann2{
+    margin-left: 20px;
+    font-size: 18px;
+}
+.ann3{
+    margin-left: 40px;
+    font-size: 18px;
+}
+.ann1{
+    font-size: 20px;
+    font-family: Georgia (serif);
+}
+
+  
