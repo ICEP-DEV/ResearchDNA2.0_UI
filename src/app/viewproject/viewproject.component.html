@@ -28,9 +28,11 @@
 </mat-card>
 
 
-  <input type="tel" matInput placeholder="" class= "message" >
+  <input class="message">
   <br>
   <br>
+  <button  (click)="clickEvent()" class="feed" >
+    Send Feedback</button>
+    <h2>{{msg}}</h2>
+  
 
-  <button (click)="showMessageSoon()" class="feed">Send Feedback</button>
-<p *ngIf="showMyMessage">hello there</p>

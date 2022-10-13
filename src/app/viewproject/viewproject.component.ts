@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
-
+export interface Message{
+  name: string;
+  email: string;
+  message: string;
+}
 
 export interface Studentproject {
   stud_number: string;
@@ -27,17 +31,16 @@ export class ViewprojectComponent implements OnInit {
   displayedColumns: string[] = ['stud_number', 'proj_title'];
   dataSource = STUDENT_DATA;
   clickedRows = new Set<Studentproject>();
+  _emailService: any;
+  msg:string | undefined;
   constructor() { }
 
   ngOnInit(): void {
   }
-
-  public showMyMessage = false
-
-showMessageSoon() {
-  setTimeout(() => {
-    this.showMyMessage = true
-  }, 3000)
-}
+  clickEvent(){
+    this.msg='Successfully sent!';
+    return this.msg;
+  }
+ 
 
 }
