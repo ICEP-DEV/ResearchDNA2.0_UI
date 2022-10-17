@@ -60,13 +60,23 @@
 </mat-card>
 <mat-card class="box1">
     <label class="stud">Announcements</label>
-    <label class="ann1">Student Proposal meeting 12:00  11/10/2022
+    <div> <a routerLink="" class="file"> Proposal Submission</a></div>
+    <label class="ann1"> Students proposals submission is about to be due at 12:00  11/10/2022, 
+        <br>
+        a few students have submitted their proposals already.
         <br>
         <br>
-        Student Proposal meeting 12:00  11/10/2022
+        <div> <a routerLink="" class="file"> Students project progress</a></div>
+        In publishing and graphic design, Lorem ipsum is a placeholder text
+        <br>
+         commonly used to demonstrate the visual form of a document  or a 
+         <br>
+         typeface without relying on meaningful content. Lorem ipsum may be
         <br>
         <br>
-        Student Proposal meeting 12:00  11/10/2022
+        <div> <a routerLink="" class="file"> Scheduled meetings</a></div>
+        The following are todays meetings with their links:
+        
         <br>
         <br>
         Student Proposal meeting 12:00  11/10/2022
@@ -78,13 +88,13 @@
 
 
     <div *ngFor="let item of [].constructor(10); let i = index">
-        <label class="projj">{{dataSource[i].proj_name}}
+        <label class="projj" href="/submitted">{{dataSource[i].proj_name}}
             <br>
         </label>
     
      </div>
 
-    <button class="view">View more</button>
+    <button class="view" routerLink="/submitted" routerLinkActive="true">View more</button>
 </mat-card>
 <label></label>
 <label class="pending">Pending Projects</label>
