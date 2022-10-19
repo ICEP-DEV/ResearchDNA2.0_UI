@@ -8,12 +8,14 @@
 
 
 
-<br>
+<!--<br>
 <br>
 <form class="example-form">
 <mat-form-field class="example-full-width">
 <span matPrefix> </span>
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by student no..">
+<div class="search-hero">
+  <input class="form-control" id="myInput" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="&#61442; search by student number">
+</div>
 <button matSuffix mat-button><mat-icon >search</mat-icon></button>
 </mat-form-field>
 <br/>
@@ -30,8 +32,8 @@
 <mat-card class="head"></mat-card>
 <br>
 <br>
-<div *ngFor="let item of [].constructor(10); let i = index">
-<button mat-button [matMenuTriggerFor]="list">{{dataSource[i].stud_numb}}{{dataSource[i].name}}{{dataSource[i].stud_surn}}{{dataSource[i].stud_proj}}</button>
+<div >
+<button *ngFor="let hero of dataSource | filter:searchText" mat-button [matMenuTriggerFor]="list">{{hero.stud_numb}}{{hero.name}}{{hero.stud_surn}}{{hero.stud_proj}}</button>
 <br>
 <br>
 <mat-menu #list="matMenu">
@@ -40,6 +42,105 @@
  
 </mat-menu>
 </div>
+
+<br>
+<br>
+<br>
+<br>
+-->
+
+<!--<br>
+<br>
+<div class="search-hero">
+  <input class="form-control" id="myInput" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="&#61442; search by student number">
+</div>
+<br>
+<br>
+<br>
+<mat-card class="title">
+  <br>
+  <mat-label class="submit">SUBMITTED PROJECT</mat-label>
+</mat-card>
+<br>
+<mat-card class="head"></mat-card>
+<br>
+<br>
+
+ 
+    
+    <div *ngFor="let item of [].constructor(1); let i = index">
+      <br>
+      <li>
+      <button *ngFor="let hero of dataSource | filter:searchText" mat-button [matMenuTriggerFor]="list">{{dataSource[i].stud_numb}}{{dataSource[i].name}}{{dataSource[i].stud_surn}}{{dataSource[i].stud_proj}}</button>
+      <br>
+    </li>
+      <br>
+      <mat-menu #list="matMenu">
+          
+        <button mat-menu-item routerLink="/viewproject" routerLinkActive="true">View project</button>
+       
+      </mat-menu>
+      </div>
+   
+    -->
+  
+<br>
+<br>
+<br>
+    <div class="search-hero">
+      <input class="form-control" class="s1" id="myInput" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="&#61442; search for student">
+    </div>
+    <br>
+<br>
+<br>
+<mat-card class="title">
+  <br>
+  <mat-label class="submit">SUBMITTED PROJECT</mat-label>
+</mat-card>
+<br>
+<mat-card class="head"></mat-card>
+<br>
+<br>
+
+<label class="b1">Student No.</label>
+<label class="b2"> Name</label>
+<label class="b3"> Surname</label>
+<label class="b4">Project Title</label>
+<table class="table table-striped">
+     
+  
+
+<br>
+  <tbody>
+  <tr *ngFor="let hero of heroes | filter:searchText">
+    <mat-menu #list="matMenu">
+
+      <button mat-menu-item routerLink="/viewproject" routerLinkActive="true">View project</button>
+     
+    </mat-menu>
+    <td><button mat-button [matMenuTriggerFor]="list">{{hero.stud_numb}}</button></td>
+    <br>
+    <td><button mat-button [matMenuTriggerFor]="list">{{hero.name}}</button></td>
+    <br>
+    <td><button mat-button [matMenuTriggerFor]="list">{{hero.stud_surn}}</button></td>
+    <br>
+    <td><button mat-button [matMenuTriggerFor]="list">{{hero.stud_proj}}</button></td>
+    <mat-menu #list="matMenu">
+          
+      <button mat-menu-item routerLink="/viewproject" routerLinkActive="true">View project</button>
+     
+    </mat-menu>
+    <br>
+  </tr>
+  </tbody>
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+<tr
+    mat-row
+    (click)="clickedRows.add(row)"
+    [class.demo-row-is-clicked]="clickedRows.has(row)"
+    *matRowDef="let row; columns: displayedColumns;"
+></tr>
+</table>
 
 
 

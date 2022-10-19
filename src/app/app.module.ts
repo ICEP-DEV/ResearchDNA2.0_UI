@@ -28,6 +28,8 @@ import { FormsModule } from '@angular/forms';
 import { SearchbystudentPipe } from './searchbystudent.pipe';
 import { HighlightDirective } from './highlight.directive';
 import { ViewprojectComponent } from './viewproject/viewproject.component';
+import { UploadresourceComponent } from './uploadresource/uploadresource.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 
 
@@ -52,7 +54,8 @@ import { ViewprojectComponent } from './viewproject/viewproject.component';
           SubmittedComponent,
           SearchbystudentPipe,
           HighlightDirective,
-          ViewprojectComponent
+          ViewprojectComponent,
+          UploadresourceComponent
     
     
  
@@ -77,7 +80,10 @@ import { ViewprojectComponent } from './viewproject/viewproject.component';
     ImageCropperModule,
     HttpClientModule,
     MatTableModule,
-    FormsModule
+    FormsModule,
+    Ng2SearchPipeModule
+    
+    
    
     
     

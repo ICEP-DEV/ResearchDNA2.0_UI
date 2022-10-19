@@ -35,6 +35,7 @@ color: white;
     padding: 12px 20px 12px 40px; /* Add some padding */
     border: 1px solid #ddd; /* Add a grey border */
     margin-bottom: 12px; /* Add some space below the input */
+    
   }
   #myUL {
     /* Remove default list styling */
@@ -57,3 +58,79 @@ color: white;
   #myUL li a:hover:not(.header) {
     background-color: #eee; /* Add a hover effect to all links, except for headers */
   }
+
+
+
+
+
+  .container {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    color: #405065;
+  }
+  
+  .search-hero {
+    max-width: 500px;
+    padding-bottom: 50px;
+    margin:auto;
+  }
+  
+  .form-control {
+    box-shadow: 0 10px 40px 0 #B0C1D9;
+  }
+  .form-control::placeholder  {
+    font-family: FontAwesome;
+  }
+
+  table tr:nth-child(odd) {
+    background-color: #f1f1f1;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #ffffff;
+  }
+  .studtable{
+    width: 1200px;
+  }
+  .demo-row-is-clicked {
+    font-weight: bold;
+  }
+  .th:hover .td {
+    border-color: currentColor;
+  }
+  .demo-table {
+    width: 100%;
+  }
+  
+  .mat-row .mat-cell {
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    cursor: pointer;
+  }
+  
+  .mat-row:hover .mat-cell {
+    border-color: currentColor;
+  }
+  
+  .demo-row-is-clicked {
+    font-weight: bold;
+  }
+  .b4{
+    font-weight: bold;
+    margin-left: 50px;
+  }
+  .b3{
+    margin-left:50px;
+    font-weight: bold;
+  }
+  .b2{
+    margin-left:100px;
+    font-weight: bold;
+  }
+  .b1{
+    font-weight: bold;
+  }
+  .s1{
+    margin-right: 500px;
+  }
+ 
