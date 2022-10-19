@@ -30,15 +30,25 @@ const STUDENT_DATA: Studentlist[] = [
 export class SubmittedComponent implements OnInit {
 
   searchText = '';
+  input: string | undefined
+  filter: string | undefined
+   ul: string | undefined
+   li: string | undefined
+   a: string | undefined
+   i:string | undefined
 
   displayedColumns: string[] = ['stud_numb','stud_name','stud_surn','stud_proj'];
   dataSource = STUDENT_DATA;
   clickedRows = new Set<Studentlist>();
+  
  
   constructor() { }
 
   ngOnInit(): void {
   }
+   
+
+  
  
   
 

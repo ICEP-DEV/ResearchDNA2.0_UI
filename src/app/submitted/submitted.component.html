@@ -13,7 +13,7 @@
 <form class="example-form">
 <mat-form-field class="example-full-width">
 <span matPrefix> </span>
-<input type="tel" matInput placeholder="Search by student no." class= "search" [(ngModel)]= "searchText">
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by student no..">
 <button matSuffix mat-button><mat-icon >search</mat-icon></button>
 </mat-form-field>
 <br/>
@@ -40,4 +40,6 @@
  
 </mat-menu>
 </div>
+
+
 
