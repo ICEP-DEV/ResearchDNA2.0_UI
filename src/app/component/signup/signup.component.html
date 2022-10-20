@@ -2,7 +2,7 @@
 <div class="mat-display-3">Sign up</div>
 <mat-card>
 
-    <form [formGroup]="signupForm" (ngSubmit)="signup()" novalidate>
+    <form #signupForm="ngForm" (ngSubmit)="onSubmit()" novalidate>
         <img class="img-responsive" src="https://cdn0.iconfinder.com/data/icons/thin-line-2/4/03-512.png">
         <br/>
         <br/>
@@ -11,40 +11,41 @@
         <!--field form studentNo-->
         <mat-form-field>
             <mat-label>Student No</mat-label>
-            <input matInput placeholder="Enter your name" formControlName="studNumber" placeholder="21890086">
+            <input matInput required #userId="ngModel" placeholder="21890086" name="userId" [ngModel]="userModel.userId" [class.is-invalid]="userId.invalid && userId.touched">
         </mat-form-field>
+
 
         <mat-form-field>
             <mat-label>First Name</mat-label>
-            <input matInput placeholder="Enter your name" formControlName="firstName" placeholder="Ex. John">
+            <input matInput placeholder="Ex. John" name="firstName" [ngModel]="userModel.firstName">
         </mat-form-field>
 
         <mat-form-field>
             <mat-label>Last Name</mat-label>
-            <input matInput placeholder="Enter your name" formControlName="lastName" placeholder="Ex. Nkosi">
+            <input matInput placeholder="Ex. Nkosi" name="lastName" [ngModel]="userModel.lastName">
         </mat-form-field>
 
         <!--field for email-->
         <mat-form-field>
             <mat-label>Email</mat-label>
-            <input matInput placeholder="Enter your name" formControlName="email" placeholder="Ex. jnkosi@outlook.com">
+            <input matInput placeholder="Ex. jnkosi@outlook.com" name="email" [ngModel]="userModel.email">
         </mat-form-field>
         <!--field for password-->
         <mat-form-field>
             <mat-label>Password</mat-label>
-            <input matInput type="password" placeholder="Enter your name" formControlName="password" placeholder="Minimum 7 characters">
+            <input matInput type="password" placeholder="Minimum 7 characters" name="password" [ngModel]="userModel.password">
             <br/>
 
         </mat-form-field>
         <mat-form-field>
             <mat-label>Department</mat-label>
-            <input matInput placeholder="Enter your name" formControlName="department" placeholder="Ex. Humanities">
+            <input matInput placeholder="Ex. Humanities" name="department" [ngModel]="userModel.department">
         </mat-form-field>
         <mat-form-field>
             <mat-label>Faculty</mat-label>
-            <input matInput placeholder="Enter your name" formControlName="faculty" placeholder="Ex. Law">
+            <input matInput placeholder="Ex. Law" name="faculty" [ngModel]="userModel.faculty">
         </mat-form-field>
         <div>Already have an account?<a routerLink="/login">Sign In</a></div>
-        <button color="Red" [disabled]="!signupForm.valid" mat-raised-button type="submit"><span>Submit</span></button>
+        <button color="Red" mat-raised-button type="submit"><span>Submit</span></button>
     </form>
 </mat-card>

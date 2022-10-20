@@ -1,6 +1,4 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-
 <mat-drawer-container class="container">
     <mat-sidenav class="container" opened="true">
         <mat-nav-list>
@@ -34,16 +32,19 @@
 <br/>
 <br/>
 <!--Dash ends here-->
-<div *ngIf="ChangingImage" class="saveimg">
-    <input type="file" (change)="fileChangeEvent($event)" />
-
-    <image-cropper [imageChangedEvent]="imageChangedEvent" [maintainAspectRatio]="true" [aspectRatio]="4 / 3" format="png" (imageCropped)="imageCropped($event)" (cropperReady)="cropperReady()" (loadImageFailed)="loadImageFailed()"></image-cropper>
-
-    <img [src]="croppedImage" />
-    <button md-button type="button" (click)="saveNewImage()" class="u-img">Save</button>
-</div>
 <mat-card class="profile">
+    <img fxFlex="128px" [src]="data && data.image ? data.image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcgNY4pYkj6KPV2TbqsBw3lYZ9mwkbx_XwjnYSsXunpnLwD1XFXi2Iuf5_zD-u9xsa14c&usqp=CAU'" class="profile-img">
 
+
+    <button md-button type="button" (click)="ChangingImageclick()" class="u-img">Upload picture</button>
+    <div *ngIf="ChangingImage" class="saveimg">
+        <input type="file" (change)="fileChangeEvent($event)" />
+
+        <image-cropper [imageChangedEvent]="imageChangedEvent" [maintainAspectRatio]="true" [aspectRatio]="4 / 3" format="png" (imageCropped)="imageCropped($event)" (cropperReady)="cropperReady()" (loadImageFailed)="loadImageFailed()"></image-cropper>
+
+        <img [src]="croppedImage" />
+        <button md-button type="button" (click)="saveNewImage()" class="u-img">Save</button>
+    </div>
     <mat-label class="Basic">Basic Information</mat-label>
     <mat-label class="b">
         Name:
@@ -53,13 +54,6 @@
         <br> Faculty:
 
     </mat-label>
-
-    <img fxFlex="128px" [src]="data && data.image ? data.image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcgNY4pYkj6KPV2TbqsBw3lYZ9mwkbx_XwjnYSsXunpnLwD1XFXi2Iuf5_zD-u9xsa14c&usqp=CAU'" class="profile-img">
-
-
-    <button md-button type="button" (click)="ChangingImageclick()" class="u-img">Upload picture</button>
-
-
     <mat-divider class="d1"></mat-divider>
 
     <mat-label class="contact">Contact Information</mat-label>
@@ -91,7 +85,6 @@
 </mat-card>
 <button mat-raised-button class="edit" routerLink="edit" routerLinkActive="active">Edit Information</button>
 <button mat-raised-button class="log" routerLink="researchtools" routerLinkActive="active">logout</button>
-
 <li *ngIf="userIsAuthenticated">
     <button mat-button (click)="onLogout()" class="logout">Logout</button>
 </li>

@@ -9,6 +9,9 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatTableModule} from '@angular/material/table';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatSelectModule} from '@angular/material/select';
+import {MatDatepickerModule} from '@angular/material/datepicker';
 const MaterialComponents = [
     MatButtonModule,
     MatCardModule,
@@ -19,7 +22,10 @@ const MaterialComponents = [
     MatDividerModule,
     MatSidenavModule,
     MatTabsModule,
-    MatTableModule
+    MatTableModule,
+    MatDialogModule,
+    MatSelectModule,
+    MatDatepickerModule,
 
 ]
 

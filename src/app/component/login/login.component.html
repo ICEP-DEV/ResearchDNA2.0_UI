@@ -1,10 +1,8 @@
-<div class="dev">
-</div>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <div class="mat-display-3">Sign in</div>
 <mat-card>
 
-    <form [formGroup]="loginForm" (ngSubmit)="login()">
+    <form (ngSubmit)="login()" novalidate>
         <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdagfNlkCXKS54rDkgY6CjGNtPECsI_SZlKQ&usqp=CAU">
         <br/>
         <br/>
@@ -14,12 +12,12 @@
         <br/>
         <mat-form-field>
             <mat-label>Username</mat-label>
-            <input matInput placeholder="Enter your name" formControlName="studNumber">
+            <input matInput required #userId="ngModel" placeholder="21890086" name="userId" [ngModel]="userModel.userId" [class.is-invalid]="userId.invalid && userId.touched">
         </mat-form-field>
         <!--field for password-->
         <mat-form-field>
             <mat-label>Password</mat-label>
-            <input matInput type="password" placeholder="Enter your name" formControlName="password">
+            <input matInput type="password" placeholder="Minimum 7 characters" name="password" [ngModel]="userModel.password">
             <br/>
 
         </mat-form-field>

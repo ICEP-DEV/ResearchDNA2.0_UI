@@ -1,28 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
+import { Router } from "@angular/router";
+import {Login} from '../../shared/models/User';
+import {LoginService} from '../../shared/services/login.service';
 
-import {AuthService} from "../../shared/services/auth.service";
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-  loginForm: FormGroup;
-  constructor(private authService: AuthService) { }
-  ngOnInit(): void {
-    this.loginForm = this.createFormGroup();
-  }
-createFormGroup(): FormGroup {
-  return new FormGroup({
-    studNumber: new FormControl("", [Validators.required, Validators.minLength(5)]),
-    password: new FormControl("", [Validators.required, Validators.minLength(7)]),
-  });
-}
-login() : void{
-  //this.authService.login(this.loginForm.value.email, this.loginForm.value.password).subscribe();
-  this.authService
-  .login(this.loginForm.value.studNumber, this.loginForm.value.password)
-  .subscribe();
+  userModel = new Login(218407765,'Matsub@100');
+  constructor(private _loginService: LoginService){}
+  ngOnInit(): void {}
+login(){
+
+this._loginService.signup(this.userModel).subscribe(
+  data =>console.log('success', data),
+  error=>console.error('Error!',error)
+)
 }
 }

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CalendarOptions } from '@fullcalendar/angular';
 import {UserService} from './shared/user.service';
-
+import {User} from './shared/models/User';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -12,6 +12,7 @@ export class AppComponent {
   calendarOptions: CalendarOptions = {
     initialView: 'dayGridMonth'
   };
+  userModel = new User(216545678,'Mpumi','Gembe','gmpumie@gmail.com','1231314fff','Humanities','Law');
 
 
 }

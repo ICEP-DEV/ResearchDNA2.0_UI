@@ -4,7 +4,6 @@ import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import{AuthInterceptorService} from './shared/services/auth-interceptor.service';
 import { SignupComponent } from "./component/signup/signup.component";
 import { PostsComponent } from "./component/posts/posts.component";
 import {ReactiveFormsModule} from "@angular/forms";
@@ -25,6 +24,10 @@ import { ProjectcreateComponent } from './component/projects/projectcreate/proje
 import { WorkspaceComponent } from './component/workspace/workspace.component';
 import { CKEditorModule } from 'ng2-ckeditor';
 import { FormsModule } from '@angular/forms';
+import { MatNativeDateModule } from '@angular/material/core';
+import { AngularFileUploaderModule } from "angular-file-uploader";
+
+
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
 
@@ -58,16 +61,14 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     FullCalendarModule,
     ImageCropperModule,
     CKEditorModule,
-    FormsModule
+    FormsModule,
+    MatNativeDateModule,
+    AngularFileUploaderModule
+
 
 
   ],
   providers: [
-    {
-      provide: HTTP_INTERCEPTORS,
-     useClass: AuthInterceptorService,
-      multi: true,
-    },
   ],
   bootstrap: [AppComponent]
 })

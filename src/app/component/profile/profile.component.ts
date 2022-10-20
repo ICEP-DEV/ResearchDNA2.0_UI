@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { createViewChild } from '@angular/compiler/src/core';
 import { UserService } from '../../shared/user.service';
 import { ImageCroppedEvent, LoadedImage } from 'ngx-image-cropper';
 @Component({
