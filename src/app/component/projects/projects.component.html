@@ -45,8 +45,46 @@
                 <button mat-raised-button color="primary" class="projectBtn" (click)="openDialog('')">New Project+</button>
                 <br/>
                 <br/>
+                <table mat-table [dataSource]="finaldata" matSort class="mat-elevation-z8">
 
-                <div class="mat-display-1"><b>Current Projects</b></div>
+                    <ng-container matColumnDef="id">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header> ID</th>
+                        <td mat-cell *matCellDef="let element">{{element.id}}</td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="projectName">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header> Project Name</th>
+                        <td mat-cell *matCellDef="let element">{{element.projectName}}</td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="projectDate">
+                        <th mat-header-cell *matHeaderCellDef> projectDate</th>
+                        <td mat-cell *matCellDef="let element">{{element.projectDate}}</td>
+                    </ng-container>
+
+
+                    <ng-container matColumnDef="projectType">
+                        <th mat-header-cell *matHeaderCellDef> Project type</th>
+                        <td mat-cell *matCellDef="let element">{{element.projectType}}</td>
+                    </ng-container>
+
+
+
+                    <ng-container matColumnDef="action">
+                        <th mat-header-cell *matHeaderCellDef> Action</th>
+                        <td mat-cell *matCellDef="let element">
+                            <div>
+                                <a mat-raised-button (click)="EditProject(element.id)" color="primary">Edit</a> |
+                                <a mat-raised-button (click)="RemoveProject(element.id)" color="accent">Delete</a>
+                            </div>
+                        </td>
+                    </ng-container>
+
+                    <tr mat-header-row *matHeaderRowDef="displayColums"></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayColums;"></tr>
+
+                </table>
+
 
 
                 <br/> </mat-tab>

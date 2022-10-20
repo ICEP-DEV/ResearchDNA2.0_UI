@@ -26,7 +26,7 @@ export interface ProjectElement {
 
 export class ProjectsComponent implements OnInit {
   finaldata:any;
-  displayColums: string[] = ['id', 'projectDate','projectName', 'projectType'];
+  displayColums: string[] = ['id','projectName','projectDate', 'projectType','action'];
   dataSource !: projectsmodel[];
   constructor(private dialog: MatDialog, private api: StudentProjectServicesService) { }
   ngOnInit(): void {
