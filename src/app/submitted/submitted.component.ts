@@ -9,16 +9,11 @@ export interface Studentlist {
 
 }
 const STUDENT_DATA: Studentlist[] = [
-  {stud_numb: '214715213 ',name:' Siphesihle Pretty ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
-  {stud_numb: '123457641',name:' Siphesihle Pretty ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
-  {stud_numb: '215715213' ,name:' Siphesihle Pretty ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
-  {stud_numb: '215715213' ,name:' Siphesihle Pretty ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
-  {stud_numb: '215715213' ,name:' Siphesihle Pretty ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
-  {stud_numb: '215715213 ',name:' Siphesihle Pretty ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
-  {stud_numb: '215715213' ,name:' Siphesihle Pretty ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
-  {stud_numb: '214715213' ,name:' Siphesihle Pretty ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
-  {stud_numb: '215715213' ,name:' Siphesihle Pretty ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
-  {stud_numb: '215715213',name:' Siphesihle Pretty ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
+  {stud_numb: '000000000 ',name:' Promise Sphelele ',stud_surn:' Maseko ',stud_proj:' Cyber Security '},
+  {stud_numb: '123457641',name:' Oliver Sbusiso ',stud_surn:' Mthombeni ',stud_proj:' Cyber Security '},
+  {stud_numb: '666666999' ,name:' Siwe Tibusiso ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
+  {stud_numb: '245678939' ,name:' Takangwane Precious ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
+  
 ];
 
 
@@ -32,25 +27,10 @@ export class SubmittedComponent implements OnInit {
   title = 'Angular Search Using ng2-search-filter';
   searchText: any;
   heroes = [
-    {stud_numb: '214715213 ',name:' Siphesihle Pretty ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
-    
-    {stud_numb: '123457641',name:' Siphesihle Pretty ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
-
-    {stud_numb: '215715213' ,name:' molly Pretty ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
-
-    {stud_numb: '215715213' ,name:' Siphesihle Pretty ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
-
-    {stud_numb: '215715213' ,name:' Siphesihle Pretty ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
-
-    {stud_numb: '215715213 ',name:' Siphesihle Pretty ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
-
-    {stud_numb: '215715213' ,name:' Siphesihle Pretty ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
-
-    {stud_numb: '214715213' ,name:' Siphesihle Pretty ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
-
-    {stud_numb: '215715213' ,name:' Siphesihle Pretty ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
-
-    {stud_numb: '215715213',name:' Siphesihle Pretty ',stud_surn:' Malinga ',stud_proj:' Cyber Security '},
+    {stud_numb: '000000000 ',name:' Promise Sphelele ',stud_surn:' Maseko ',stud_proj:' Cyber Security '},
+  {stud_numb: '123457641',name:' Oliver Sbusiso ',stud_surn:' Mthombeni ',stud_proj:' Cyber Security '},
+  {stud_numb: '666666999' ,name:' Siwe Tibusiso ',stud_surn:' Nkosi ',stud_proj:' Cyber Security '},
+  {stud_numb: '245678939' ,name:' Takangwane Precious ',stud_surn:' Nkuna ',stud_proj:' Cyber Security '},
   ];
   
  
