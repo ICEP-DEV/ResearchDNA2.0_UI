@@ -7,6 +7,19 @@ import { ImageCroppedEvent, LoadedImage } from 'ngx-image-cropper';
   styleUrls: ['./profile.component.scss']
 })
 export class ProfileComponent implements OnInit {
+imgFailed() {
+throw new Error('Method not implemented.');
+}
+initCropper() {
+throw new Error('Method not implemented.');
+}
+imgChangeEvt: any;
+imgLoad() {
+throw new Error('Method not implemented.');
+}
+cropImg($event: ImageCroppedEvent) {
+throw new Error('Method not implemented.');
+}
   student: any;
   ChangingImage : boolean | undefined
   imageChangedEvent: any = '';
