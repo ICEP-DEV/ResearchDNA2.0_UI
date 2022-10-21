@@ -8,7 +8,6 @@ import {FormControl, Validators, FormGroup, FormBuilder} from '@angular/forms';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import {StudentProjectServicesService} from '../../../shared/student-project-services.service';
-import{MatDialogRef} from '@angular/material/dialog';
 import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 
@@ -23,8 +22,6 @@ const year = today.getFullYear();
 })
 export class ProjectcreateComponent implements OnInit {
   editdata: any;
-
-  projectForm !: FormGroup;
   constructor(private formBuilder: FormBuilder,private dialog: MatDialog, private api :StudentProjectServicesService, @Inject(MAT_DIALOG_DATA) public data: any) { }
 
   ngOnInit(): void {
@@ -52,7 +49,7 @@ export class ProjectcreateComponent implements OnInit {
 
         });
       } else {
-        this.api.postProject(this.projectForm.value).subscribe(response => {
+        this.api.postProject(this.projectform.value).subscribe(response => {
           this.closepopup();
 
         });

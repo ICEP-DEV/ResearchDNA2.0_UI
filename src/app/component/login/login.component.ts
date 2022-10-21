@@ -10,7 +10,7 @@ import {LoginService} from '../../shared/services/login.service';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-  userModel = new Login(218407765,'Matsub@100');
+  userModel = new Login(0,'');
   constructor(private _loginService: LoginService){}
   ngOnInit(): void {}
 login(){
