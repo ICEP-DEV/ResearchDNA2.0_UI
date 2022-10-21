@@ -19,7 +19,8 @@ const routes: Routes = [
   {path:'studentslist',component:StudentslistComponent},
   {path:'admindashboard', component:AdmindashboardComponent},
   {path:'viewproject', component:ViewprojectComponent},
-  {path:'submitted', component: SubmittedComponent}
+  {path:'submitted', component: SubmittedComponent},
+  {path:'profile', component:LoginComponent}
 ];
 
 @NgModule({
