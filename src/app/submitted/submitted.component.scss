@@ -14,8 +14,9 @@ border-radius: 5px;
 color: white;
 }
 .title{
-    background:rgba(79, 164, 242, 0.88);
+    background:rgb(0, 13, 255);
     height: 40px;
+    margin-left: 410px;
 }
 .submit{
     font-size: x-large;
@@ -25,6 +26,7 @@ color: white;
 }
 .head{
     color: whitesmoke;
+    margin-left: 410px;
 }
 #myInput {
     background-image: url('/css/searchicon.png'); /* Add a search icon to input */
@@ -133,4 +135,72 @@ color: white;
   .s1{
     margin-right: 500px;
   }
+  .menu{
+    position: absolute;
+width: 348px;
+height: 1253px;
+left: 25px;
+top: 118px;
+
+background: #FFFFFF;
+border-radius: 5px;
+}
+.home{
+  position: absolute;
+width: 380px;
+height: 53px;
+left: 0px;
+top: 154px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 24px;
+background: whitesmoke;
+color: #1D619F;
+}
+.chat{
+  position: absolute;
+width: 380px;
+height: 53px;
+left: 0px;
+top: 220px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 24px;
+background: whitesmoke;
+color: #1D619F;
+
+}
+.studlist{
+  position: absolute;
+width: 380px;
+height: 53px;
+left: 0px;
+top: 290px;
+background: whitesmoke;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 24px;
+
+color: #1D619F;
+
+}
+.table{
+  margin-left: 500px;
+}
+.hh{
+  margin-left: 500px;
+  width: 500px;
+}
+.menu{
+  height: 900px;
+  margin-top: 100px;
+}
  
