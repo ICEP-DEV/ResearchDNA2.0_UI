@@ -144,13 +144,12 @@ top: 118px;
 
 background: #FFFFFF;
 border-radius: 5px;
-}
-.home{
+}.home{
   position: absolute;
 width: 380px;
 height: 53px;
 left: 0px;
-top: 154px;
+top: 4px;
 
 font-family: 'Inter';
 font-style: normal;
@@ -158,22 +157,22 @@ font-weight: 700;
 font-size: 22px;
 line-height: 24px;
 background: whitesmoke;
-color: #1D619F;
+color:black;
 }
 .chat{
   position: absolute;
 width: 380px;
 height: 53px;
 left: 0px;
-top: 220px;
+top: 60px;
 
 font-family: 'Inter';
 font-style: normal;
-font-weight: 700;
+font-weight: bolder;
 font-size: 22px;
 line-height: 24px;
 background: whitesmoke;
-color: #1D619F;
+color: black;
 
 }
 .studlist{
@@ -181,7 +180,7 @@ color: #1D619F;
 width: 380px;
 height: 53px;
 left: 0px;
-top: 290px;
+top: 117px;
 background: whitesmoke;
 font-family: 'Inter';
 font-style: normal;
@@ -189,7 +188,7 @@ font-weight: 700;
 font-size: 22px;
 line-height: 24px;
 
-color: #1D619F;
+color: black;
 
 }
 .table{
