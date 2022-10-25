@@ -51,50 +51,49 @@
 -->
 <mat-card class="fff">
     <label class="welcome">Welcome </label>
-    <img class="user"  src="https://www.nicepng.com/png/detail/128-1280406_view-user-icon-png-user-circle-icon-png.png" alt="profile">
+    
+    <img class="user" routerLink="/login" routerLinkActive="true" src="https://www.nicepng.com/png/detail/128-1280406_view-user-icon-png-user-circle-icon-png.png" alt="profile">
     <br>
    
     
     <mat-card class="ff1">
         <mat-card class="box1">
             <label class="stud">Announcements</label>
-            <div> <a routerLink="" class="file"> Proposal Submission</a></div>
-            <label class="ann1"> Students proposals submission is about to be due at 12:00  11/10/2022, 
-                <br>
-                a few students have submitted their proposals already.
-                <br>
-                <br>
-                <div> <a routerLink="" class="file"> Students project progress</a></div>
-                In publishing and graphic design, Lorem ipsum is a placeholder text
-                <br>
-                 commonly used to demonstrate the visual form of a document  or a 
-                 <br>
-                 typeface without relying on meaningful content. Lorem ipsum may be
-                <br>
-                <br>
-                <div> <a routerLink="" class="file"> Scheduled meetings</a></div>
-                The following are todays meetings with their links:
-                
-                <br>
-                <br>
-                Student Proposal meeting 12:00  11/10/2022
-            </label>
+            <div> <a routerLink="" class="file"> </a></div>
+            
         
         </mat-card>
-        <mat-card class="box2">
+        <mat-card class="procard">
+            <label class="sub">Submitted Projects</label>
+            <label class="pending">Pending Projects</label>
+       <mat-card class="box2">
 <br>
 
 
-            <div *ngFor="let item of [].constructor(10); let i = index">
+            <!--<div *ngFor="let item of [].constructor(10); let i = index">
                 <label class="projj" href="/submitted">{{dataSource[i].proj_name}}
                     <br>
                 </label>
             
-             </div>
+             </div>-->
         
             <button class="view" routerLink="/submitted" routerLinkActive="true">View more</button>
         </mat-card>
+       
     </mat-card>
+        <mat-card class="box3">
+
+        </mat-card>
+        <mat-card class="box4"></mat-card>
+    </mat-card>
+
+
+
+
+
+
+
+
 <!--<mat-card class="head">
     <label class="proj">Projects to be Supervised</label>
    
