@@ -30,6 +30,8 @@ import { HighlightDirective } from './highlight.directive';
 import { ViewprojectComponent } from './viewproject/viewproject.component';
 import { UploadresourceComponent } from './uploadresource/uploadresource.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { PendingprojectsComponent } from './pendingprojects/pendingprojects.component';
+import { MatTabsModule } from '@angular/material/tabs';
 
 
 
@@ -55,7 +57,8 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
           SearchbystudentPipe,
           HighlightDirective,
           ViewprojectComponent,
-          UploadresourceComponent
+          UploadresourceComponent,
+          PendingprojectsComponent
     
     
  
@@ -81,7 +84,8 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     HttpClientModule,
     MatTableModule,
     FormsModule,
-    Ng2SearchPipeModule
+    Ng2SearchPipeModule,
+    MatTabsModule
     
     
    

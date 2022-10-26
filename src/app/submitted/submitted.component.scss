@@ -14,9 +14,9 @@ border-radius: 5px;
 color: white;
 }
 .title{
-    background:rgb(0, 13, 255);
+    background:rgba(0, 0, 0, 0.831);
     height: 40px;
-    margin-left: 410px;
+    margin-left: 0px;
 }
 .submit{
     font-size: x-large;
@@ -26,7 +26,7 @@ color: white;
 }
 .head{
     color: whitesmoke;
-    margin-left: 410px;
+    margin-left: 0px;
 }
 #myInput {
     background-image: url('/css/searchicon.png'); /* Add a search icon to input */
@@ -119,14 +119,14 @@ color: white;
   }
   .b4{
     font-weight: bold;
-    margin-left: 50px;
+    margin-left: 150px;
   }
   .b3{
-    margin-left:80px;
+    margin-left:180px;
     font-weight: bold;
   }
   .b2{
-    margin-left:100px;
+    margin-left:200px;
     font-weight: bold;
   }
   .b1{
@@ -192,14 +192,18 @@ color: black;
 
 }
 .table{
-  margin-left: 500px;
+  margin-left: 0px;
+  width: 900px;
 }
 .hh{
-  margin-left: 500px;
-  width: 500px;
+  margin-left: 0px;
+  width: 860px;
 }
 .menu{
   height: 900px;
   margin-top: 100px;
+}
+.tabsSet{
+  margin-left: 500px;
 }
  
