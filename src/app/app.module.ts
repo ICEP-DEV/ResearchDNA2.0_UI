@@ -26,8 +26,8 @@ import { CKEditorModule } from 'ng2-ckeditor';
 import { FormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
 import { AngularFileUploaderModule } from "angular-file-uploader";
-
-
+import { DocumentEditorModule } from '@syncfusion/ej2-angular-documenteditor';
+import { DocumentEditorContainerModule } from '@syncfusion/ej2-angular-documenteditor';
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
 
@@ -63,7 +63,9 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     CKEditorModule,
     FormsModule,
     MatNativeDateModule,
-    AngularFileUploaderModule
+    AngularFileUploaderModule,
+    DocumentEditorModule,
+    DocumentEditorContainerModule
 
 
 
