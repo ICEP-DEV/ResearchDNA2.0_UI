@@ -1,6 +1,15 @@
 import { NodeWithI18n } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { MatMenuPanel } from '@angular/material/menu';
+import { UserService } from '../user.service';
+import { Announcements} from '../Announcements';
+import { Router } from '@angular/router';
+import { from, Observable } from 'rxjs'
+import * as XLSX from 'xlsx';
+
+
+
+
 
 export interface Studentproj {
   proj_name: string;
@@ -47,11 +56,35 @@ export class AdmindashboardComponent implements OnInit {
   dataSource = STUDENT_DATA;
   clickedRows = new Set<Studentproj>();
   datasource = ANNOUN_DATA;
+
+
   
 
-  constructor() { }
+  
+
+  constructor(private service:UserService, private route:Router) { }
+
+  readData:any;
+  announcements!: Announcements[];
+ 
 
   ngOnInit(): void {
+
+    this.service.getnoticeLoadFile().subscribe((res:any) =>{
+      console.log(res, );
+
+
+      this.announcements = res.data;
+      console.log(this.announcements[0].id)
+  })
+  }
+
+
+
+  removeHTML(str:any){ 
+    var tmp = document.createElement("DIV");
+    tmp.innerHTML = str;
+    return tmp.textContent || tmp.innerText || "";
     
   }
   

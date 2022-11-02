@@ -1,8 +1,8 @@
 export interface Announcements {
-    data: any;
+    id: any;
 
-    title: string;
-    message: string;
-    date: string;
+    text: string;
+    createdAt: string;
+    updatedAt: string;
 
 }

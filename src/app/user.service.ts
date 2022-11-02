@@ -13,8 +13,8 @@ export class UserService {
 
   constructor(private _http:HttpClient) { }
 
-  apmUrl = 'http://localhost:9002/notice'; /// announcement
-  delantUrl = 'http://localhost:9002/deleteAnnouncement'; ///DeleteAnnouncement
+  apmUrl = 'http://localhost:3000/api/announcement'; /// announcement
+  delantUrl = 'http://localhost:3000/deleteAnnouncement'; ///DeleteAnnouncement
 
   getnoticeLoadFile():Observable<Announcements>
     {
