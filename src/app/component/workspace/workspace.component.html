@@ -17,7 +17,7 @@
             <a mat-list-item routerLink="/workspace">
                 <mat-icon>work</mat-icon>Workspace</a>
             <mat-divider></mat-divider>
-            <a mat-list-item>
+            <a mat-list-item routerLink="/researchtools">
                 <mat-icon>extension</mat-icon>Research tools</a>
             <mat-divider></mat-divider>
             <a mat-list-item>
@@ -28,5 +28,7 @@
         </mat-nav-list>
     </mat-sidenav>
 </mat-drawer-container>
-<!-- <ckeditor [(ngModel)]="ckeditorContent">
-</ckeditor> -->
+
+<!-- <mat-card-content>
+    <ckeditor [editor]="Editor" data="<p>Enter whatever you want</p>"></ckeditor>
+</mat-card-content> -->

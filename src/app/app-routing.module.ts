@@ -11,6 +11,7 @@ import {ProfileComponent} from './component/profile/profile.component';
 import { EditComponent } from './component/edit/edit.component';
 import {ProjectcreateComponent} from './component/projects/projectcreate/projectcreate.component';
 import {WorkspaceComponent} from './component/workspace/workspace.component';
+import {ResearchtoolsComponent} from './component/researchtools/researchtools.component';
 const routes: Routes = [
    {path:'',component:LandingPageComponent},
   {path:"signup", component: SignupComponent},
@@ -23,7 +24,8 @@ const routes: Routes = [
   {path:"profile",component: ProfileComponent},
   {path:"edit",component: EditComponent},
   {path:"workspace",component: WorkspaceComponent},
-  {path:"**", redirectTo:""}
+  // {path:"**", redirectTo:""},
+  {path:"researchtools", component: ResearchtoolsComponent},
 ];
 
 @NgModule({

@@ -1,13 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation} from '@angular/core';
 import { CKEditorModule } from 'ng2-ckeditor';
-import { ToolbarService } from '@syncfusion/ej2-angular-documenteditor';
+// import { saveDocument } from './textcontrol.js';
+
+// import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+
 @Component({
   selector: 'app-workspace',
   templateUrl: './workspace.component.html',
-  styleUrls: ['./workspace.component.scss'],
-  providers: [ToolbarService]
+  styleUrls: ['./workspace.component.scss']
 })
 export class WorkspaceComponent implements OnInit {
+  
 
   constructor() { }
 

@@ -58,14 +58,12 @@ export class ProjectsComponent implements OnInit {
   }
 
   RemoveProject(id: any) {
-   /*   alertify.confirm("Remove Project", "do you want remove this project?", () => {
+
         this.api.RemoveProjectbycode(id).subscribe(r => {
           this.loadProjects();
         });
-      }, function () {
 
-      })
-*/
+
 
   }
 }

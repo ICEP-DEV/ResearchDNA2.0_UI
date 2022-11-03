@@ -33,7 +33,7 @@ export class DashboardComponent implements OnInit {
     initialView: 'dayGridMonth',
 
     events: [
-      { title: 'Proposal Submission', date: '2022-09-16' },
+      { title: 'Proposal Submission', date: '2022-11-03' },
       { title: 'event 2', date: '2022-09-17' }
     ]
   };
