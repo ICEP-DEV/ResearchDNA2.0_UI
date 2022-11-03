@@ -57,14 +57,14 @@
    
     
     <mat-card class="ff1">
-        <mat-card class="box1" *ngFor='let announcement of readData' >
+        <mat-card class="box1"  >
             <label class="stud">Announcements</label>
             <div> <a routerLink="" class="file"> </a></div>
-            <mat-card >
-           <label>{{announcement.text}}  0000000000</label>
-           <label> {{announcement.createdAt}}</label>
-           <label>{{announcement.id}}</label>
-        </mat-card>
+            
+           <label *ngFor="let announcement of readData"></label>
+           <label *ngFor="let announcement of readData"> {{announcement.createdAt}}</label>
+           <label *ngFor="let announcement of readData">{{announcement.id}}</label>
+        
            
                    
                   
