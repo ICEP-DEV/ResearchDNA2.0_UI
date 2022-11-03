@@ -1,8 +1,8 @@
 import { NodeWithI18n } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { MatMenuPanel } from '@angular/material/menu';
-import { UserService } from '../user.service';
-import { Announcements} from '../Announcements';
+import { UserService } from '../services/user.service';
+import { Announcements} from '../models/Announcements';
 import { Router } from '@angular/router';
 import { from, Observable } from 'rxjs'
 import * as XLSX from 'xlsx';

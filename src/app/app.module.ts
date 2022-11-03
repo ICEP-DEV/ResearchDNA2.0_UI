@@ -18,7 +18,7 @@ import { EditComponent } from './edit/edit.component';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { ImageCropperModule } from 'ngx-image-cropper';
 import { HttpClientModule } from '@angular/common/http';
-import {UserService} from './user.service';
+import {UserService} from './services/user.service';
 import { ResearchtoolsComponent } from './researchtools/researchtools.component';
 import {MatTableModule} from '@angular/material/table';
 import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
