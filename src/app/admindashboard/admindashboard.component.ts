@@ -11,39 +11,6 @@ import * as XLSX from 'xlsx';
 
 
 
-export interface Studentproj {
-  proj_name: string;
-}
-export interface Announcement {
-  ann_name: string;
-  ann_time: string;
-  ann_date: string;
-}
-const ANNOUN_DATA: Announcement[] = [
-  {ann_name:'Student Proposal meeting',ann_time:'12:00',ann_date:'11/10/2022'},
-  {ann_name:'Student Proposal meeting',ann_time:'12:00',ann_date:'11/10/2022'},
-  {ann_name:'Student Proposal meeting',ann_time:'12:00',ann_date:'11/10/2022'},
-  {ann_name:'Student Proposal meeting',ann_time:'12:00',ann_date:'11/10/2022'},
-  {ann_name:'Student Proposal meeting',ann_time:'12:00',ann_date:'11/10/2022'},
-  {ann_name:'Student Proposal meeting',ann_time:'12:00',ann_date:'11/10/2022'},
-  {ann_name:'Student Proposal meeting',ann_time:'12:00',ann_date:'11/10/2022'},
-  
-
-];
-
-
-const STUDENT_DATA: Studentproj[] = [
-  {proj_name:'Artificial Intelligence.'},
-  {proj_name:'Computational & Synthetic Biology.'},
-  {proj_name:'Computer Architecture.'},
-  {proj_name:'Computing for Development.'},
-  {proj_name:'Data Science.'},
-  {proj_name:'Data Science.'},
- 
-
-];
-
-
 
 @Component({
   selector: 'app-admindashboard',
@@ -53,40 +20,35 @@ const STUDENT_DATA: Studentproj[] = [
 export class AdmindashboardComponent implements OnInit {
 
   displayedColumns: string[] = ['proj_name'];
-  dataSource = STUDENT_DATA;
-  clickedRows = new Set<Studentproj>();
-  datasource = ANNOUN_DATA;
-
-
-  
-
   
 
   constructor(private service:UserService, private route:Router) { }
 
   readData:any;
+  //id:any;
   announcements!: Announcements[];
  
 
   ngOnInit(): void {
 
-    this.service.getnoticeLoadFile().subscribe((res:any) =>{
-      console.log(res, );
+    
 
-
-      this.announcements = res.data;
-      console.log(this.announcements[0].id)
+    this.service.getnoticeLoadFile().subscribe((res) =>{
+      console.log(res,"res==>" );
+    
+     this.readData = res.data;
   })
   }
+  
 
 
 
   removeHTML(str:any){ 
-    var tmp = document.createElement("DIV");
-    tmp.innerHTML = str;
-    return tmp.textContent || tmp.innerText || "";
+  var tmp = document.createElement("DIV");
+  tmp.innerHTML = str;
+  return tmp.textContent || tmp.innerText || "";
     
-  }
+ }
   
 
 }

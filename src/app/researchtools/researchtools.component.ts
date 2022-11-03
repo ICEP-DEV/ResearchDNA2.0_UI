@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
+import { NgForm } from '@angular/forms';
+import { ActivatedRoute, ParamMap, Router } from '@angular/router';
+
 
 export interface Researchdatabase {
   name: string;
@@ -23,13 +27,20 @@ export class ResearchtoolsComponent implements OnInit {
   displayedColumns: string[] = [ 'name',  'description'];
   dataSource = ELEMENT_DATA;
 
+  submitted: boolean = false;
+  editMode: boolean = false;
+  private postId: string | undefined;
+  public readonly:boolean = true;
+
+
   
 
-  constructor() {
+  constructor(public route: ActivatedRoute, private router: Router, private formBuilder : FormBuilder) {
     
    }
 
   ngOnInit(): void {
+    
   }
   
 

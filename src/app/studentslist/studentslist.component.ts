@@ -11,16 +11,8 @@ export interface Studentlists {
 }
 
 const STUDENT_DATA: Studentlists[] = [
-  {stud_number: '215715213', stud_name: 'Siphesihle Pretty', stud_surname: 'Malinga', Qualification: 'Ndip:Software Development', Faculty:'ICT', proj_title:'Cyber Security'},
-  {stud_number: '215715213', stud_name: 'Siphesihle Pretty', stud_surname: 'Malinga', Qualification: 'Ndip:Software Development', Faculty:'ICT', proj_title:'Cyber Security'},
-  {stud_number: '215715213', stud_name: 'Siphesihle Pretty', stud_surname: 'Malinga', Qualification: 'Ndip:Software Development', Faculty:'ICT', proj_title:'Cyber Security'},
-  {stud_number: '215715213', stud_name: 'Siphesihle Pretty', stud_surname: 'Malinga', Qualification: 'Ndip:Software Development', Faculty:'ICT', proj_title:'Cyber Security'},
-  {stud_number: '215715213', stud_name: 'Siphesihle Pretty', stud_surname: 'Malinga', Qualification: 'Ndip:Software Development', Faculty:'ICT', proj_title:'Cyber Security'},
-  {stud_number: '215715213', stud_name: 'Siphesihle Pretty', stud_surname: 'Malinga', Qualification: 'Ndip:Software Development', Faculty:'ICT', proj_title:'Cyber Security'},
-  {stud_number: '215715213', stud_name: 'Siphesihle Pretty', stud_surname: 'Malinga', Qualification: 'Ndip:Software Development', Faculty:'ICT', proj_title:'Cyber Security'},
-  {stud_number: '215715213', stud_name: 'Siphesihle Pretty', stud_surname: 'Malinga', Qualification: 'Ndip:Software Development', Faculty:'ICT', proj_title:'Cyber Security'},
-  {stud_number: '215715213', stud_name: 'Siphesihle Pretty', stud_surname: 'Malinga', Qualification: 'Ndip:Software Development', Faculty:'ICT', proj_title:'Cyber Security'},
-  {stud_number: '215715213', stud_name: 'Siphesihle Pretty', stud_surname: 'Malinga', Qualification: 'Ndip:Software Development', Faculty:'ICT', proj_title:'Cyber Security'},
+  {stud_number: '111111111', stud_name: 'Nathi Surprise', stud_surname: 'Mkhonto', Qualification: 'Ndip:Software Development', Faculty:'ICT', proj_title:'Cyber Security'},
+  {stud_number: '111111111', stud_name: 'Nathi Surprise', stud_surname: 'Mkhonto', Qualification: 'Ndip:Software Development', Faculty:'ICT', proj_title:'Cyber Security'},
 ];
 
 @Component({

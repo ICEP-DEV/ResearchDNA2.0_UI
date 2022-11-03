@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from '../user.service';
 
 export interface Studentlist {
  
@@ -6,6 +7,7 @@ export interface Studentlist {
   stud_proj: string,
   name:string,
   stud_surn:string
+  
 
 }
 const STUDENT_DATA: Studentlist[] = [
@@ -26,6 +28,7 @@ const STUDENT_DATA: Studentlist[] = [
 export class SubmittedComponent implements OnInit {
   title = 'Angular Search Using ng2-search-filter';
   searchText: any;
+  readData:any;
   heroes = [
     {stud_numb: '000000000 ',name:' Promise Sphelele ',stud_surn:' Maseko ',stud_proj:' Cyber Security '},
   {stud_numb: '123457641',name:' Oliver Sbusiso ',stud_surn:' Mthombeni ',stud_proj:' Cyber Security '},
@@ -48,9 +51,11 @@ export class SubmittedComponent implements OnInit {
   clickedRows = new Set<Studentlist>();
   
  
-  constructor() { }
+  constructor(private service:UserService) { }
 
   ngOnInit(): void {
+
+    
   }
    
 

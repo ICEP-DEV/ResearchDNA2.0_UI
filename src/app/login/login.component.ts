@@ -1,6 +1,7 @@
 import { createViewChild } from '@angular/compiler/src/core';
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../user.service';
+import { Router } from '@angular/router';
 
 
 import { ImageCroppedEvent, LoadedImage } from 'ngx-image-cropper';
@@ -12,6 +13,9 @@ import { ImageCroppedEvent, LoadedImage } from 'ngx-image-cropper';
 })
 export class LoginComponent implements OnInit {
   
+  readData:any;
+  
+
 
   imgChangeEvt: any = '';
     cropImgPreview: any = '';
@@ -36,20 +40,22 @@ export class LoginComponent implements OnInit {
     }
     
  
-data: any;
+
   UserService: any;
 user: any;
 userIsAuthenticated: any;
   token: null | undefined;
-  constructor() {
-    this.data = {}
+  constructor(private service:UserService, private route:Router) {
+   
     
    }
 
   ngOnInit() {
-   this.UserService.getstudent().subscribe((student:any[])=>{
-    console.log(student)
-   })
+   this.service.getUsers().subscribe((res) =>{
+      console.log(res,"res==>" );
+  
+      //this.readData = res.data
+  });
   }
   ChangingImageclick(){
 this.ChangingImage= true;
