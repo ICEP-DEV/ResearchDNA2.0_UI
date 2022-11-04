@@ -55,7 +55,20 @@ export class ResearchtoolsComponent implements OnInit {
  ngOnInit() {}
   displayedColumns: string[] = ['id', 'name', 'fruit', 'actions'];
   dataSource: MatTableDataSource<UserData>;
-
+  title="Video List";
+  videoList=[{
+    name: "Item 1",
+    slug: "Item-1"
+  },
+{
+  name: "Item 2",
+  slug: "Item-2"
+},
+{
+  name: "Item 3",
+  slug: "Item-3"
+},
+]
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
 

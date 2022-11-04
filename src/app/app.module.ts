@@ -29,6 +29,7 @@ import { AngularFileUploaderModule } from "angular-file-uploader";
 // import { DocumentEditorModule } from '@syncfusion/ej2-angular-documenteditor';
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 import { ResearchtoolsComponent } from './component/researchtools/researchtools.component';
+import {NgToastModule} from 'ng-angular-popup';
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
 
@@ -66,6 +67,7 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     FormsModule,
     MatNativeDateModule,
     AngularFileUploaderModule,
+    NgToastModule
    
 
 

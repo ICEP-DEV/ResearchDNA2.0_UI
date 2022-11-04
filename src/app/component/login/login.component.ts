@@ -3,6 +3,7 @@ import {FormControl, FormGroup, Validators} from "@angular/forms";
 import { Router } from "@angular/router";
 import {Login} from '../../shared/models/User';
 import {LoginService} from '../../shared/services/login.service';
+import { NgToastService } from 'ng-angular-popup';
 
 @Component({
   selector: 'app-login',
@@ -11,13 +12,18 @@ import {LoginService} from '../../shared/services/login.service';
 })
 export class LoginComponent implements OnInit {
   userModel = new Login(0,'');
-  constructor(private _loginService: LoginService){}
+  constructor(private _loginService: LoginService, private toast:NgToastService){}
   ngOnInit(): void {}
 login(){
 
 this._loginService.signup(this.userModel).subscribe(
-  data =>console.log('success', data),
-  error=>console.error('Error!',error)
+  data =>{
+    console.log('success', data);
+    this.toast.success({detail:"Success message",summary:"Login Successful",duration:5000});
+  },
+  error=>{
+    console.error('Error!',error);
+    this.toast.error({detail:"Success message",summary:"Login failed, check if user id exists by signing up",duration:5000});}
 )
 }
 }

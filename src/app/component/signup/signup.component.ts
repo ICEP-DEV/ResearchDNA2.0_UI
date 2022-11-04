@@ -7,6 +7,7 @@ import {RegisterService} from '../../shared/services/register.service';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MAT_SNACK_BAR_DATA} from '@angular/material/snack-bar';
 import {MatSnackBar} from '@angular/material/snack-bar';
+import { NgToastService } from 'ng-angular-popup';
 //import {AuthService} from "../../shared/services/auth.service";
 @Component({
   selector: 'app-signup',
@@ -19,7 +20,7 @@ export class SignupComponent implements OnInit {
 
 popupButton:string;
   userModel = new User( 0,'','','','','','');
-  constructor(private _registrationService: RegisterService){}
+  constructor(private _registrationService: RegisterService, private toast:NgToastService){}
   ngOnInit(): void {}
 
 onSubmit(){
@@ -27,9 +28,13 @@ onSubmit(){
 this._registrationService.signup(this.userModel).subscribe(
   data =>{
     console.log('success', data);
+    this.toast.success({detail:"Success message",summary:"Signup Successful",duration:5000});
 
   },
-  error=>console.error('Error!',error)
+  error=>{
+    console.error('Error!',error);
+    this.toast.error({detail:"Success message",summary:"Signup failed, check if user id exists by login in or that all input fields are filled",duration:5000});}
+
 )
 }
 
