@@ -32,6 +32,7 @@ import { UploadresourceComponent } from './uploadresource/uploadresource.compone
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { PendingprojectsComponent } from './pendingprojects/pendingprojects.component';
 import { MatTabsModule } from '@angular/material/tabs';
+import { SupProfileComponent } from './sup-profile/sup-profile.component';
 
 
 
@@ -58,7 +59,8 @@ import { MatTabsModule } from '@angular/material/tabs';
           HighlightDirective,
           ViewprojectComponent,
           UploadresourceComponent,
-          PendingprojectsComponent
+          PendingprojectsComponent,
+          SupProfileComponent
     
     
  

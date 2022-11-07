@@ -21,7 +21,7 @@ export class UserService {
   apmUrl = 'http://localhost:3000/api/announcement'; /// announcement
   delantUrl = 'http://localhost:3000/deleteAnnouncement'; ///DeleteAnnouncement
 
-  getnoticeLoadFile():Observable<any>
+  getAnnouncements():Observable<any>
     {
           return this._http.get(`${this.apmUrl}`);
     }

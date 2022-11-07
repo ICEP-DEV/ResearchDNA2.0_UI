@@ -60,26 +60,13 @@
         <mat-card class="box1"  >
             <label class="stud">Announcements</label>
             <div> <a routerLink="" class="file"> </a></div>
-            <section *ngFor='let announcement of readData' >
-
-
-                  
-                    <div class>
-                    {{announcement.text}}
-                  </div>
-                  <div class>
-                    {{announcement.createdAt| date:'fullDate'}}
-                  </div>
-              
-                  <div class>
-                         
-                    {{announcement.id}}
-              
-                  </div>  
-                     <!--  <a target ="_blank" href="ACADEMIC RECORD.pdf" download class="download-btn">Download PDF</a> -->
-        
-              
-                </section> 
+            <a class="announce" *ngFor="let list of announcements">
+                <br><br>
+               <p class="tt"> {{list.title}}</p>
+                <br>
+                <p class="text">{{list.text}}</p>
+            </a>
+           
               
               
             

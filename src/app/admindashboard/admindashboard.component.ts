@@ -26,17 +26,17 @@ export class AdmindashboardComponent implements OnInit {
 
   readData:any;
   //id:any;
-  announcements!: Announcements[];
+  announcements!: any[];
  
 
   ngOnInit(): void {
 
     
 
-    this.service.getnoticeLoadFile().subscribe((res) =>{
-      console.log(res,"res==>" );
+    this.service.getAnnouncements().subscribe((announcements: any) =>{
+      console.log(announcements,"res==>" );
     
-     this.readData = res.data;
+     this.announcements = announcements;
   })
   }
   

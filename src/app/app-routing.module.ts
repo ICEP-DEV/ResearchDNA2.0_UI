@@ -7,6 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { ResearchtoolsComponent } from './researchtools/researchtools.component';
 import { StudentslistComponent } from './studentslist/studentslist.component';
 import { SubmittedComponent } from './submitted/submitted.component';
+import { SupProfileComponent } from './sup-profile/sup-profile.component';
 import { UploadresourceComponent } from './uploadresource/uploadresource.component';
 import { ViewprojectComponent } from './viewproject/viewproject.component';
 
@@ -22,7 +23,8 @@ const routes: Routes = [
   {path:'viewproject', component:ViewprojectComponent},
   {path:'submitted', component: SubmittedComponent},
   {path:'profile', component:LoginComponent},
-  {path:'upload', component:UploadresourceComponent}
+  {path:'upload', component:UploadresourceComponent},
+  {path:'supprofile', component:SupProfileComponent}
 ];
 
 @NgModule({
