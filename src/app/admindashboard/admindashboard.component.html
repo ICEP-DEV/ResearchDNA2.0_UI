@@ -62,7 +62,7 @@
             <div> <a routerLink="" class="file"> </a></div>
             <a class="announce" *ngFor="let list of announcements">
                 <br><br>
-               <p class="tt"> {{list.title}}</p>
+               <u><p class="tt"> {{list.title}}</p></u>
                 <br>
                 <p class="text">{{list.text}}</p>
             </a>
@@ -103,7 +103,9 @@
        
     </mat-card>
         <mat-card class="box3">
-
+          <label class="postr">Post Resources</label>
+          <br><br><br>
+          <button class="view" routerLink="/upload" routerLinkActive="true">Post Resources</button>
         </mat-card>
         <mat-card class="box4"></mat-card>
     </mat-card>
