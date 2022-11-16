@@ -9,6 +9,19 @@ import * as XLSX from 'xlsx';
 
 
 
+export interface subprojs {
+  id: any;
+
+  text: string;
+  document: string;
+  description: string;
+ 
+  startDate: Date;
+  
+
+}
+
+
 
 
 
@@ -20,13 +33,16 @@ import * as XLSX from 'xlsx';
 export class AdmindashboardComponent implements OnInit {
 
   displayedColumns: string[] = ['proj_name'];
+  userIsAuthenticated: boolean | undefined;
+  token: null | undefined;
   
 
   constructor(private service:UserService, private route:Router) { }
 
   readData:any;
   //id:any;
-  announcements!: any[];
+  announcements!: Announcements[];
+  user!: subprojs[];
  
 
   ngOnInit(): void {
@@ -37,6 +53,12 @@ export class AdmindashboardComponent implements OnInit {
       console.log(announcements,"res==>" );
     
      this.announcements = announcements;
+  })
+
+  this.service.getProject().subscribe((user: any) =>{
+    console.log(user,"res==>");
+
+    this.user = user;
   })
   }
   
@@ -49,6 +71,12 @@ export class AdmindashboardComponent implements OnInit {
   return tmp.textContent || tmp.innerText || "";
     
  }
+
+ onLogout(){  
+  this.token = null;  
+  this.userIsAuthenticated = false;   
+}  
+  
   
 
 }

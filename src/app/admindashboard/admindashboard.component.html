@@ -89,6 +89,13 @@
             <label class="pending">Pending Projects</label>
        <mat-card class="box2">
 <br>
+<a class="announce" *ngFor="let u of user">
+    
+   <p class="prodash">{{u.text}} <p class="prodate">{{u.startDate | date:'fullDate'}}</p>
+   
+    <br>
+    
+</a>
 
 
             <!--<div *ngFor="let item of [].constructor(10); let i = index">
@@ -170,3 +177,8 @@
 <label class="pending">Pending Projects</label>
 -->
 </mat-card>
+<button mat-raised-button  class="log" routerLink="researchtools" routerLinkActive="active">LOGOUT</button>
+
+<li *ngIf = "userIsAuthenticated">  
+    <button mat-raised-button (click)= "onLogout()"  class="log" >logout</button>
+  </li>

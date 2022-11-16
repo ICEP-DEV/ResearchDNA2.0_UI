@@ -33,6 +33,7 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { PendingprojectsComponent } from './pendingprojects/pendingprojects.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { SupProfileComponent } from './sup-profile/sup-profile.component';
+import { ChatboxComponent } from './chatbox/chatbox.component';
 
 
 
@@ -60,7 +61,8 @@ import { SupProfileComponent } from './sup-profile/sup-profile.component';
           ViewprojectComponent,
           UploadresourceComponent,
           PendingprojectsComponent,
-          SupProfileComponent
+          SupProfileComponent,
+          ChatboxComponent
     
     
  

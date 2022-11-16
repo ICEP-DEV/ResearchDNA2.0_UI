@@ -10,6 +10,19 @@ export interface Studentlist {
   
 
 }
+export interface subprojs {
+  id: any;
+
+  text: string;
+  document: string;
+  description: string;
+ 
+  startDate: Date;
+  
+
+}
+
+
 const STUDENT_DATA: Studentlist[] = [
   {stud_numb: '000000000 ',name:' Promise Sphelele ',stud_surn:' Maseko ',stud_proj:' Cyber Security '},
   {stud_numb: '123457641',name:' Oliver Sbusiso ',stud_surn:' Mthombeni ',stud_proj:' Cyber Security '},
@@ -36,6 +49,7 @@ export class SubmittedComponent implements OnInit {
   {stud_numb: '245678939' ,name:' Takangwane Precious ',stud_surn:' Nkuna ',stud_proj:' Cyber Security '},
   ];
   
+  user!: subprojs[];
  
 
   
@@ -55,7 +69,12 @@ export class SubmittedComponent implements OnInit {
 
   ngOnInit(): void {
 
-    
+    this.service.getProject().subscribe((user: any) =>{
+      console.log(user,"res==>");
+  
+      this.user = user;
+    })
+    }
   }
    
 
@@ -63,4 +82,4 @@ export class SubmittedComponent implements OnInit {
  
   
 
-}
+

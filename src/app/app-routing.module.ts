@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
+import { ChatboxComponent } from './chatbox/chatbox.component';
 import { EditComponent } from './edit/edit.component';
 
 import { LoginComponent } from './login/login.component';
@@ -24,7 +25,8 @@ const routes: Routes = [
   {path:'submitted', component: SubmittedComponent},
   {path:'profile', component:LoginComponent},
   {path:'upload', component:UploadresourceComponent},
-  {path:'supprofile', component:SupProfileComponent}
+  {path:'supprofile', component:SupProfileComponent},
+  {path:'chatbox', component:ChatboxComponent}
 ];
 
 @NgModule({

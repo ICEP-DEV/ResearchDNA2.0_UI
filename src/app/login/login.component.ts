@@ -51,7 +51,7 @@ userIsAuthenticated: any;
    }
 
   ngOnInit() {
-   this.service.getUsers().subscribe((res: any) =>{
+   this.service.getProject().subscribe((res: any) =>{
       console.log(res,"res==>" );
   
       this.readData = res.data

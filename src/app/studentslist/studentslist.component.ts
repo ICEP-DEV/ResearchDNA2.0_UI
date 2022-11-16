@@ -7,12 +7,12 @@ export interface Studentlists {
   stud_surname: string;
   Qualification: string;
   Faculty:string;
-  proj_title:string
+ 
 }
 
 const STUDENT_DATA: Studentlists[] = [
-  {stud_number: '111111111', stud_name: 'Nathi Surprise', stud_surname: 'Mkhonto', Qualification: 'Ndip:Software Development', Faculty:'ICT', proj_title:'Cyber Security'},
-  {stud_number: '111111111', stud_name: 'Nathi Surprise', stud_surname: 'Mkhonto', Qualification: 'Ndip:Software Development', Faculty:'ICT', proj_title:'Cyber Security'},
+  {stud_number: '111111111', stud_name: 'Nathi Surprise', stud_surname: 'Mkhonto', Qualification: 'Ndip:Software Development', Faculty:'ICT'},
+  {stud_number: '123456789', stud_name: 'SS SSSS', stud_surname: 'Mhlongo', Qualification: 'Ndip:Software Development', Faculty:'ICT'},
 ];
 
 @Component({
