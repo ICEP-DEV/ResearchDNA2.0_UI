@@ -1,5 +1,5 @@
 .chat1{
-    background-color: rgba(0, 0, 0, 0.775);
+    background-color: rgba(128, 128, 128, 0.678);
     height: 700px;
     width: 1000px;
     left:400px;
@@ -9,15 +9,24 @@
 .chat2{
     width: 300px;
     height: 650px;
-    background-color: whitesmoke;
+    background-color: white;
 }
-.chat3{
-   left: 350px;
-   width: 620px;
-   height: 650px;
-   top: -680px;
-}
+
 .label1{
     font-size: 20px;
     color: white;
+}
+.message
+{
+    margin-left: 400px;
+    width: 500px;
+    height: 100px;
+    margin-top: -750px;
+   
+   
+ 
+}
+.send{
+    margin-left: 900px;
+
 }
