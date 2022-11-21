@@ -10,11 +10,17 @@ border-radius: 5px;
 }
 .text{
     font-size: 20px;
-    color: rgba(0, 0, 255, 0.887);
+    color: rgba(0, 0, 0, 0.921);
+    
 }
 .tt{
     font-size: 35px;
-    color: red;
+    color:black;
+    font-weight: 500;
+}
+.date{
+    color: grey;
+    font-weight: 500;
 }
 .welcome{
     position: absolute;
@@ -68,15 +74,15 @@ top: 118px;
 background: rgba(15, 72, 124, 0.33);
 }
 .prodash{
-    font-size: x-large;
-    color: #000000;
+    font-size: medium;
+    color: black;
     font-weight: 700;
 }
 .prodate{
-    margin-left: 220px;
+    margin-left: 260px;
     margin-top: -30px;
     font-weight: 500;
-    font-size: large;
+    font-size: 14px;
 }
 .home{
     position: absolute;

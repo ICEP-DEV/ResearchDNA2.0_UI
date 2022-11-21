@@ -24,7 +24,9 @@
             <a class="announce" *ngFor="let list of announcements">
                 <br><br>
                <u><p class="tt"> {{list.title}}</p></u>
-                <br>
+                
+                <p class="date">{{list.createdAt | date:'fullDate'}}</p>
+              
                 <p class="text">{{list.text}}</p>
             </a>
            
