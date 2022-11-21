@@ -1,37 +1,9 @@
-.chat1{
-    background-color:whitesmoke;
-    height: 900px;
-    width: 1300px;
-    left:450px;
-    top: 50px;
-    
-}
-.chat2{
-    width: 300px;
-    height: 650px;
-    background-color: white;
-}
-
-.label1{
-    font-size: 20px;
-    color: black;
-    font-weight: 900;
-}
-.message
-{
-    margin-left: 400px;
-    width: 500px;
-    height: 100px;
-    margin-top: -750px;
-   
-   
- 
-}
-.send{
-    margin-left: 900px;
-
-}
-.menu{
+table {
+    width: 1800px;
+    margin-left: 490px;
+    margin-top: 50px;
+  }
+  .menu{
     position: absolute;
 width: 348px;
 height: 953px;
@@ -88,3 +60,9 @@ line-height: 24px;
 color: black;
   
 }
+th{
+    font-size: 17px;
+    font-weight: 600;
+  }
+   
+  

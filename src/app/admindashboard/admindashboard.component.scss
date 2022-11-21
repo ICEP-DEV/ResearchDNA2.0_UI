@@ -68,14 +68,15 @@ top: 118px;
 background: rgba(15, 72, 124, 0.33);
 }
 .prodash{
-    font-size: large;
+    font-size: x-large;
     color: #000000;
     font-weight: 700;
 }
 .prodate{
-    margin-left: 270px;
+    margin-left: 220px;
     margin-top: -30px;
     font-weight: 500;
+    font-size: large;
 }
 .home{
     position: absolute;
@@ -123,6 +124,10 @@ line-height: 24px;
 
 color: black;
   
+}
+.penicon{
+width: 290px;
+height: 280px;
 }
 .procard{
     left: 779px;
@@ -298,7 +303,7 @@ line-height: 29px;
 }
 .fff{
     background: rgba(0, 0, 255, 0.887);
-    height: 1000px;
+    height: 1050px;
     margin-left: 420px;
     margin-top: 50px;
 }
@@ -306,7 +311,7 @@ line-height: 29px;
     background: white;
     height: 900px;
     border-radius: 10px;
-    margin-top: 0px;
+    margin-top: 15px;
     
 }
 .log{

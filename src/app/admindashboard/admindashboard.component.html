@@ -1,54 +1,15 @@
 <mat-card class="menu" >
     <button mat-flat-button class="home" routerLink="/admindashboard">Home</button>
     <br>
-    <button mat-flat-button  class="chat">Chatbox</button>
+    <button mat-flat-button  class="chat" routerLink="/chatbox" routerLinkActive="true">Chatbox</button>
 
     <br>
-    <button mat-flat-button  class="studlist" routerLink="/studentslist" routerLinkActive="true" >Student list</button>
+    <button mat-flat-button  class="studlist" routerLink="/stdl" routerLinkActive="true" >Student list</button>
     <br>
     
-    <br>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<!--<img class="penpic" src="https://www.kindpng.com/picc/m/74-743908_lined-pages-paper-stacked-transparent-stack-paper-icon.png" alt="prof">-->
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<!--<img class= "projpic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpo6yVbdJ8wtlduigs8YEoOfB_NIoge5SSGA&usqp=CAU" alt="picture">-->
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-    
-   
-    
+      
 </mat-card >
--->
+
 <mat-card class="fff">
   
     
@@ -91,7 +52,7 @@
 <br>
 <a class="announce" *ngFor="let u of user">
     
-   <p class="prodash">{{u.text}} <p class="prodate">{{u.startDate | date:'fullDate'}}</p>
+   <p class="prodash">{{u.text}} <p class="prodate">{{u.createdAt | date:'fullDate'}}</p>
    
     <br>
     
@@ -114,7 +75,9 @@
           <br><br><br>
           <button class="view" routerLink="/upload" routerLinkActive="true">Post Resources</button>
         </mat-card>
-        <mat-card class="box4"></mat-card>
+        <mat-card class="box4">
+          <img class="penicon" src="https://static.thenounproject.com/png/3044640-200.png" alt="pen">
+        </mat-card>
     </mat-card>
 
 

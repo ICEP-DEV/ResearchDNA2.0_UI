@@ -34,6 +34,7 @@ import { PendingprojectsComponent } from './pendingprojects/pendingprojects.comp
 import { MatTabsModule } from '@angular/material/tabs';
 import { SupProfileComponent } from './sup-profile/sup-profile.component';
 import { ChatboxComponent } from './chatbox/chatbox.component';
+import { StudentslComponent } from './studentsl/studentsl.component';
 
 
 
@@ -62,7 +63,8 @@ import { ChatboxComponent } from './chatbox/chatbox.component';
           UploadresourceComponent,
           PendingprojectsComponent,
           SupProfileComponent,
-          ChatboxComponent
+          ChatboxComponent,
+          StudentslComponent
     
     
  

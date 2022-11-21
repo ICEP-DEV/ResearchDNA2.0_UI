@@ -86,41 +86,15 @@
     <mat-card class="menu" >
       <button mat-flat-button class="home" routerLink="/admindashboard">Home</button>
       <br>
-      <button mat-flat-button  class="chat">Chatbox</button>
+      <button mat-flat-button  class="chat" routerLink="/chatbox" routerLinkActive="true">Chatbox</button>
   
       <br>
-      <button mat-flat-button  class="studlist" routerLink="/studentslist" routerLinkActive="true" >Student list</button>
+      <button mat-flat-button  class="studlist" routerLink="/stdl" routerLinkActive="true" >Student list</button>
       <br>
       
       <br>
   
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
   
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
   
   <br>
   <br>
@@ -175,9 +149,9 @@
     <br>
     <td><button mat-button [matMenuTriggerFor]="list">{{hero.text}}</button></td>
     <br>
-    <td><button mat-button [matMenuTriggerFor]="list">{{hero.description}}</button></td>
+    <td><button mat-button [matMenuTriggerFor]="list">{{hero.text}}</button></td>
     <br>
-    <td><button mat-button [matMenuTriggerFor]="list">{{hero.document}}</button></td>
+    <td><button mat-button [matMenuTriggerFor]="list">{{hero.text}}</button></td>
     <mat-menu #list="matMenu">
           
       <button mat-menu-item routerLink="/viewproject" routerLinkActive="true">View project</button>

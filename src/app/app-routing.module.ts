@@ -6,6 +6,7 @@ import { EditComponent } from './edit/edit.component';
 
 import { LoginComponent } from './login/login.component';
 import { ResearchtoolsComponent } from './researchtools/researchtools.component';
+import { StudentslComponent } from './studentsl/studentsl.component';
 import { StudentslistComponent } from './studentslist/studentslist.component';
 import { SubmittedComponent } from './submitted/submitted.component';
 import { SupProfileComponent } from './sup-profile/sup-profile.component';
@@ -26,7 +27,9 @@ const routes: Routes = [
   {path:'profile', component:LoginComponent},
   {path:'upload', component:UploadresourceComponent},
   {path:'supprofile', component:SupProfileComponent},
-  {path:'chatbox', component:ChatboxComponent}
+  {path:'chatbox', component:ChatboxComponent},
+  {path:'stdl', component:StudentslComponent},
+  
 ];
 
 @NgModule({

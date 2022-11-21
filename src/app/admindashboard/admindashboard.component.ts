@@ -13,10 +13,11 @@ export interface subprojs {
   id: any;
 
   text: string;
-  document: string;
-  description: string;
+  createdAt: Date;
+  updatedAt: Date
+
  
-  startDate: Date;
+  
   
 
 }
