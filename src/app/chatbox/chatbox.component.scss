@@ -1,4 +1,4 @@
-.chat1{
+/*.chat1{
     background-color:whitesmoke;
     height: 900px;
     width: 1300px;
@@ -87,4 +87,99 @@ line-height: 24px;
 
 color: black;
   
+}*/
+
+
+
+.container {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* Darker chat container */
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+/* Clear floats */
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Style images */
+.container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Style the right image */
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+/* Style time text */
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+/* Style time text */
+.time-left {
+  float: left;
+  color: #999;
+}
+.con{
+  width: 1000px;
+  height: 900px;
+  margin-left: 1100px;
+  top: 40px;
+  
+}
+.chat{
+  height: 700px;
+  width: 400px;
+  top: -900px;
+  left: 650px;
+  background: rgba(245, 245, 245, 0.779);
+}
+.create{
+  background: rgba(0, 0, 0, 0.52);
+  color: white;
+  width: 200px;
+  font-size: medium;
+}
+.input{
+  margin-top: 300px;
+  height: 40px;
+  width: 1000px;
+  border-radius: 5px;
+}
+.send{
+  left: 940px;
+  top: 342px;
+  height: 40px;
+  
+}
+.user{
+  height: 60px;
+}
+.lebel{
+  margin-left: 10px;
+  top: -40px;
+}
+.head{
+  width: 1000px;
+  left: -15px;
+  background: rgba(0, 0, 128, 0.842);
 }
