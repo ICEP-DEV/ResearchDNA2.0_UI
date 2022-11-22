@@ -5,6 +5,8 @@ import { Announcements } from '../models/Announcements';
 import { WebRequestService } from '../web-request.service';
 import { throwError } from 'rxjs';
 import {submittedproj} from '../models/submittedproj'
+import { feedback } from '../feedback';
+
 
 const url = 'http://localhost:3000/api/announcement';
 @Injectable({
@@ -46,6 +48,10 @@ export class UserService {
        let ids = id;
        return this._http.delete(`${this.delantUrl}/${ids}`);
      } 
+     register(user: feedback) {
+      return this._http.post(`${this.usurl }`,user);
+    }
+  
      
   
 }
