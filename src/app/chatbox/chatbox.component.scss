@@ -146,11 +146,11 @@ color: black;
   top: 40px;
   
 }
-.chat{
+.chat1{
   height: 700px;
   width: 400px;
   top: -900px;
-  left: 650px;
+  margin-left: 650px;
   background: rgba(245, 245, 245, 0.779);
 }
 .create{
@@ -158,6 +158,7 @@ color: black;
   color: white;
   width: 200px;
   font-size: medium;
+  
 }
 .input{
   margin-top: 300px;
@@ -173,13 +174,99 @@ color: black;
 }
 .user{
   height: 60px;
+  border-radius: 50%;
+}
+.u1{
+ 
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 0px;
+}
+.u2{
+  height: 60px;
+  border-radius: 50%;
+  
 }
 .lebel{
   margin-left: 10px;
   top: -40px;
+  color: white;
+  font-size: 20px;
 }
 .head{
   width: 1000px;
   left: -15px;
   background: rgba(0, 0, 128, 0.842);
 }
+.menu{
+  position: absolute;
+width: 348px;
+height: 953px;
+left: 25px;
+top: 128px;
+
+background: #FFFFFF;
+border-radius: 5px;
+}
+.home{
+  position: absolute;
+width: 380px;
+height: 53px;
+left: 0px;
+top: 4px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 24px;
+background: whitesmoke;
+color:black;
+}
+.chat{
+  position: absolute;
+width: 380px;
+height: 53px;
+left: 0px;
+top: 60px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: bolder;
+font-size: 22px;
+line-height: 24px;
+background: whitesmoke;
+color: black;
+
+}
+.studlist{
+  position: absolute;
+width: 380px;
+height: 53px;
+left: 0px;
+top: 117px;
+background: whitesmoke;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 24px;
+
+color: black;
+}
+.gr1{
+  font-size: x-large;
+  color: navy;
+  font-weight: bold;
+}
+.grlabel{
+  margin-left: 10px;
+  margin-top: -20px;
+}
+.ch1{
+  font-size: x-large;
+  color: navy;
+  font-weight: bold;
+}
+
+
