@@ -218,27 +218,30 @@
 .sup1{
   height: 800px;
   width: 1100px;
-  left: 500px;
+  left: 800px;
   top: 50px;
   background: rgba(135, 207, 235, 0.116);
   
 }
 .sub2{
   width: 700px;
-  left:900px;
+  left:1200px;
   top: -600px;
  background:  rgba(135, 207, 235, 0.116);;
   
   
 }
 .personal{
-  margin-left: 1000px;
-  bottom: 200px;
+  margin-left: 450px;
+ font-size: xx-large;
+top: 50px;
+font-weight: 600;
+ 
 }
 
 .sub3{
   width: 700px;
-  left:900px;
+  left:1200px;
   top: -600px;
   background:rgba(135, 207, 235, 0.116);
 }
@@ -367,4 +370,59 @@ body {
     text-decoration: none;
   }
 
-  
+  .menu{
+    position: absolute;
+width: 348px;
+height: 953px;
+left: 25px;
+top: 128px;
+
+background: #FFFFFF;
+border-radius: 5px;
+}
+.home{
+    position: absolute;
+width: 380px;
+height: 53px;
+left: 0px;
+top: 4px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 24px;
+background: whitesmoke;
+color:black;
+}
+.chat{
+    position: absolute;
+width: 380px;
+height: 53px;
+left: 0px;
+top: 60px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: bolder;
+font-size: 22px;
+line-height: 24px;
+background: whitesmoke;
+color: black;
+
+}
+.studlist{
+    position: absolute;
+width: 380px;
+height: 53px;
+left: 0px;
+top: 117px;
+background: whitesmoke;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 24px;
+
+color: black;
+}

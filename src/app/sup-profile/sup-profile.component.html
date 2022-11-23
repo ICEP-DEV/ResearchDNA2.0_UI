@@ -84,14 +84,21 @@
   </li>
   -->
   
+  <mat-card class="menu" >
+    <button mat-flat-button class="home" routerLink="/admindashboard">Home</button>
+    <br>
+    <button mat-flat-button  class="chat" routerLink="/chatbox" routerLinkActive="true">Chatbox</button>
 
+    <br>
+    <button mat-flat-button  class="studlist" routerLink="/stdl" routerLinkActive="true" >Student list</button>
 
-  <u><mat-label class="personal">Personal Information</mat-label></u>
+</mat-card >
+
+  
 <mat-card class="sup1"  >
   
-    <div class="row mb-3">
-                         
-      <div class="col-md-8 col-lg-9">
+  <u><label class="personal">Personal Information</label></u>
+   
       
           
           
@@ -104,9 +111,9 @@
         
          <input type="file"  (change)="selectFile($event)">
           
-              </div>
+              
      
-      </div>
+      
      
      <br>
     
