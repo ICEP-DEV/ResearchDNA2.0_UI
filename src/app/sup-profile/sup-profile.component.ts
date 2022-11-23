@@ -60,34 +60,30 @@ token: null | undefined;*/
     
   }
 
- 
+  msg = "";
+  url:any;
+	
+	//selectFile(event) { //Angular 8
+	selectFile(event: any) { //Angular 11, for stricter type
+		if(!event.target.files[0] || event.target.files[0].length == 0) {
+			this.msg = 'You must select an image';
+			return;
+		}
+    var mimeType = event.target.files[0].type;
+		
+		
+		if(event.target.files && event.target.files[0]){
+		var reader = new FileReader();
+		reader.readAsDataURL(event.target.files[0]);
+		
+		reader.onload = (_event) => {
+			this.msg = "";
+			this.url = reader.result;
+			
+		}
+  }
+}
 
- /* ChangingImageclick(){
-    this.ChangingImage= true;
-      }
-    
-      saveNewImage(){
-        this.ChangingImage = false;
-      }
-      fileChangeEvent(event: any): void {
-        this.imageChangedEvent = event;
-    }
-    imageCropped(event: ImageCroppedEvent) {
-        this.croppedImage = event.base64;
-    }
-    imageLoaded(image: LoadedImage) {
-        // show cropper
-    }
-    cropperReady() {
-        // cropper ready
-    }
-    loadImageFailed() {
-        // show message
-    }
-    onLogout(){  
-      this.token = null;  
-      this.userIsAuthenticated = false;   
-    }  */
-      
+ 
 
 }

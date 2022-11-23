@@ -82,7 +82,63 @@
   <li *ngIf = "userIsAuthenticated">  
     <button mat-button (click)= "onLogout()" class="logout">Logout</button>  
   </li>
+  -->
   
--->
+
+
+  <u><mat-label class="personal">Personal Information</mat-label></u>
+<mat-card class="sup1"  >
+  
+    <div class="row mb-3">
+                         
+      <div class="col-md-8 col-lg-9">
+      
+          
+          
+          <div [innerHtml]='msg' *ngIf="msg" style="color: red;"></div>
+          <br>
+          <img [src]="url ? url: 'https://cdn-icons-png.flaticon.com/512/219/219986.png'" class="proff">
+          
+         <br>
+         
+        
+         <input type="file"  (change)="selectFile($event)">
+          
+              </div>
+     
+      </div>
+     
+     <br>
+    
+      <mat-icon class="icon1">call</mat-icon>
+      <label class="call"> 07900000000</label>
+      <br><br>
+      <mat-icon class="icon2">email</mat-icon>
+      <label class="email">nontandmaseko@gmail.com</label>
+      <br><br>
+      <mat-icon class="icon3">place</mat-icon>
+      <label class="place">14402 ivory park, Tembisa 1111 </label>
+ <br><br>
+  
+  
+  
+</mat-card>
+
+<mat-card class="sub2"><mat-label class="fullname">Fullname:</mat-label></mat-card>
+
+  <br>
+  <mat-card class="sub3"><mat-label class="lastname">Lastname:</mat-label></mat-card>
+  <br>
+  <mat-card class="sub3"><mat-label class="lastname">Department:</mat-label></mat-card>
+  <br>
+  <mat-card class="sub3"><mat-label class="lastname">Faculty:</mat-label></mat-card>
+  <br>
+  <mat-card class="sub3"><mat-label class="lastname">Staff Nr.:</mat-label></mat-card>
+  <br>
+  <mat-card class="sub3"><mat-label class="lastname">Username:</mat-label></mat-card>
+  
+
+
+
 
 
