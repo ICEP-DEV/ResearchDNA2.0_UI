@@ -1,6 +1,6 @@
 import { Pipe, PipeTransform } from '@angular/core';
 import { SubmittedComponent } from './submitted/submitted.component';
-import { Studentlist } from './submitted/submitted.component';
+import { subprojs } from './submitted/submitted.component';
 
 @Pipe({
   name: 'searchbystudent'

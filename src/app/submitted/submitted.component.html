@@ -187,7 +187,7 @@
 <table class="table ">
   <br>
   <tbody>
-  <tr *ngFor="let hero of heroes | filter:searchText">
+  <tr *ngFor="let hero of user | filter:searchText">
     <mat-menu #list="matMenu">
 
       <button mat-menu-item routerLink="/viewproject" routerLinkActive="true">View project</button>
