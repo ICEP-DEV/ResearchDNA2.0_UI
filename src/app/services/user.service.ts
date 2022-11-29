@@ -17,7 +17,7 @@ export class UserService {
  
 
 
-  constructor(private _http:HttpClient) { }
+  constructor(private _http:HttpClient, private webrequest: WebRequestService) { }
 
   apiUrl="http://localhost:3000/projectList/";//projectlist
  usurl ='http://localhost:3000/api/feedback';//project
@@ -48,9 +48,10 @@ export class UserService {
        let ids = id;
        return this._http.delete(`${this.delantUrl}/${ids}`);
      } 
-     register(user: feedback) {
-      return this._http.post(`${this.usurl }`,user);
-    }
+     postFeedback(message: string){
+      return this._http.post(this.usurl,message);
+     }
+   
   
      
   

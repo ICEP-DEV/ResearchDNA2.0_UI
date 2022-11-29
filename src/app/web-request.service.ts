@@ -9,7 +9,7 @@ export class WebRequestService {
   readonly ROOT_URL: any
 
   constructor(private http: HttpClient) {
-    this.ROOT_URL = 'http://localhost:3000/api/user/215715213'
+    this.ROOT_URL = 'http://localhost:3000/api'
    }
 
    get(uri: string){
@@ -17,6 +17,6 @@ export class WebRequestService {
    }
 
    post(uri: string, payload:object){
-    return this.http.post('${this.ROOT_URL}/${uri}', payload)
+    return this.http.post(`${this.ROOT_URL}/${uri}`, payload)
    }
 }

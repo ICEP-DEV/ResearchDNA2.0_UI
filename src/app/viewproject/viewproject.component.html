@@ -37,12 +37,13 @@
            inceptos himenaeos.</label>
 </mat-card>
 
-
-  <input class="message">
+<form #feedbackform="ngForm" (ngSubmit)="clickEvent(feedbackform.value)">
+  <input ngModel name="text" class="message">
   <br>
   <br>
-  <button  (click)="clickEvent()" class="feed" >
+  <button  class="feed" >
     Send Feedback</button>
-    <h2>{{msg}}</h2>
+  </form>
+    
   
 
