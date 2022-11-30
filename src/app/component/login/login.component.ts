@@ -3,6 +3,7 @@ import {FormControl, FormGroup, Validators} from "@angular/forms";
 import { Router } from "@angular/router";
 import {Login} from '../../shared/models/User';
 import {LoginService} from '../../shared/services/login.service';
+import { NgToastService } from 'ng-angular-popup';
 
 @Component({
   selector: 'app-login',
@@ -11,13 +12,14 @@ import {LoginService} from '../../shared/services/login.service';
 })
 export class LoginComponent implements OnInit {
   userModel = new Login(0,'');
-  constructor(private service: LoginService){}
+  constructor(private _loginService: LoginService){}
   ngOnInit(): void {}
-  login(data: any){
-    console.warn(data)
-    this.service.login(data).subscribe((result)=>{
-      console.warn(result)
-     })
-    }
+login(){
+
+this._loginService.signup(this.userModel).subscribe(
+  data =>console.log('success', data),
+  error=>console.error('Error!',error)
+)
+}
 }
 

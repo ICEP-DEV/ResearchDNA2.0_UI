@@ -22,12 +22,14 @@ import { ImageCropperModule } from 'ngx-image-cropper';
 import { EditComponent } from './component/edit/edit.component';
 import { ProjectcreateComponent } from './component/projects/projectcreate/projectcreate.component';
 import { WorkspaceComponent } from './component/workspace/workspace.component';
-import { CKEditorModule } from 'ng2-ckeditor';
+// import { CKEditorModule } from 'ng2-ckeditor';
 import { FormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
 import { AngularFileUploaderModule } from "angular-file-uploader";
-
-
+// import { DocumentEditorModule } from '@syncfusion/ej2-angular-documenteditor';
+import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
+import { ResearchtoolsComponent } from './component/researchtools/researchtools.component';
+import {NgToastModule} from 'ng-angular-popup';
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
 
@@ -48,6 +50,7 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     EditComponent,
     ProjectcreateComponent,
     WorkspaceComponent,
+    ResearchtoolsComponent,
 
 
   ],
@@ -63,7 +66,9 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     CKEditorModule,
     FormsModule,
     MatNativeDateModule,
-    AngularFileUploaderModule
+    AngularFileUploaderModule,
+    NgToastModule
+   
 
 
 

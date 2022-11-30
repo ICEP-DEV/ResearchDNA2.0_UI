@@ -9,7 +9,13 @@ import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { StudentProjectServicesService } from '../../shared/student-project-services.service';
 import { projectsmodel } from 'src/app/shared/models/projects';
 
+export interface ProjectElement {
+  id: number;
+  projectDate: any;
+  projectName: string;
+  projectType: string;
 
+}
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -33,7 +39,7 @@ export class DashboardComponent implements OnInit {
     initialView: 'dayGridMonth',
 
     events: [
-      { title: 'Proposal Submission', date: '2022-09-16' },
+      { title: 'Proposal Submission', date: 'this.dataSource.projectDate '},
       { title: 'event 2', date: '2022-09-17' }
     ]
   };
