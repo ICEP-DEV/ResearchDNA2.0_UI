@@ -11,13 +11,13 @@ import {LoginService} from '../../shared/services/login.service';
 })
 export class LoginComponent implements OnInit {
   userModel = new Login(0,'');
-  constructor(private _loginService: LoginService){}
+  constructor(private service: LoginService){}
   ngOnInit(): void {}
-login(){
+  login(data: any){
+    console.warn(data)
+    this.service.login(data).subscribe((result)=>{
+      console.warn(result)
+     })
+    }
+}
 
-this._loginService.signup(this.userModel).subscribe(
-  data =>console.log('success', data),
-  error=>console.error('Error!',error)
-)
-}
-}

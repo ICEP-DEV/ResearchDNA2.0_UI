@@ -6,9 +6,9 @@ import {Login} from '../models/User';
 })
 export class LoginService {
 
-  _url = 'http://localhost:3010/api/login';
+  _url = 'http://localhost:3000/api/login';
   constructor(private _http:HttpClient) { }
-  signup(user: Login){
-   return this._http.post<any>(this._url, user);
+  login(data: any){
+    return this._http.post(this._url,data);
   }
 }

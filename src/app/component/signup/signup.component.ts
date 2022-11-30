@@ -13,13 +13,18 @@ import {RegisterService} from '../../shared/services/register.service';
 export class SignupComponent implements OnInit {
 
   userModel = new User( 0,'','','','','','');
-  constructor(private _registrationService: RegisterService){}
+  constructor(private service: RegisterService){}
   ngOnInit(): void {}
-onSubmit(){
+onSubmit(data: any){
+  console.warn(data)
+  this.service.signup(data).subscribe((result)=>{
+    console.warn(result)
+   })
 
-this._registrationService.signup(this.userModel).subscribe(
+/*this._registrationService.signup(this.userModel).subscribe(
   data =>console.log('success', data),
   error=>console.error('Error!',error)
 )
+}*/
 }
 }

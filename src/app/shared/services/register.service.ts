@@ -5,9 +5,9 @@ import {User} from '../models/User';
   providedIn: 'root'
 })
 export class RegisterService {
- _url = 'http://localhost:3010/api/signup';
+ _url = 'http://localhost:3000/api/user';
   constructor(private _http:HttpClient) { }
-  signup(user: User){
-   return this._http.post<any>(this._url, user);
+  signup(data:any){
+    return this._http.post(this._url,data);
   }
 }
