@@ -38,12 +38,16 @@
 </mat-card>
 
 <form #feedbackform="ngForm" (ngSubmit)="clickEvent(feedbackform.value)">
-  <input ngModel name="text" class="message">
+  <input ngModel name="text" #name required class="message">
   <br>
   <br>
-  <button  class="feed" >
+  <button  class="feed" (click)="name.value=' '">
     Send Feedback</button>
   </form>
-    
+
+ 
+    <h1 class="success" *ngIf="registerSucess"> Feedback Sent Successfully :D </h1>
+  
+   
   
 

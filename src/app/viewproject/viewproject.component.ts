@@ -1,5 +1,4 @@
-import { Message } from '@angular/compiler/src/i18n/i18n_ast';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ViewChild } from '@angular/core';
 import { UserService } from '../services/user.service';
 
 
@@ -15,9 +14,11 @@ import { UserService } from '../services/user.service';
 })
 export class ViewprojectComponent implements OnInit {
 
-
+  @ViewChild('text') inputName: any; 
+  registerSucess:boolean = false;
   
   msg:string | undefined;
+  text: string | undefined;
   constructor(private service: UserService) { }
 
   ngOnInit(): void {
@@ -27,9 +28,10 @@ export class ViewprojectComponent implements OnInit {
       console.log(message);
 this.service.postFeedback(message).subscribe((result)=>{
  console.warn(result)
+ this.registerSucess=true;
+ 
 })
     
   }
  
-
 }
