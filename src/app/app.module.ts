@@ -22,7 +22,7 @@ import {UserService} from './services/user.service';
 import { ResearchtoolsComponent } from './researchtools/researchtools.component';
 import {MatTableModule} from '@angular/material/table';
 import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
-import { StudentslistComponent } from './studentslist/studentslist.component';
+
 import { SubmittedComponent } from './submitted/submitted.component';
 import { FormsModule } from '@angular/forms';
 import { SearchbystudentPipe } from './searchbystudent.pipe';
@@ -56,7 +56,7 @@ import { StudentslComponent } from './studentsl/studentsl.component';
     EditComponent,
           ResearchtoolsComponent,
           AdmindashboardComponent,
-          StudentslistComponent,
+         
           SubmittedComponent,
           SearchbystudentPipe,
           HighlightDirective,
