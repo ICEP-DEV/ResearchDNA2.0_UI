@@ -43,7 +43,7 @@
                                 </div>
                             </div>
                         </div><!--upload-content-->
-                        <input data-required="image" type="file" name="image_name" id="file_upload" class="image-input" data-traget-resolution="image_resolution" value="">
+                        <input data-required="image" type="file" name="image_name" id="file_upload" class="image-input" data-traget-resolution="image_resolution" (change)="onFileSelected($event)" value="">
                         
                          </label>
                     </div>            
@@ -54,7 +54,7 @@
     </div><!--item-->
 
 </div>
-<button class="upload">Upload File</button>
+<button class="upload" (click)="onUpload()">Upload File </button>
 
 <table mat-table class="studtable">
     

@@ -8,7 +8,8 @@ export interface subprojs {
   text: string;
   document: string;
   description: string;
- 
+ fName: string;
+ Surname: string;
   startDate: Date;
   
 

@@ -4,7 +4,7 @@ import { UserService } from '../services/user.service';
 
 
 export interface studlist {
-  id: string;
+  userId: string;
 
   firstName: string;
   lastName: string;
@@ -38,7 +38,7 @@ export class StudentslComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.service.getStudent().subscribe((user: any) =>{
+    this.service.getUser().subscribe((user: any) =>{
       console.log(user,"res==>");
   
       this.user = user;

@@ -1,6 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 import { ImageCroppedEvent, LoadedImage } from 'ngx-image-cropper';
 import { Router } from '@angular/router';
+import { UserService } from '../services/user.service';
+
+
+export interface supervisor {
+  supervisorId: string	
+  firstName: string
+  lastName: string	
+  email: string	
+  department: string	
+  faculty: string	
+  password: string	
+  createdAt: Date	
+  updatedAt: Date	
+
+}
 
 @Component({
   selector: 'app-sup-profile',
@@ -12,6 +27,7 @@ export class SupProfileComponent implements OnInit {
   public innerWidth: any = 0;
   public innerHeight: any  = 0;
   public inputDivHeigh: any  = 0;
+  user!: supervisor[];
 
   disable: boolean = true;
   formV: any = {lastName: false, firstName: false, password: false};
@@ -20,35 +36,8 @@ export class SupProfileComponent implements OnInit {
   userType: string = "2";
   
 
- /* imgChangeEvt: any = '';
-  cropImgPreview: any = '';
-ChangingImage: boolean | undefined;
-imageChangedEvent: any;
-croppedImage: string | null | undefined;
-  onFileChange(event: any): void {
-      this.imgChangeEvt = event;
-  }
-  cropImg(e: ImageCroppedEvent) {
-      this.cropImgPreview = e.base64;
-  }
-  imgLoad() {
-      // display cropper tool
-  }
-  initCropper() {
-      // init cropper
-  }
-  
-  imgFailed() {
-      // error msg
-  }
-  
-
-
-UserService: any;
-user: any;
-userIsAuthenticated: any;
-token: null | undefined;*/
-  constructor(public router: Router) { }
+ 
+  constructor(public router: Router, private service: UserService) { }
 
   ngOnInit(): void {
     this.innerWidth = (window.innerWidth * 0.823) + "px";
@@ -57,6 +46,11 @@ token: null | undefined;*/
     this.innerHeight= (window.innerHeight * 0.87) + "px";
     console.log(this.innerWidth + "H " + this.innerHeight + "W");
 
+    this.service.getSupervisor().subscribe((user: any) =>{
+      console.log(user,"res==>");
+  
+      this.user = user;
+    })
     
   }
 

@@ -7,7 +7,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {ReactiveFormsModule} from "@angular/forms";
 import { MatFormFieldModule} from '@angular/material/form-field';
 import {MatCardModule} from '@angular/material/card';
-import { LoginComponent } from './login/login.component';
+
 import { MatLineModule } from '@angular/material/core';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatMenuModule} from '@angular/material/menu'; 
@@ -22,7 +22,7 @@ import {UserService} from './services/user.service';
 import { ResearchtoolsComponent } from './researchtools/researchtools.component';
 import {MatTableModule} from '@angular/material/table';
 import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
-
+import {MatSidenavModule} from '@angular/material/sidenav';
 import { SubmittedComponent } from './submitted/submitted.component';
 import { FormsModule } from '@angular/forms';
 import { SearchbystudentPipe } from './searchbystudent.pipe';
@@ -35,6 +35,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { SupProfileComponent } from './sup-profile/sup-profile.component';
 import { ChatboxComponent } from './chatbox/chatbox.component';
 import { StudentslComponent } from './studentsl/studentsl.component';
+import {MatListModule} from '@angular/material/list';
 
 
 
@@ -49,7 +50,7 @@ import { StudentslComponent } from './studentsl/studentsl.component';
   declarations: [
     
     AppComponent,
-    LoginComponent,
+    
     SearchbystudentPipe,
     HighlightDirective,
     
@@ -78,6 +79,8 @@ import { StudentslComponent } from './studentsl/studentsl.component';
     MatMenuModule,
     BrowserAnimationsModule,
     MatIconModule,
+    MatSidenavModule,
+    MatListModule,
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,

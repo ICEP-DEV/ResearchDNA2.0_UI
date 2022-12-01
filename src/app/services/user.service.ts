@@ -20,10 +20,12 @@ export class UserService {
   constructor(private _http:HttpClient, private webrequest: WebRequestService) { }
 
   apiUrl="http://localhost:3000/projectList/";//projectlist
- usurl ='http://localhost:3000/api/feedback';//project
+ usurl ='http://localhost:3000/api/project';//project
   apmUrl = 'http://localhost:3000/api/announcement'; /// announcement
   delantUrl = 'http://localhost:3000/deleteAnnouncement'; ///DeleteAnnouncement
   stdlurl = 'http://localhost:3000/api/supervisor';
+  furl ='http://localhost:3000/api/feedback';//project
+  uurl ='http://localhost:3000/api/user';//project
 
   //get announcements
   getAnnouncements():Observable<any>
@@ -36,7 +38,7 @@ export class UserService {
       return this._http.get(`${this.usurl}`);
     }
     //get students
-    getStudent():Observable<any>{
+    getSupervisor():Observable<any>{
       return this._http.get(`${this.stdlurl}`);
     }
 
@@ -47,9 +49,15 @@ export class UserService {
      {
        let ids = id;
        return this._http.delete(`${this.delantUrl}/${ids}`);
-     } 
+     }
+     //post feedback 
      postFeedback(message: string){
-      return this._http.post(this.usurl,message);
+      return this._http.post(this.furl,message);
+     }
+     //get user
+     getUser():Observable<any>
+     {
+           return this._http.get(`${this.uurl}`);
      }
    
   

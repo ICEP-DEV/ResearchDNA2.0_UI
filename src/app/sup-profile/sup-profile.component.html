@@ -131,18 +131,19 @@
   
 </mat-card>
 
-<mat-card class="sub2"><mat-label class="fullname">Fullname:</mat-label></mat-card>
+
+<mat-card *ngFor="let list of user" class="sub2"><mat-label class="fullname">Fullname: {{list.firstName}}</mat-label></mat-card>
 
   <br>
-  <mat-card class="sub3"><mat-label class="lastname">Lastname:</mat-label></mat-card>
+  <mat-card *ngFor="let list of user" class="sub3"><mat-label class="lastname">Lastname: {{list.lastName}}</mat-label></mat-card>
   <br>
-  <mat-card class="sub3"><mat-label class="lastname">Department:</mat-label></mat-card>
+  <mat-card *ngFor="let list of user" class="sub3"><mat-label class="lastname">Department: {{list.department}}</mat-label></mat-card>
   <br>
-  <mat-card class="sub3"><mat-label class="lastname">Faculty:</mat-label></mat-card>
+  <mat-card *ngFor="let list of user" class="sub3"><mat-label class="lastname">Faculty: {{list.faculty}}</mat-label></mat-card>
   <br>
-  <mat-card class="sub3"><mat-label class="lastname">Staff Nr.:</mat-label></mat-card>
+  <mat-card *ngFor="let list of user" class="sub3"><mat-label class="lastname">Staff Nr.: {{list.supervisorId}} </mat-label></mat-card>
   <br>
-  <mat-card class="sub3"><mat-label class="lastname">Username:</mat-label></mat-card>
+  <mat-card *ngFor="let list of user" class="sub3"><mat-label class="lastname">Email: {{list.email}}</mat-label></mat-card>
   
 
 
