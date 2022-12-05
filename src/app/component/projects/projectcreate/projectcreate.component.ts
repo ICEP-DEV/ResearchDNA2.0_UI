@@ -10,6 +10,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 import {StudentProjectServicesService} from '../../../shared/student-project-services.service';
 import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import {ProjectUploadService} from "../../../shared/project-upload.service";
+import { UserService } from 'src/app/services/user.service';
 
 
 const today = new Date();
@@ -24,7 +25,7 @@ const year = today.getFullYear();
 export class ProjectcreateComponent implements OnInit {
   editdata: any;
 
-  constructor(private formBuilder: FormBuilder,private dialog: MatDialog, private api :StudentProjectServicesService, @Inject(MAT_DIALOG_DATA) public data: any) { }
+  constructor(private service:UserService, private formBuilder: FormBuilder,private dialog: MatDialog, private api :StudentProjectServicesService, @Inject(MAT_DIALOG_DATA) public data: any) { }
 
   ngOnInit(): void {
     if (this.data.id != '' && this.data.id != null) {
@@ -62,6 +63,16 @@ export class ProjectcreateComponent implements OnInit {
   closepopup() {
     this.dialog.closeAll();
   }
+  clickEvent(data: any){
+    
+    console.log(data);
+this.service.postFeedback(data).subscribe((result)=>{
+console.warn(result)
+
+
+})
+  
+}
 // file uploader
 
 }

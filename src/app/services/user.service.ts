@@ -59,6 +59,9 @@ export class UserService {
      {
            return this._http.get(`${this.uurl}`);
      }
+     postProject(data: any){
+      return this._http.post(this.usurl,data);
+     }
    
   
      
