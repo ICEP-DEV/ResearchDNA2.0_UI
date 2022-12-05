@@ -61,6 +61,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { SupervisorchatComponent } from './supervisorchat/supervisorchat.component';
+import { SupervisorLoginComponent } from './supervisor-login/supervisor-login.component';
 
 
 
@@ -97,6 +98,7 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     SubmittedComponent,
     SearchbystudentPipe,
     SupervisorchatComponent,
+    SupervisorLoginComponent,
     
     
 

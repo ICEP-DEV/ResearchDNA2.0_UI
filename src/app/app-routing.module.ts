@@ -21,7 +21,7 @@ import { SupProfileComponent } from './sup-profile/sup-profile.component';
 import { StudentslComponent } from './studentsl/studentsl.component';
 import {ChatboxComponent} from './studentChatbox/Studentchatbox.component'
 import { SupervisorchatComponent } from './supervisorchat/supervisorchat.component';
-
+import { SupervisorLoginComponent } from './supervisor-login/supervisor-login.component';
 
 
 const routes: Routes = [
@@ -50,7 +50,8 @@ const routes: Routes = [
   {path:'chatbox', component:ChatboxComponent},
   {path:'stdl', component:StudentslComponent},
   {path: 'stuchat' , component:ChatboxComponent },
-  {path:'supchat', component: SupervisorchatComponent}
+  {path:'supchat', component: SupervisorchatComponent},
+  {path:'suplogin', component:SupervisorLoginComponent}
 
 ];
 
