@@ -16,7 +16,6 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { AppRoutingModule } from './app-routing.module';
 import { EditComponent } from './edit/edit.component';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
-import { ImageCropperModule } from 'ngx-image-cropper';
 import { HttpClientModule } from '@angular/common/http';
 import {UserService} from './services/user.service';
 import { ResearchtoolsComponent } from './researchtools/researchtools.component';
@@ -90,12 +89,12 @@ import {MatListModule} from '@angular/material/list';
     AppRoutingModule,
     MatFormFieldModule,
     MatProgressBarModule,
-    ImageCropperModule,
     HttpClientModule,
     MatTableModule,
     FormsModule,
     Ng2SearchPipeModule,
-    MatTabsModule
+    MatTabsModule,
+    Ng2SearchPipeModule
     
     
    
