@@ -12,6 +12,15 @@ import { EditComponent } from './component/edit/edit.component';
 import {ProjectcreateComponent} from './component/projects/projectcreate/projectcreate.component';
 import {WorkspaceComponent} from './component/workspace/workspace.component';
 import {ResearchtoolsComponent} from './component/researchtools/researchtools.component';
+import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
+import { ViewprojectComponent } from './viewproject/viewproject.component';
+import { SubmittedComponent } from './submitted/submitted.component';
+import { UploadresourceComponent } from './uploadresource/uploadresource.component';
+import { SupProfileComponent } from './sup-profile/sup-profile.component';
+import { ChatboxComponent } from './chatbox/chatbox.component';
+import { StudentslComponent } from './studentsl/studentsl.component';
+
+
 const routes: Routes = [
    {path:'',component:LandingPageComponent},
   {path:"signup", component: SignupComponent},
@@ -26,6 +35,17 @@ const routes: Routes = [
   {path:"workspace",component: WorkspaceComponent},
   // {path:"**", redirectTo:""},
   {path:"researchtools", component: ResearchtoolsComponent},
+  {path:'edit', component: EditComponent},
+  {path:'researchtools', component:ResearchtoolsComponent},
+ 
+  {path:'admindashboard', component:AdmindashboardComponent},
+  {path:'viewproject', component:ViewprojectComponent},
+  {path:'submitted', component: SubmittedComponent},
+ 
+  {path:'upload', component:UploadresourceComponent},
+  {path:'supprofile', component:SupProfileComponent},
+  {path:'chatbox', component:ChatboxComponent},
+  {path:'stdl', component:StudentslComponent},
 ];
 
 @NgModule({

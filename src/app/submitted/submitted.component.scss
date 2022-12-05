@@ -1,0 +1,231 @@
+.search{
+    
+background: whitesmoke;
+font-size: 16px;
+}
+.go{
+    position: relative;
+width: 46px;
+height: 37px;
+margin-left: -20px;
+top: 30px;
+background: rgba(29, 97, 159, 0.88);
+border-radius: 5px;
+color: white;
+}
+.title{
+    background:blue;
+    height: 40px;
+    margin-left: 0px;
+}
+.submit{
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-weight: 500; 
+}
+.head{
+    color: whitesmoke;
+    margin-left: 0px;
+}
+#myInput {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+    
+  }
+  #myUL {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myUL li a {
+    border: 1px solid #ddd; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6; /* Grey background color */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+  }
+  
+  #myUL li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+  }
+
+
+
+
+
+  .container {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    color: #405065;
+  }
+  
+  .search-hero {
+    max-width: 500px;
+    padding-bottom: 50px;
+    margin:auto;
+  }
+  
+  .form-control {
+    box-shadow: 0 10px 40px 0 #B0C1D9;
+  }
+  .form-control::placeholder  {
+    font-family: FontAwesome;
+  }
+
+  table tr:nth-child(odd) {
+    background-color: #f1f1f1;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #ffffff;
+  }
+  .studtable{
+    width: 1200px;
+  }
+  .demo-row-is-clicked {
+    font-weight: bold;
+  }
+  .th:hover .td {
+    border-color: currentColor;
+    
+  }
+  .demo-table {
+    width: 100%;
+  }
+  
+  .mat-row .mat-cell {
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    cursor: pointer;
+  }
+  
+  .mat-row:hover .mat-cell {
+    border-color: currentColor;
+  }
+  
+  .demo-row-is-clicked {
+    font-weight: bold;
+  }
+  .b4{
+    font-weight: bold;
+    margin-left: 130px;
+  }
+  .b3{
+    margin-left:180px;
+    font-weight: bold;
+  }
+  .b2{
+    margin-left:160px;
+    font-weight: bold;
+  }
+  .b1{
+    font-weight: bold;
+  }
+  .b5{
+    font-weight: bold;
+  }
+  .b6{
+    font-weight: bold;
+    margin-left: 160px;
+
+  }
+  .b7{
+    font-weight: bold;
+    margin-left: 210px;
+
+  }
+  .b8{
+    font-weight: bold;
+    margin-left: 200px;
+
+  }
+  .s1{
+    margin-right: 500px;
+  }
+  .menu{
+    position: absolute;
+width: 348px;
+height: 1253px;
+left: 25px;
+top: 118px;
+
+background: #FFFFFF;
+border-radius: 5px;
+}.home{
+  position: absolute;
+width: 380px;
+height: 53px;
+left: 0px;
+top: 4px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 24px;
+background: whitesmoke;
+color:black;
+}
+.chat{
+  position: absolute;
+width: 380px;
+height: 53px;
+left: 0px;
+top: 60px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: bolder;
+font-size: 22px;
+line-height: 24px;
+background: whitesmoke;
+color: black;
+
+}
+.studlist{
+  position: absolute;
+width: 380px;
+height: 53px;
+left: 0px;
+top: 117px;
+background: whitesmoke;
+font-family: '';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 24px;
+
+color: black;
+
+}
+.table{
+  margin-left: 0px;
+  width: 1000px;
+}
+.hh{
+  margin-left: 0px;
+  width: 960px;
+}
+.menu{
+  height: 900px;
+  margin-top: 100px;
+}
+.tabsSet{
+  margin-left: 500px;
+}
+button{
+  font-size: medium;
+}
+ 

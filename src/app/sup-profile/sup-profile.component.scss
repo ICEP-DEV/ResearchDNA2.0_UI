@@ -1,0 +1,428 @@
+/*mat-card{
+    position: absolute;
+  width: 704px;
+  height: 935px;
+  left: 373px;
+  top: 19px;
+  margin-left: 400px;
+  background: #F5F5F5;
+  border-radius: 15px;
+  
+  }
+  .proff{
+    height: 200px;
+   
+  }
+  .Basic{
+    position: absolute;
+  width: 275px;
+  height: 24px;
+  left: 290px;
+  top: 27px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 24px;
+  color: #000000;
+  
+  }
+  .d1{
+    position: absolute;
+  
+  height: 0px;
+  left: 10px;
+  top: 236px;
+  margin-top: 100px;
+  border: 1px solid #6699FF;
+  transform: rotate(-0.22deg);
+  }
+  .contact{
+    position: absolute;
+  width: 300px;
+  height: 24px;
+  left:  220px;
+  top: 256px;
+  margin-top: 100px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 24px;
+  
+  color: #000000;
+  }
+  .d2{
+    position: absolute;
+  width: 0.01px;
+  height: 0px;
+  left: 29px;
+  top: 485px;
+  margin-top: 130px;
+  
+  border: 1px solid #6699FF;
+  transform: rotate(0.32deg)
+  }
+  .project{
+    position: absolute;
+  width: 291px;
+  height: 25px;
+  left:  220px;
+  top: 508px;
+  margin-top: 120px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 24px;
+  color: #000000;
+  }
+  .picture{
+    position: absolute;
+  width: 159px;
+  height: 152px;
+  margin-right: 50px;
+  left: -390px;
+  top: 15px;
+  border-radius: 0px;
+  
+  border-radius: 0px; 
+  }
+  .profile-img{
+    border-radius: 50%;
+   bottom: 270px;
+    max-height: 168px;
+    max-width: 168px;
+    margin-right: -130px;
+  }
+  .u-img{
+    margin-bottom: 300px
+  }
+  
+  .b{
+    position: absolute;
+  width: 241px;
+  height: 100px;
+  left: 290px;
+  top: 103px;
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 15px;
+  
+  color: #808080;
+  }
+  .c{
+    position: absolute;
+  width: 141px;
+  height: 94px;
+  left: 60px;
+  top: 444px;
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 15px;
+  
+  color: #808080;
+  }
+  .p{
+    position: absolute;
+  width: 200px;
+  height: 150px;
+  left: 61px;
+  top: 675px;
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 15px;
+  
+  color: #808080;
+  
+  }
+  mat-menu{
+    max-width: 20px;
+  }
+  .mat-divider{
+    max-width: 650px;
+    margin-left: 40px;
+  }
+  .profile{
+    margin-top: 100px;
+  }
+  mat-menu{
+    position: absolute;
+  width: 361px;
+  height: 421px;
+  left: 2px;
+  top: -28px;
+  
+  background: #FFFFFF;
+  }
+  .edit{
+    top: 1100px;
+    left: 993px;
+    position: absolute;
+    width: 223px;
+  height: 37px;
+  font-size: 16px;
+  font-weight: bolder;
+  background: rgba(102, 153, 255, 0.27);
+  border-radius: 15px;
+  }
+  .password{
+    position: absolute;
+  width: 223px;
+  height: 37px;
+  left: 1260px;
+  top: 1100px;
+  font-size: 16px;
+  background: rgba(102, 153, 255, 0.28);
+  border-radius: 15px;
+  font-weight: bolder;
+  }
+  
+  
+  .log{
+    top: 1100px;
+    left: 593px;
+    position: absolute;
+    width: 223px;
+  height: 37px;
+  font-size: 16px;
+  font-weight: bolder;
+  background: rgba(102, 153, 255, 0.27);
+  border-radius: 15px;
+  }
+  .log{
+    top: 1100px;
+    left: 83px;
+  
+  }
+  .col-md-8{
+    visibility: hidden;
+    width: 1px;
+  }
+  .col-md-4{
+    height:50px ;
+    margin-bottom: 400px;
+    margin-left: 0px;
+    width: 50px; 
+  }*/
+
+.sup1{
+  height: 800px;
+  width: 1100px;
+  left: 800px;
+  top: 50px;
+  background: rgba(135, 207, 235, 0.116);
+  
+}
+.sub2{
+  width: 700px;
+  left:1200px;
+  top: -600px;
+ background:  rgba(135, 207, 235, 0.116);;
+  
+  
+}
+.personal{
+  margin-left: 450px;
+ font-size: xx-large;
+top: 50px;
+font-weight: 600;
+ 
+}
+
+.sub3{
+  width: 700px;
+  left:1200px;
+  top: -600px;
+  background:rgba(135, 207, 235, 0.116);
+}
+.icon1{
+  left: 300px;
+}
+.proff{
+  border-radius: 50%;
+  height: 200px;
+  
+}
+.email{
+  color: #012970;
+  font-size: larger;
+  font-weight: 500;
+  
+ 
+}
+.place{
+  color: #012970;
+  font-size: larger;
+  font-weight: 500;
+  left: 20px;
+}
+.call{
+  color: #012970;
+  font-size: larger;
+  font-weight: 500;
+}
+.fullname{
+  font-size:x-large;
+  font-weight: 500;
+  font-style: oblique;
+  margin-left: 0px;
+  
+  
+}
+.lastname{
+  font-size:x-large;
+  font-weight: 500;
+  font-style: oblique;
+  margin-left:0px;
+}
+
+
+
+
+.profile .profile-card img {
+  max-width: 150px;
+}
+
+.profile .profile-card h2 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #2c384e;
+  margin: 10px 0 0 0;
+}
+
+.profile .profile-card h3 {
+  font-size: 30px;
+}
+
+.profile .profile-card .social-links a {
+  font-size: 20px;
+  display: inline-block;
+  color: rgba(1, 41, 112, 0.5);
+  line-height: 0;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.profile .profile-card .social-links a:hover {
+  color: #012970;
+}
+
+.profile .profile-overview .row {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.profile .profile-overview .card-title {
+  color: #012970;
+}
+
+.profile .profile-overview .label {
+  font-weight: 600;
+  color: rgba(1, 41, 112, 0.6);
+}
+
+.profile .profile-edit label {
+  font-weight: 600;
+  color: rgba(1, 41, 112, 0.6);
+}
+
+.profile .profile-edit img {
+  max-width: 120px;
+}
+
+  #main {
+  margin-top: 100px;
+  margin-bottom: 60px;
+  padding: 20px 30px;
+  transition: all 0.3s;
+  position: relative;
+
+
+}
+
+@media (max-width: 1000px) {
+  #main {
+    padding: 20px;
+    position: relative;
+  }
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background: #f6f9ff;
+    color: #444444;
+    position: relative;
+   
+  }
+  
+  a {
+    color: #4154f1;
+    text-decoration: none;
+  }
+
+  .menu{
+    position: absolute;
+width: 348px;
+height: 953px;
+left: 25px;
+top: 128px;
+
+background: #FFFFFF;
+border-radius: 5px;
+}
+.home{
+    position: absolute;
+width: 380px;
+height: 53px;
+left: 0px;
+top: 4px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 24px;
+background: whitesmoke;
+color:black;
+}
+.chat{
+    position: absolute;
+width: 380px;
+height: 53px;
+left: 0px;
+top: 60px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: bolder;
+font-size: 22px;
+line-height: 24px;
+background: whitesmoke;
+color: black;
+
+}
+.studlist{
+    position: absolute;
+width: 380px;
+height: 53px;
+left: 0px;
+top: 117px;
+background: whitesmoke;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 24px;
+
+color: black;
+}

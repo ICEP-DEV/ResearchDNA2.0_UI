@@ -1,0 +1,152 @@
+<!--<div class="container ">
+    <div class="col-md-8" visibility="hidden">
+      <image-cropper 
+        [imageChangedEvent]="imgChangeEvt" 
+        [maintainAspectRatio]="true" 
+        [aspectRatio]="4 / 4"
+        [resizeToWidth]="256" 
+        format="png" 
+        (imageCropped)="cropImg($event)" 
+        (imageLoaded)="imgLoad()"
+        (cropperReady)="initCropper()" 
+        (loadImageFailed)="imgFailed()">
+      </image-cropper>
+      
+    </div>
+    
+  
+  <br>
+  <br>
+  
+    
+    <mat-card class="profile">
+      
+      <div class="col-md-12">
+        <input type="file" (change)="onFileChange($event)" />
+      </div>
+        
+      <div class="col-md-4">
+        <img [src]="cropImgPreview" />
+      </div>
+     
+     
+      
+    <mat-label class="Basic">Basic Information</mat-label>
+    <a class="b">
+      Name: 
+      <br>
+      <br>
+      Department:
+      <br>
+      <br>
+      Faculty:
+  
+    </a>
+   
+      
+    
+    <mat-divider class="d1"></mat-divider>
+    
+    <mat-label class="contact">Contact Information</mat-label>
+    <a class="c"  >
+      User id:
+      <br>
+      <br>
+      Email:
+      
+    </a>
+    
+    <mat-divider class="d2"></mat-divider>
+    <mat-label class="project">Project Information</mat-label>
+    <a class="p">
+      Project Name:
+      <br>
+      <br>
+      Description:
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      Start Date:
+      <br>
+      <br>
+      End Date:
+  
+    </a>
+  </mat-card>
+  <button mat-raised-button  class="edit" routerLink="edit" routerLinkActive="active">Edit Information</button>
+  <button mat-raised-button  class="log" routerLink="researchtools" routerLinkActive="active">logout</button>
+  
+  <li *ngIf = "userIsAuthenticated">  
+    <button mat-button (click)= "onLogout()" class="logout">Logout</button>  
+  </li>
+  -->
+  
+  <mat-card class="menu" >
+    <button mat-flat-button class="home" routerLink="/admindashboard">Home</button>
+    <br>
+    <button mat-flat-button  class="chat" routerLink="/chatbox" routerLinkActive="true">Chatbox</button>
+
+    <br>
+    <button mat-flat-button  class="studlist" routerLink="/stdl" routerLinkActive="true" >Student list</button>
+
+</mat-card >
+
+  
+<mat-card class="sup1"  >
+  
+  <u><label class="personal">Personal Information</label></u>
+   
+      
+          
+          
+          <div [innerHtml]='msg' *ngIf="msg" style="color: red;"></div>
+          <br>
+          <img [src]="url ? url: '../../assets/profilepic.png'" class="proff">
+          
+         <br>
+         
+        
+         <input type="file"  (change)="selectFile($event)">
+          
+              
+     
+      
+     
+     <br><br>
+    
+      <mat-icon class="icon1">call</mat-icon>
+      <label class="call"> 07900000000</label>
+      <br><br>
+      <mat-icon class="icon2">email</mat-icon>
+      <label class="email">nontandmaseko@gmail.com</label>
+      <br><br>
+      <mat-icon class="icon3">place</mat-icon>
+      <label class="place">14402 ivory park, Tembisa 1111 </label>
+ <br><br>
+  
+  
+  
+</mat-card>
+
+
+<mat-card *ngFor="let list of user" class="sub2"><mat-label class="fullname">Fullname: {{list.firstName}}</mat-label></mat-card>
+
+  <br>
+  <mat-card *ngFor="let list of user" class="sub3"><mat-label class="lastname">Lastname: {{list.lastName}}</mat-label></mat-card>
+  <br>
+  <mat-card *ngFor="let list of user" class="sub3"><mat-label class="lastname">Department: {{list.department}}</mat-label></mat-card>
+  <br>
+  <mat-card *ngFor="let list of user" class="sub3"><mat-label class="lastname">Faculty: {{list.faculty}}</mat-label></mat-card>
+  <br>
+  <mat-card *ngFor="let list of user" class="sub3"><mat-label class="lastname">Staff Nr.: {{list.supervisorId}} </mat-label></mat-card>
+  <br>
+  <mat-card *ngFor="let list of user" class="sub3"><mat-label class="lastname">Email: {{list.email}}</mat-label></mat-card>
+  
+
+
+
+
+

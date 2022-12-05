@@ -28,8 +28,39 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { AngularFileUploaderModule } from "angular-file-uploader";
 // import { DocumentEditorModule } from '@syncfusion/ej2-angular-documenteditor';
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
-import { ResearchtoolsComponent } from './component/researchtools/researchtools.component';
+
 import {NgToastModule} from 'ng-angular-popup';
+import { MatLineModule } from '@angular/material/core';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatMenuModule} from '@angular/material/menu'; 
+import {MatIconModule} from '@angular/material/icon';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { ResearchtoolsComponent } from './component/researchtools/researchtools.component';
+
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+
+import {UserService} from './services/user.service';
+
+import {MatTableModule} from '@angular/material/table';
+import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { SubmittedComponent } from './submitted/submitted.component';
+
+import { SearchbystudentPipe } from './searchbystudent.pipe';
+import { HighlightDirective } from './highlight.directive';
+import { ViewprojectComponent } from './viewproject/viewproject.component';
+import { UploadresourceComponent } from './uploadresource/uploadresource.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { MatTabsModule } from '@angular/material/tabs';
+import { SupProfileComponent } from './sup-profile/sup-profile.component';
+import { ChatboxComponent } from './chatbox/chatbox.component';
+import { StudentslComponent } from './studentsl/studentsl.component';
+import {MatListModule} from '@angular/material/list';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
 
@@ -51,6 +82,16 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     ProjectcreateComponent,
     WorkspaceComponent,
     ResearchtoolsComponent,
+  
+    UploadresourceComponent,
+    SupProfileComponent,
+    ChatboxComponent,
+    StudentslComponent,
+    ViewprojectComponent,
+    HighlightDirective,
+    AdmindashboardComponent,
+    SubmittedComponent,
+    SearchbystudentPipe
 
 
   ],
@@ -67,7 +108,32 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     FormsModule,
     MatNativeDateModule,
     AngularFileUploaderModule,
-    NgToastModule
+    NgToastModule,
+    BrowserModule,
+    MatCardModule,
+    MatLineModule,
+    MatDividerModule,
+    MatMenuModule,
+    BrowserAnimationsModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatListModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
+    MatCardModule,
+    MatToolbarModule,
+    ReactiveFormsModule,
+    AppRoutingModule,
+    MatFormFieldModule,
+    MatProgressBarModule,
+    HttpClientModule,
+    MatTableModule,
+    FormsModule,
+    MatTabsModule,
+    Ng2SearchPipeModule
+   
+    
    
 
 

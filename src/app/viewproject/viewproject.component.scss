@@ -1,0 +1,92 @@
+.view{
+    background-color: aliceblue;
+    height: 70px;
+}
+.message{
+    height: 230px;
+    margin-top:70px;
+    margin-left: 520px;
+    width: 500px;
+    border-radius: 10px;
+
+}
+.h{
+    color: blue($color: #000000);
+}
+.file{
+    font-size: large;
+    margin-left: 500px;
+}
+.descr{
+    font-size: larger;
+}
+.feed{
+    width: 200px;
+    height: 50px;
+    background:rgba(0, 0, 128, 0.891);
+    padding: 10px;
+    margin-left: 520px;
+    border-radius: 15px;
+    color: white;
+}
+.home{
+    position: absolute;
+  width: 380px;
+  height: 53px;
+  left: 0px;
+  top: 4px;
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 24px;
+  background: whitesmoke;
+  color:black;
+  }
+  .chat{
+    position: absolute;
+  width: 380px;
+  height: 53px;
+  left: 0px;
+  top: 60px;
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 22px;
+  line-height: 24px;
+  background: whitesmoke;
+  color: black;
+  
+  }
+  .studlist{
+    position: absolute;
+  width: 380px;
+  height: 53px;
+  left: 0px;
+  top: 117px;
+  background: whitesmoke;
+  font-family: '';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 24px;
+  
+  color: black;
+  
+  }
+  .success{
+    margin-left: 520px;
+    margin-top: 30px;
+  }
+  .des{
+    left: 500px;
+  }
+  .menu{
+    position: absolute;
+width: 348px;
+height: 1253px;
+left: 25px;
+top: 118px;
+  }

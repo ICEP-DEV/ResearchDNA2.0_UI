@@ -1,0 +1,53 @@
+
+ <mat-card class="menu" >
+  <button mat-flat-button class="home" routerLink="/admindashboard">Home</button>
+  <br>
+  <button mat-flat-button  class="chat">Chatbox</button>
+
+  <br>
+  <button mat-flat-button  class="studlist" routerLink="/studentslist" routerLinkActive="true" >Student list</button>
+  <br>
+ </mat-card>
+
+<br>
+<br>
+<br>
+<div> <a routerLink="" class="file"> CyberSecurity.doc</a></div>
+<br>
+<mat-card class="des">
+    <label class="descr">Project Description:</label>
+    <br>
+    <br>
+    <label>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu convallis est, in placerat tellus. 
+        <br>
+        Morbi volutpat pellentesque mauris, ut ullamcorper neque euismod et. Praesent bibendum magna eu dapibus 
+        <br>
+        sollicitudin. Donec mattis felis massa, ac egestas tellus consequat a. Curabitur eu vulputate eros.
+        <br>
+         Aliquam eget sollicitudin lectus. Suspendisse venenatis semper risus, vitae pulvinar libero faucibus at.
+         <br>
+          Quisque blandit est urna, sed tempus purus semper id. Proin ac libero mi. Phasellus ut enim gravida, 
+          <br>
+          commodo lectus nec, tempor dolor. Duis consectetur ultricies tellus, finibus sagittis est bibendum vel.
+          <br>
+           Ut vel sem id nisl dictum ultrices. Vestibulum quam velit, mattis sit amet diam a, dictum finibus urna.
+           <br> 
+           Nam ac porttitor risus.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per 
+           <br>
+           inceptos himenaeos.</label>
+</mat-card>
+
+<form #feedbackform="ngForm" (ngSubmit)="clickEvent(feedbackform.value)">
+  <input ngModel name="text" #name required class="message">
+  <br>
+  <br>
+  <button  class="feed" (click)="name.value=' '">
+    Send Feedback</button>
+  </form>
+
+ 
+    <h1 class="success" *ngIf="registerSucess"> Feedback Sent Successfully!</h1>
+  
+   
+  
+

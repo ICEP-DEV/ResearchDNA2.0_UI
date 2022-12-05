@@ -1,0 +1,147 @@
+<mat-card class="menu" >
+    <button mat-flat-button class="home" routerLink="/admindashboard">Home</button>
+    <br>
+    <button mat-flat-button  class="chat" routerLink="/chatbox" routerLinkActive="true">Chatbox</button>
+
+    <br>
+    <button mat-flat-button  class="studlist" routerLink="/stdl" routerLinkActive="true" >Student list</button>
+
+</mat-card >
+
+<mat-card class="fff">
+  
+    
+    <mat-icon class="user" routerLink="/supprofile" routerLinkActive="true">account_circle</mat-icon>
+    
+   
+    
+    <mat-card class="ff1">
+        <mat-card class="box1"  >
+            <label class="stud">Announcements</label>
+            <div> <a routerLink="" class="file"> </a></div>
+            <a class="announce" *ngFor="let list of announcements">
+                <br><br>
+               <u><p class="tt"> {{list.title}}</p></u>
+                
+                <p class="date">{{list.createdAt | date:'fullDate'}}</p>
+              
+                <p class="text">{{list.text}}</p>
+            </a>
+           
+              
+              
+            
+           <!--<label *ngFor="let announcement of readData"></label>
+           <label *ngFor="let announcement of readData"> {{announcement.createdAt}}</label>
+           <label *ngFor="let announcement of readData">{{announcement.id}}</label>-->
+        
+           
+                   
+                  
+                 
+                    
+                  
+                
+            
+        
+        </mat-card>
+        <mat-card class="procard">
+            <label class="sub">Submitted Projects</label>
+            <label class="pending">Pending Projects</label>
+       <mat-card class="box2">
+<br>
+<a class="announce" *ngFor="let u of user">
+    
+   <p class="prodash">{{u.text}} <p class="prodate">{{u.createdAt | date:'fullDate'}}</p>
+   
+    <br>
+    
+</a>
+
+
+            <!--<div *ngFor="let item of [].constructor(10); let i = index">
+                <label class="projj" href="/submitted">{{dataSource[i].proj_name}}
+                    <br>
+                </label>
+            
+             </div>-->
+        
+            <button class="view" routerLink="/submitted" routerLinkActive="true">View more</button>
+        </mat-card>
+       
+    </mat-card>
+        <mat-card class="box3">
+          <label class="postr">Post Resources</label>
+          <br><br><br>
+          <button class="view" routerLink="/upload" routerLinkActive="true">Post Resources</button>
+        </mat-card>
+        <mat-card class="box4">
+          <img class="penicon" src='../../assets/projectdash.png' alt="pen">
+        </mat-card>
+    </mat-card>
+
+
+
+
+
+
+
+
+<!--<mat-card class="head">
+    <label class="proj">Projects to be Supervised</label>
+   
+   
+   <label class="afew">A few students have shared their progress on their projects. 
+    <br>
+    waiting for your feedback.</label>
+
+    <button class="learn">Learn more</button>
+
+</mat-card>
+<mat-card class="box1">
+    <label class="stud">Announcements</label>
+    <div> <a routerLink="" class="file"> Proposal Submission</a></div>
+    <label class="ann1"> Students proposals submission is about to be due at 12:00  11/10/2022, 
+        <br>
+        a few students have submitted their proposals already.
+        <br>
+        <br>
+        <div> <a routerLink="" class="file"> Students project progress</a></div>
+        In publishing and graphic design, Lorem ipsum is a placeholder text
+        <br>
+         commonly used to demonstrate the visual form of a document  or a 
+         <br>
+         typeface without relying on meaningful content. Lorem ipsum may be
+        <br>
+        <br>
+        <div> <a routerLink="" class="file"> Scheduled meetings</a></div>
+        The following are todays meetings with their links:
+        
+        <br>
+        <br>
+        Student Proposal meeting 12:00  11/10/2022
+    </label>
+
+</mat-card>
+<label class="sub">Submissions</label>
+<mat-card class="box2">
+
+
+    <div *ngFor="let item of [].constructor(10); let i = index">
+        <label class="projj" href="/submitted">{{dataSource[i].proj_name}}
+            <br>
+        </label>
+    
+     </div>
+
+    <button class="view" routerLink="/submitted" routerLinkActive="true">View more</button>
+</mat-card>
+<label></label>
+<label class="pending">Pending Projects</label>
+-->
+</mat-card>
+<button mat-raised-button  class="log" routerLink="researchtools" routerLinkActive="active">LOGOUT</button>
+
+<li *ngIf = "userIsAuthenticated">  
+    <button mat-raised-button (click)= "onLogout()"  class="log" >logout</button>
+  </li>
