@@ -1,0 +1,130 @@
+<router-outlet></router-outlet>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<div class="pageWraper">
+    <div class="mat-display-2">Projects</div>
+
+    <mat-sidenav class="container" opened="true">
+        <mat-nav-list routerLink="/dashboard">
+            <a mat-list-item>
+                <span> <mat-icon class="homeIcon">home</mat-icon></span>Home</a>
+            <mat-divider></mat-divider>
+
+            <div style="background-color: rgb(225, 225, 225);">
+                <a mat-list-item>
+                    <mat-icon> attach_file</mat-icon>
+                    Projects</a>
+                <mat-divider></mat-divider>
+            </div>
+            <a mat-list-item>
+                <mat-icon>work</mat-icon>Workspace</a>
+            <mat-divider></mat-divider>
+            <a mat-list-item routerLink="/researchtools">
+                <mat-icon>extension</mat-icon>Research tools</a>
+            <mat-divider></mat-divider>
+            <a mat-list-item>
+
+                <mat-icon> chat</mat-icon>Chatbox</a>
+            <mat-divider></mat-divider>
+
+        </mat-nav-list>
+    </mat-sidenav>
+
+    <div class="tabs">
+        <mat-tab-group class="tabsSet">
+            <mat-tab label="Overview" flex layout="column" layout-fill class="tabsSet">
+                <div>
+                    <table mat-table [dataSource]="finaldata" matSort class="mat-elevation-z8">
+
+                        <ng-container matColumnDef="id">
+                            <th mat-header-cell *matHeaderCellDef mat-sort-header> ID</th>
+                            <td mat-cell *matCellDef="let element">{{element.id}}</td>
+                        </ng-container>
+
+                        <ng-container matColumnDef="projectName">
+                            <th mat-header-cell *matHeaderCellDef mat-sort-header> Project Name</th>
+                            <td mat-cell *matCellDef="let element">{{element.projectName}}</td>
+                        </ng-container>
+
+                        <ng-container matColumnDef="projectDate">
+                            <th mat-header-cell *matHeaderCellDef> projectDate</th>
+                            <td mat-cell *matCellDef="let element">{{element.projectDate}}</td>
+                        </ng-container>
+
+
+                        <ng-container matColumnDef="projectType">
+                            <th mat-header-cell *matHeaderCellDef> Project type</th>
+                            <td mat-cell *matCellDef="let element">{{element.projectType}}</td>
+                        </ng-container>
+
+
+
+                        <ng-container matColumnDef="action">
+                            <th mat-header-cell *matHeaderCellDef> Action</th>
+                            <td mat-cell *matCellDef="let element">
+                                <div>
+                                </div>
+                            </td>
+                        </ng-container>
+
+                        <tr mat-header-row *matHeaderRowDef="displayColums"></tr>
+                        <tr mat-row *matRowDef="let row; columns: displayColums;"></tr>
+
+                    </table>
+                </div>
+                <br/>
+                <!--Table end-->
+            </mat-tab>
+
+
+            <mat-tab label="Projects">
+                <br/>
+                <button mat-raised-button color="primary" class="projectBtn" (click)="openDialog('')">New Project+</button>
+                <br/>
+                <br/>
+                <table mat-table [dataSource]="finaldata" matSort class="mat-elevation-z8">
+
+                    <ng-container matColumnDef="id">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header> ID</th>
+                        <td mat-cell *matCellDef="let element">{{element.id}}</td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="projectName">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header> Project Name</th>
+                        <td mat-cell *matCellDef="let element">{{element.projectName}}</td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="projectDate">
+                        <th mat-header-cell *matHeaderCellDef> projectDate</th>
+                        <td mat-cell *matCellDef="let element">{{element.projectDate}}</td>
+                    </ng-container>
+
+
+                    <ng-container matColumnDef="projectType">
+                        <th mat-header-cell *matHeaderCellDef> Project type</th>
+                        <td mat-cell *matCellDef="let element">{{element.projectType}}</td>
+                    </ng-container>
+
+
+
+                    <ng-container matColumnDef="action">
+                        <th mat-header-cell *matHeaderCellDef> Action</th>
+                        <td mat-cell *matCellDef="let element">
+                            <div>
+                                <a mat-raised-button (click)="EditProject(element.id)" color="primary">Edit</a> |
+                                <a mat-raised-button (click)="RemoveProject(element.id)" color="accent">Delete</a>|
+                                <button mat-raised-button>Submit</button>
+                            </div>
+                        </td>
+                    </ng-container>
+
+                    <tr mat-header-row *matHeaderRowDef="displayColums"></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayColums;"></tr>
+
+                </table>
+
+
+
+                <br/> </mat-tab>
+        </mat-tab-group>
+    </div>
+</div>

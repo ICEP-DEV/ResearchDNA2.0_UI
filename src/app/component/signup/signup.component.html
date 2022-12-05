@@ -1,0 +1,52 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<div class="mat-display-3">Sign up</div>
+<mat-card>
+
+    <form #signupForm="ngForm" (ngSubmit)="onSubmit(signupForm.value)" novalidate>
+        <img class="img-responsive" src="https://cdn0.iconfinder.com/data/icons/thin-line-2/4/03-512.png">
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <!--field form studentNo-->
+        <mat-form-field>
+            <mat-label>Student No</mat-label>
+            <input matInput required #userId="ngModel" placeholder="21890086" name="userId" ngModel [class.is-invalid]="userId.invalid && userId.touched">
+        </mat-form-field>
+
+
+        <mat-form-field>
+            <mat-label>First Name</mat-label>
+            <input matInput placeholder="Ex. John" name="firstName" ngModel>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Last Name</mat-label>
+            <input matInput placeholder="Ex. Nkosi" name="lastName" ngModel>
+        </mat-form-field>
+
+        <!--field for email-->
+        <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Ex. jnkosi@outlook.com" name="email" ngModel>
+        </mat-form-field>
+        <!--field for password-->
+        <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input matInput type="password" placeholder="Minimum 7 characters" name="password" ngModel>
+            <br/>
+
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Department</mat-label>
+            <input matInput placeholder="Ex. Humanities" name="department" [(ngModel)]="userModel.department">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Faculty</mat-label>
+            <input matInput placeholder="Ex. Law" name="faculty" [(ngModel)]="userModel.faculty">
+        </mat-form-field>
+        <div>Already have an account?<a routerLink="/login">Sign In</a></div>
+        <button color="Red" mat-raised-button type="submit" ><span>Submit</span></button>
+
+    </form>
+</mat-card>

@@ -1,0 +1,48 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+<mat-drawer-container class="container">
+    <mat-sidenav class="container" opened="true">
+        <mat-nav-list>
+            <div style="background-color: rgb(225, 225, 225);">
+                <a mat-list-item>
+                    <span> <mat-icon class="homeIcon">home</mat-icon></span>Home</a>
+                <mat-divider></mat-divider>
+            </div>
+
+            <a mat-list-item routerLink="/projects">
+                <mat-icon> attach_file</mat-icon>
+                Projects</a>
+            <mat-divider></mat-divider>
+            <a mat-list-item routerLink="/workspace">
+                <mat-icon>work</mat-icon>Workspace</a>
+            <mat-divider></mat-divider>
+            <a mat-list-item routerLink="/researchtools">
+                <mat-icon>extension</mat-icon>Research tools</a>
+            <mat-divider></mat-divider>
+            <a mat-list-item>
+
+                <mat-icon> chat</mat-icon>Chatbox</a>
+            <mat-divider></mat-divider>
+
+        </mat-nav-list>
+    </mat-sidenav>
+</mat-drawer-container>
+<div class="title">
+    <p class="PageTitle">Student Dashboard</p>
+</div>
+<div class="calendar">
+    <!--<ejs-calendar></ejs-calendar>-->
+    <full-calendar [options]="calendarOptions"></full-calendar>
+</div>
+<div class="bottomCard">
+    <mat-card class="bottomCard">Overdue projects</mat-card>
+</div>
+
+<div class="bottomCard2">
+    <mat-card class="bottomCard2">
+        <header>Project Status</header>
+        <p>Proposal 03/11/2022  - In Progress<mat-icon>all_inclusive</mat-icon></p>
+       
+    </mat-card>
+</div>

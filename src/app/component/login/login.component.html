@@ -1,0 +1,39 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<div class="mat-display-3">Sign in</div>
+<mat-card>
+
+    <form (ngSubmit)="login()" novalidate>
+        <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdagfNlkCXKS54rDkgY6CjGNtPECsI_SZlKQ&usqp=CAU">
+        <br/><br/>
+        <div id="user">
+            <h4>Login As:</h4>
+            <input type="radio" id="login" name="radio"  /><label>Student</label>
+            <input type="radio" id="signup" name="radio"  /><label>Lecturer</label>
+            <input type="radio" id="signup" name="radio" /><label>Admin</label><br/>
+        </div>
+        
+          <br><br>
+       
+          
+        
+        
+        <mat-form-field>
+            <mat-label>Username</mat-label>
+            <input matInput required #userId="ngModel" placeholder="21890086" name="userId" [(ngModel)]="userModel.userId" [class.is-invalid]="userId.invalid && userId.touched">
+        </mat-form-field>
+        <!--field for password-->
+        <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input matInput type="password" placeholder="Minimum 7 characters" name="password" [(ngModel)]="userModel.password">
+            <br/>
+
+        </mat-form-field>
+       <div>Don't have an account?<a routerLink="/signup">Sign Up</a></div>
+        <br/>
+        <div>Forgot your password?<a href="">Reset Password</a></div>
+        <button color="Red" mat-raised-button type="submit"><span>Submit</span></button>
+    </form>
+</mat-card>
+
+
+
