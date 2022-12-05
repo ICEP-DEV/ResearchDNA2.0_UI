@@ -53,13 +53,15 @@ import { UploadresourceComponent } from './uploadresource/uploadresource.compone
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { MatTabsModule } from '@angular/material/tabs';
 import { SupProfileComponent } from './sup-profile/sup-profile.component';
-import { ChatboxComponent } from './chatbox/chatbox.component';
+import { ChatboxComponent } from './studentChatbox/Studentchatbox.component';
 import { StudentslComponent } from './studentsl/studentsl.component';
 import {MatListModule} from '@angular/material/list';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
+
+
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
@@ -82,16 +84,17 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     ProjectcreateComponent,
     WorkspaceComponent,
     ResearchtoolsComponent,
-  
+    ChatboxComponent,
     UploadresourceComponent,
     SupProfileComponent,
-    ChatboxComponent,
+    
     StudentslComponent,
     ViewprojectComponent,
     HighlightDirective,
     AdmindashboardComponent,
     SubmittedComponent,
-    SearchbystudentPipe
+    SearchbystudentPipe,
+    
 
 
   ],

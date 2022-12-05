@@ -175,3 +175,35 @@ mat-toolbar {
     right: -0px;
     text-size-adjust: 30px;
 }
+@media screen {
+    mat-card.mat1 {
+        position: absolute;
+        height: 300px;
+        top: 80%;
+        left: 360px;
+        width: 370px;
+        border-radius: 15px;
+        box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.55);
+    }
+    
+    mat-card.mat2 {
+        position: absolute;
+        height: 300px;
+        top: 80%;
+        left: 860px;
+        width: 370px;
+        border-radius: 15px;
+        box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.55);
+    }
+    
+    mat-card.mat3 {
+        position: absolute;
+        height: 300px;
+        top: 80%;
+        left: 1360px;
+        width: 370px;
+        border-radius: 15px;
+        box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.55);
+    }
+    
+}

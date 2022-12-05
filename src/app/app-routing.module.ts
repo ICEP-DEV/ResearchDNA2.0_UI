@@ -17,8 +17,10 @@ import { ViewprojectComponent } from './viewproject/viewproject.component';
 import { SubmittedComponent } from './submitted/submitted.component';
 import { UploadresourceComponent } from './uploadresource/uploadresource.component';
 import { SupProfileComponent } from './sup-profile/sup-profile.component';
-import { ChatboxComponent } from './chatbox/chatbox.component';
+
 import { StudentslComponent } from './studentsl/studentsl.component';
+import {ChatboxComponent} from './studentChatbox/Studentchatbox.component'
+
 
 
 const routes: Routes = [
@@ -46,6 +48,8 @@ const routes: Routes = [
   {path:'supprofile', component:SupProfileComponent},
   {path:'chatbox', component:ChatboxComponent},
   {path:'stdl', component:StudentslComponent},
+  {path: 'stuchat' , component:ChatboxComponent }
+
 ];
 
 @NgModule({

@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ChatboxComponent } from './chatbox.component';
+import { ChatboxComponent } from './Studentchatbox.component';
 
 describe('ChatboxComponent', () => {
   let component: ChatboxComponent;
@@ -11,9 +11,7 @@ describe('ChatboxComponent', () => {
       declarations: [ ChatboxComponent ]
     })
     .compileComponents();
-  });
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(ChatboxComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

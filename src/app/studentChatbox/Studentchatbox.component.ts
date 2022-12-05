@@ -1,29 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
-
-
-
-
-
 @Component({
   selector: 'app-chatbox',
-  templateUrl: './chatbox.component.html',
-  styleUrls: ['./chatbox.component.scss']
+  templateUrl: './Studentchatbox.component.html',
+  styleUrls: ['./Studentchatbox.component.css']
 })
 export class ChatboxComponent implements OnInit {
-  
-  
 
-  constructor(){}
-   
-  
+  constructor() { }
 
   ngOnInit(): void {
-
-    
-      
   }
-
-  
 
 }
